@@ -51,7 +51,7 @@
     "@types/etag": "^1.8.4",
     "@types/less": "^3.0.8",
     "@types/node": "^22.15.32",
-    "@types/picomatch": "^4.0.0",
+    "@types/picomatch": "^4.0.3",
     "@types/stylus": "^0.48.43",
     "@types/ws": "^8.18.1",
     "@vitejs/release-scripts": "^1.5.0",
@@ -72,7 +72,7 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.34.1",
     "vite": "workspace:*",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.6"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --concurrent false"
