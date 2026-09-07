@@ -1,0 +1,15 @@
+
+[0;36m[1m=== PHASE 0: ENVIRONMENT ===[0m
+[0;32m[C25][0m ollama found: /data/data/com.termux/files/usr/bin/ollama
+[0;32m[C25][0m node found: /data/data/com.termux/files/usr/bin/node
+[0;32m[C25][0m python3 found: /data/data/com.termux/files/usr/bin/python3
+[0;32m[C25][0m git found: /data/data/com.termux/files/usr/bin/git
+[0;32m[C25][0m npm found: /data/data/com.termux/files/usr/bin/npm
+[0;32m[C25][0m curl found: /data/data/com.termux/files/usr/bin/curl
+[0;32m[C25][0m C25_ROOT: /storage/emulated/0/c25_sovereign_product
+Disk: used=97G avail=10G use%=91%
+
+[0;36m[1m=== PHASE 1: DEDUP & CLEAN ===[0m
+
+[0;36m[1m=== PHASE 2: SOURCE MANIFEST ===[0m
+

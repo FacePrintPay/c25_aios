@@ -1,0 +1,1 @@
+9d6e5be54de9469a13a2a91b7ab3e0280eca763d86955547c9e7d566092ddfa7  /data/data/com.termux/files/home/LEGYC_ROOT/LEGYC_SEED.tar.gz

@@ -1,0 +1,13 @@
+Mercury
+
+File: agents/mercury/mercury.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Mercury Agent - Session Manager")
+
+@app.get("/")
+def root():
+    return {"agent": "Mercury", "mission": "Session Manager", "status": "Online"}
+
+✅ Mercury mission: manage session states for planetary swarm

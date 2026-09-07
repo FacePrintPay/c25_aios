@@ -1,0 +1,13 @@
+Varuna
+
+File: agents/varuna/varuna.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Varuna Agent - API Documentation Generator")
+
+@app.get("/")
+def root():
+    return {"agent": "Varuna", "mission": "API Documentation Generator", "status": "Online"}
+
+✅ Varuna mission: automatically generate and update planetary API documentation for mission transparency

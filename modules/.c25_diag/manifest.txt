@@ -1,0 +1,3 @@
+/data/data/com.termux/files/home/.c25_diag/test1.sh
+/data/data/com.termux/files/home/.c25_diag/test2.json
+/data/data/com.termux/files/home/.c25_diag/test3.yaml

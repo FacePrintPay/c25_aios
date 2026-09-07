@@ -1,0 +1,12 @@
+[submodule "AiKre8tive-Stargate"]
+	path = AiKre8tive-Stargate
+	url = https://github.com/FacePrintPay/AiKre8tive-Stargate.git
+[submodule "AiKre8tiveGenesis"]
+	path = AiKre8tiveGenesis
+	url = https://github.com/FacePrintPay/AiKre8tiveGenesis.git
+[submodule "AiKre8tive_Sovereign_Genesis"]
+	path = AiKre8tive_Sovereign_Genesis
+	url = https://github.com/FacePrintPay/AiKre8tive_Sovereign_Genesis.git
+[submodule "AIRecords_Deploy"]
+	path = AIRecords_Deploy
+	url = https://github.com/FacePrintPay/AIRecords_Deploy.git

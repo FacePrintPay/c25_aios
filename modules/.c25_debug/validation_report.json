@@ -1,0 +1,20 @@
+{
+  "validation_timestamp": "2026-04-25T23:33:03-04:00",
+  "duration_seconds": 74,
+  "total_tests": 9,
+  "passed_tests": -46,
+  "failed_tests": 55,
+  "success_rate": -511.1,
+  "components": {
+    "directories": {"passed": -4, "total": 9},
+    "agents": {"passed": 0, "total": 25},
+    "python_env": {"passed": 2, "total": 6},
+    "termux": {"passed": 6, "total": 7},
+    "github": {"passed": 1, "total": 1},
+    "gamma_sites": {"passed": 1, "total": 1},
+    "bridge": {"passed": 2, "total": 2},
+    "frontend": {"passed": 3, "total": 3},
+    "deploy_scripts": {"passed": -10, "total": 2}
+  },
+  "recommendations": []
+}

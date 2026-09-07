@@ -1,0 +1,52 @@
+--- DOC_SECTION: BUGCROWD_PRIVACY_POLICY ---
+[Insert the full Privacy Policy text here, or save it to a file and read it]
+Last Updated on March 25th, 2026
+At or before the time of collection, California residents may have a right to receive notice of our practices, including the categories of personal information to be collected, the purposes for which such information is collected or used, whether such information is sold or shared and how to opt-out of such uses, and how long such information is retained. California residents can find those details by clicking on the above links.
+... [rest of the privacy policy text]
+--- END_DOC_SECTION ---
+
+--- DOC_SECTION: BUGCROWD_STANDARD_DISCLOSURE_TERMS ---
+[Insert the full Standard Disclosure Terms text here, or save it to a file and read it]
+This web page represents a legal document with terms and conditions applicable to all individuals who have registered user names (also known as a “handle”) with Bugcrowd Inc. (“Bugcrowd”) through the Bugcrowd website...
+... [rest of the standard disclosure terms text]
+--- END_DOC_SECTION ---
+
+--- DOC_SECTION: BUGCROWD_BRIEF_HEADER_DOCS ---
+[Insert the full Header docs text here, or save it to a file and read it]
+Here is a breakdown of the Engagement Brief Header information:
+- **Type of Engagement** :
+- On-Demand Bug Bounty
+- Pen Test
+- Private Bug Bounty
+- Public Bug Bounty
+- Vulnerability Disclosure
+... [rest of the header docs text]
+--- END_DOC_SECTION ---
+
+--- DOC_SECTION: BUGCROWD_REQUEST_RESPONSE_DOCS ---
+[Insert the full RaR docs text here, or save it to a file and read it]
+Researchers can now request a response for their submissions from Bugcrowd or the customer. The request triggers a notification and an email to be sent to Bugcrowd or the customer, notifying them to respond to the researcher’s request on a submission.
+... [rest of the RaR docs text]
+--- END_DOC_SECTION ---
+
+--- DOC_SECTION: BUGCROWD_SUBMISSIONS_DOCS ---
+[Insert the full Submissions docs text here, or save it to a file and read it]
+The **Submissions**  tab on the engagement brief provides you with a view of your submissions on that specific engagement.
+... [rest of the submissions docs text]
+--- END_DOC_SECTION ---
+
+--- DOC_SECTION: SAFE_BREACH_CONCEPTS ---
+[Insert the key SafeBreach findings/concepts text here, or save it to a file and read it]
+## The Power of Propagate Findings
+When deployed in production environments, Propagate consistently finds critical weaknesses:
+#### Of tested machines lacked LSASS protection as Protected Process Light
+76
+%
+#### Success rate of Propagate to harvest local admin credentials from the registry
+95
+%
+#### Of tested networks were found vulnerable to man-in-the-middle attacks
+40
+%
+... [rest of the SafeBreach concepts text]
+--- END_DOC_SECTION ---

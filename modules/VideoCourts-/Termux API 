@@ -1,0 +1,96 @@
+const { exec } = require('child_process');
+const util = require('util');
+const execPromise = util.promisify(exec);
+
+class TermuxBiometricService {
+  // Capture fingerprint via Termux API
+  async captureFingerprint() {
+    try {
+      const { stdout } = await execPromise('termux-fingerprint authenticate');
+      return {
+        success: true,
+        data: JSON.parse(stdout),
+        timestamp: new Date().toISOString()
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error.message,
+        timestamp: new Date().toISOString()
+      };
+    }
+  }
+
+  // Capture face via Termux camera
+  async captureFace() {
+    try {
+      // Take photo using Termux camera
+      await execPromise('termux-camera-photo -c 0 /sdcard/biometric-face.jpg');
+      
+      // Read the image file
+      const fs = require('fs').promises;
+      const imagePath = '/sdcard/biometric-face.jpg';
+      const imageBuffer = await fs.readFile(imagePath);
+      
+      return {
+        success: true,
+        image: imageBuffer.toString('base64'),
+        path: imagePath,
+        timestamp: new Date().toISOString()
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error.message,
+        timestamp: new Date().toISOString()
+      };
+    }
+  }
+
+  // Capture voice via Termux microphone
+  async captureVoice(duration = 5) {
+    try {
+      const { stdout } = await execPromise(`termux-microphone-record -l ${duration} -e wav`);
+      return {
+        success: true,
+        recording: stdout,
+        duration: duration,
+        timestamp: new Date().toISOString()
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error.message,
+        timestamp: new Date().toISOString()
+      };
+    }
+  }
+
+  // Multi-modal biometric verification
+  async verifyMultiModal() {
+    const [fingerprint, face, voice] = await Promise.all([
+      this.captureFingerprint(),
+      this.captureFace(),
+      this.captureVoice(3)
+    ]);
+
+    return {
+      success: fingerprint.success && face.success && voice.success,
+      biometrics: {
+        fingerprint,
+        face,
+        voice
+      },
+      verificationHash: this.generateVerificationHash(fingerprint, face, voice),
+      timestamp: new Date().toISOString()
+    };
+  }
+
+  generateVerificationHash(fp, face, voice) {
+    const crypto = require('crypto');
+    const data = `${fp.timestamp}-${face.timestamp}-${voice.timestamp}`;
+    return crypto.createHash('sha256').update(data).digest('hex');
+  }
+}
+
+module.exports = new TermuxBiometricService();

@@ -1,0 +1,13 @@
+Makemake
+
+File: agents/makemake/makemake.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Makemake Agent - Model Retraining Trigger")
+
+@app.get("/")
+def root():
+    return {"agent": "Makemake", "mission": "Model Retraining Trigger", "status": "Online"}
+
+✅ Makemake mission: trigger model retraining cycles across planetary models for continual learning

@@ -1,0 +1,13 @@
+Orcus
+
+File: agents/orcus/orcus.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Orcus Agent - QA Harness")
+
+@app.get("/")
+def root():
+    return {"agent": "Orcus", "mission": "QA Testing and Harness", "status": "Online"}
+
+✅ Orcus mission: run automated quality assurance tests and validate planetary agent responses

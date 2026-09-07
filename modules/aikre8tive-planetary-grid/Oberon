@@ -1,0 +1,13 @@
+Oberon
+
+File: agents/oberon/oberon.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Oberon Agent - Audit Recorder")
+
+@app.get("/")
+def root():
+    return {"agent": "Oberon", "mission": "Audit Recorder", "status": "Online"}
+
+✅ Oberon mission: record, timestamp, and archive planetary events for audit and traceability

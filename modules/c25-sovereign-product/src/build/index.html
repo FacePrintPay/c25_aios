@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Constellation25</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#03030a; --surf:#08080f; --panel:#0d0d1a; --rim:#181830;
+  --c:#00e5b0; --gold:#f0b429; --violet:#8b5cf6; --red:#f43f5e; --blue:#38bdf8;
+  --text:#dde4f0; --muted:#4a5568; --dim:#12122a;
+  --display:'Bebas Neue',cursive; --mono:'DM Mono',monospace; --body:'DM Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow:hidden;font-family:var(--body);}
+body{background:var(--bg);color:var(--text);display:flex;flex-direction:column;}
+
+/* NOISE */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;
+  opacity:.35;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");}
+
+/* NEBULA BG */
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 50% 40% at 10% 20%,rgba(139,92,246,.07) 0%,transparent 70%),
+             radial-gradient(ellipse 40% 50% at 90% 80%,rgba(0,229,176,.06) 0%,transparent 70%);}
+
+/* ── TOP NAVBAR ── */
+.navbar{
+  position:relative;z-index:100;
+  background:var(--surf);border-bottom:1px solid var(--rim);
+  display:flex;align-items:center;height:52px;flex-shrink:0;padding:0 20px;gap:4px;
+  overflow-x:auto;scrollbar-width:none;
+}
+.navbar::-webkit-scrollbar{display:none;}
+.nb-logo{
+  font-family:var(--display);font-size:22px;letter-spacing:3px;
+  color:var(--c);white-space:nowrap;margin-right:16px;flex-shrink:0;
+  cursor:pointer;
+}
+.nb-logo em{color:var(--gold);font-style:normal;}
+.nb-btn{
+  display:flex;align-items:center;gap:6px;
+  padding:6px 12px;border-radius:6px;cursor:pointer;
+  font-size:12px;font-weight:500;color:var(--muted);
+  border:1px solid transparent;white-space:nowrap;
+  transition:all .15s;flex-shrink:0;background:none;
+}
+.nb-btn:hover{color:var(--text);background:rgba(255,255,255,.04);}
+.nb-btn.active{color:var(--c);background:rgba(0,229,176,.07);border-color:rgba(0,229,176,.2);}
+.nb-btn .ic{font-size:13px;}
+.nb-sep{width:1px;height:24px;background:var(--rim);margin:0 4px;flex-shrink:0;}
+.nb-cta{
+  margin-left:auto;flex-shrink:0;
+  background:var(--c);color:#000;font-weight:700;font-size:11px;
+  padding:7px 14px;border-radius:6px;cursor:pointer;letter-spacing:.5px;
+  border:none;transition:all .15s;
+}
+.nb-cta:hover{filter:brightness(1.1);}
+
+/* ── LAYOUT ── */
+.shell{display:flex;flex:1;overflow:hidden;position:relative;z-index:1;}
+
+/* ── VIEWS ── */
+.view{display:none;flex:1;overflow-y:auto;flex-direction:column;}
+.view.active{display:flex;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.view.active{animation:fadeUp .2s ease;}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--rim);border-radius:2px;}
+
+/* ── SHARED COMPONENTS ── */
+.pg{padding:24px 28px;}
+.ph{margin-bottom:22px;}
+.ph-title{font-family:var(--display);font-size:30px;letter-spacing:2px;line-height:1;}
+.ph-title .hl{color:var(--c);}
+.ph-sub{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:5px;letter-spacing:1.5px;}
+.card{background:var(--panel);border:1px solid var(--rim);border-radius:8px;padding:16px;}
+.card:hover{border-color:rgba(0,229,176,.2);}
+.card-title{font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:12px;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.mt{margin-top:16px;}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 16px;border-radius:6px;cursor:pointer;
+  font-size:12px;font-weight:600;border:none;transition:all .15s;
+}
+.btn-p{background:var(--c);color:#000;}
+.btn-p:hover{filter:brightness(1.1);}
+.btn-s{background:var(--dim);color:var(--text);border:1px solid var(--rim);}
+.btn-s:hover{border-color:rgba(0,229,176,.3);color:var(--c);}
+.btn-r{background:rgba(244,63,94,.15);color:var(--red);border:1px solid rgba(244,63,94,.25);}
+.input{
+  width:100%;background:var(--dim);border:1px solid var(--rim);border-radius:6px;
+  padding:10px 14px;color:var(--text);font-family:var(--body);font-size:13px;
+  outline:none;transition:border-color .15s;
+}
+.input:focus{border-color:rgba(0,229,176,.4);}
+.input::placeholder{color:var(--muted);}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-family:var(--mono);font-size:8px;}
+.tag-g{background:rgba(0,229,176,.12);color:var(--c);}
+.tag-v{background:rgba(139,92,246,.12);color:var(--violet);}
+.tag-a{background:rgba(240,180,41,.12);color:var(--gold);}
+.tag-r{background:rgba(244,63,94,.12);color:var(--red);}
+.tag-b{background:rgba(56,189,248,.12);color:var(--blue);}
+.row{display:flex;align-items:center;gap:10px;}
+.row-between{display:flex;align-items:center;justify-content:space-between;}
+.stat-num{font-family:var(--display);font-size:32px;color:var(--c);line-height:1;}
+.stat-num.v{color:var(--violet);}
+.stat-num.g{color:var(--gold);}
+.stat-num.r{color:var(--red);}
+
+/* log */
+.log{display:flex;flex-direction:column;gap:3px;max-height:200px;overflow-y:auto;}
+.log-line{font-family:var(--mono);font-size:9px;padding:5px 10px;border-radius:4px;display:flex;gap:8px;border-left:2px solid transparent;}
+.log-line.ok{border-left-color:var(--c);background:rgba(0,229,176,.04);}
+.log-line.warn{border-left-color:var(--gold);background:rgba(240,180,41,.04);}
+.log-line.err{border-left-color:var(--red);background:rgba(244,63,94,.04);}
+.log-line.info{border-left-color:var(--blue);background:rgba(56,189,248,.04);}
+.lt{color:var(--muted);flex-shrink:0;}
+.lm{color:var(--text);}
+.lm b{color:var(--c);}
+.log-line.warn .lm b{color:var(--gold);}
+.log-line.err .lm b{color:var(--red);}
+
+/* ══════════════════════════════════════
+   HOME — Constellation25 Portal
+══════════════════════════════════════ */
+.home-hero{
+  background:linear-gradient(135deg,rgba(0,229,176,.07),rgba(139,92,246,.06));
+  border-bottom:1px solid var(--rim);padding:32px 28px 28px;
+}
+.hero-word{font-family:var(--display);font-size:48px;letter-spacing:4px;line-height:1;}
+.hero-word em{color:var(--c);font-style:normal;}
+.hero-sub{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;letter-spacing:2px;}
+.hero-btns{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;}
+
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.product-card{
+  background:var(--panel);border:1px solid var(--rim);border-radius:10px;
+  padding:18px 16px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden;
+}
+.product-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--pc,var(--c)),transparent);opacity:.7;
+}
+.product-card:hover{border-color:var(--pc,var(--c));transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(0,0,0,.4);}
+.pc-icon{font-size:26px;margin-bottom:10px;}
+.pc-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.pc-desc{font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:12px;}
+.pc-launch{
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:8px;letter-spacing:1px;
+  color:var(--pc,var(--c));padding:4px 10px;border-radius:4px;
+  background:rgba(0,229,176,.08);border:1px solid rgba(0,229,176,.2);
+  cursor:pointer;transition:all .15s;
+}
+.product-card:hover .pc-launch{background:rgba(0,229,176,.15);}
+
+/* module rows */
+.mod-row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+}
+.mod{
+  background:var(--surf);border:1px solid var(--rim);border-radius:7px;
+  padding:12px 14px;cursor:pointer;transition:all .15s;
+}
+.mod:hover{border-color:rgba(0,229,176,.25);background:rgba(0,229,176,.03);}
+.mod-name{font-size:11px;font-weight:600;color:var(--text);}
+.mod-cat{font-family:var(--mono);font-size:8px;color:var(--muted);margin-top:2px;}
+.mod-action{font-family:var(--mono);font-size:8px;color:var(--c);margin-top:8px;cursor:pointer;}
+
+/* ══════════════════════════════════════
+   SOVEREIGN GTP — Command Center
+══════════════════════════════════════ */
+.sgtp-layout{display:flex;flex:1;overflow:hidden;}
+.sgtp-left{width:220px;flex-shrink:0;background:var(--surf);border-right:1px solid var(--rim);padding:16px;overflow-y:auto;}
+.sgtp-mid{flex:1;padding:20px;overflow-y:auto;}
+.sgtp-right{width:260px;flex-shrink:0;background:var(--surf);border-left:1px solid var(--rim);padding:16px;overflow-y:auto;}
+.agent-row{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-radius:6px;cursor:pointer;border:1px solid transparent;margin-bottom:4px;transition:all .15s;}
+.agent-row:hover{background:rgba(0,229,176,.04);border-color:rgba(0,229,176,.15);}
+.agent-row.selected{background:rgba(0,229,176,.07);border-color:rgba(0,229,176,.25);}
+.ar-name{font-size:12px;font-weight:600;}
+.ar-role{font-family:var(--mono);font-size:8px;color:var(--muted);}
+.ar-status{width:7px;height:7px;border-radius:50%;}
+.ar-status.on{background:var(--c);}
+.ar-status.busy{background:var(--gold);}
+.ar-status.off{background:var(--muted);}
+.console-wrap{background:#000;border:1px solid var(--rim);border-radius:7px;overflow:hidden;}
+.console-out{
+  padding:14px;font-family:var(--mono);font-size:10px;color:#0f0;
+  min-height:160px;max-height:200px;overflow-y:auto;line-height:1.8;
+}
+.console-in-wrap{border-top:1px solid var(--rim);display:flex;align-items:center;padding:8px 12px;gap:8px;}
+.console-prompt{font-family:var(--mono);font-size:10px;color:var(--c);}
+.console-input{
+  flex:1;background:transparent;border:none;outline:none;
+  font-family:var(--mono);font-size:10px;color:#0f0;caret-color:var(--c);
+}
+.console-run{font-family:var(--mono);font-size:9px;background:var(--c);color:#000;padding:4px 10px;border-radius:4px;cursor:pointer;border:none;font-weight:700;}
+
+/* NDA panel */
+.nda-panel{background:rgba(244,63,94,.05);border:1px solid rgba(244,63,94,.2);border-radius:7px;padding:14px;}
+.nda-title{font-size:12px;font-weight:700;color:var(--red);margin-bottom:6px;}
+.nda-text{font-size:11px;color:var(--muted);line-height:1.6;margin-bottom:12px;}
+.nda-btns{display:flex;gap:8px;}
+.nda-accept{background:var(--c);color:#000;border:none;padding:7px 14px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;}
+.nda-review{background:var(--dim);color:var(--text);border:1px solid var(--rim);padding:7px 14px;border-radius:5px;font-size:11px;cursor:pointer;}
+
+/* chat */
+.chat-wrap{display:flex;flex-direction:column;gap:10px;max-height:240px;overflow-y:auto;padding:4px 0;}
+.chat-bubble{padding:10px 12px;border-radius:8px;font-size:12px;line-height:1.6;max-width:90%;}
+.chat-bubble.agent{background:var(--dim);color:var(--text);align-self:flex-start;}
+.chat-bubble.user{background:rgba(0,229,176,.12);color:var(--c);align-self:flex-end;border:1px solid rgba(0,229,176,.2);}
+.chat-input-wrap{display:flex;gap:8px;margin-top:8px;}
+
+/* ══════════════════════════════════════
+   AI.RECORDS — Music Platform
+══════════════════════════════════════ */
+.music-hero{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(0,229,176,.06));padding:24px 28px;border-bottom:1px solid var(--rim);}
+.track-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.track-card{
+  background:var(--panel);border:1px solid var(--rim);border-radius:8px;
+  padding:14px;cursor:pointer;transition:all .15s;
+}
+.track-card:hover{border-color:rgba(139,92,246,.3);}
+.track-card.playing{border-color:var(--c);background:rgba(0,229,176,.05);}
+.tc-genre{font-family:var(--mono);font-size:8px;color:var(--violet);letter-spacing:1px;margin-bottom:6px;}
+.tc-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.tc-desc{font-size:11px;color:var(--muted);margin-bottom:10px;}
+.tc-meta{display:flex;align-items:center;justify-content:space-between;}
+.tc-price{font-family:var(--mono);font-size:10px;color:var(--gold);}
+.tc-play{
+  width:28px;height:28px;border-radius:50%;background:var(--c);
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;cursor:pointer;transition:all .15s;border:none;color:#000;
+}
+.tc-play:hover{transform:scale(1.1);}
+.player-bar{
+  position:sticky;bottom:0;background:var(--surf);border-top:1px solid var(--rim);
+  padding:12px 28px;display:flex;align-items:center;gap:16px;
+}
+.player-info{flex:1;}
+.player-name{font-size:12px;font-weight:600;}
+.player-genre{font-family:var(--mono);font-size:8px;color:var(--muted);}
+.player-controls{display:flex;align-items:center;gap:10px;}
+.p-btn{background:var(--dim);border:1px solid var(--rim);color:var(--text);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+.p-btn:hover{border-color:var(--c);color:var(--c);}
+.p-btn.main{background:var(--c);color:#000;border-color:var(--c);}
+.prog-outer{flex:1;height:4px;background:var(--dim);border-radius:2px;cursor:pointer;}
+.prog-inner{height:100%;background:var(--c);border-radius:2px;width:35%;transition:width .3s;}
+.cat-pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.cat-pill{padding:6px 14px;border-radius:20px;border:1px solid var(--rim);font-size:11px;color:var(--muted);cursor:pointer;transition:all .15s;}
+.cat-pill:hover,.cat-pill.on{border-color:var(--c);color:var(--c);background:rgba(0,229,176,.06);}
+
+/* ══════════════════════════════════════
+   FACEPRINTPAY — Biometric Verification
+══════════════════════════════════════ */
+.face-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.face-demo{background:var(--panel);border:1px solid var(--rim);border-radius:10px;padding:20px;}
+.face-canvas{
+  width:100%;height:220px;background:#000;border-radius:8px;border:1px solid var(--rim);
+  display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+  margin-bottom:14px;cursor:pointer;
+}
+.face-ring{
+  width:120px;height:120px;border-radius:50%;
+  border:3px solid var(--c);position:absolute;
+  animation:spin 4s linear infinite;
+}
+.face-ring::before{
+  content:'';position:absolute;top:-3px;left:50%;width:6px;height:6px;
+  background:var(--c);border-radius:50%;transform:translateX(-50%);
+}
+.face-ring2{
+  width:90px;height:90px;border-radius:50%;
+  border:2px dashed rgba(0,229,176,.3);position:absolute;
+  animation:spin 6s linear infinite reverse;
+}
+.face-icon{font-size:36px;z-index:1;}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.face-dots{
+  position:absolute;width:8px;height:8px;border-radius:50%;
+  background:var(--c);opacity:.8;
+  animation:dotPulse 1.5s ease-in-out infinite;
+}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.3);opacity:1}}
+.face-status{font-family:var(--mono);font-size:10px;text-align:center;margin-bottom:12px;}
+.face-status.ok{color:var(--c);}
+.face-status.scanning{color:var(--gold);}
+.face-form{display:flex;flex-direction:column;gap:10px;}
+.face-results{background:var(--panel);border:1px solid var(--rim);border-radius:10px;padding:20px;}
+.metric-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(24,24,48,.5);}
+.metric-row:last-child{border-bottom:none;}
+.metric-label{font-size:12px;color:var(--muted);}
+.metric-val{font-family:var(--mono);font-size:11px;font-weight:700;}
+.metric-val.good{color:var(--c);}
+.metric-val.warn{color:var(--gold);}
+.plans-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;}
+.plan-card{background:var(--panel);border:1px solid var(--rim);border-radius:8px;padding:16px;text-align:center;}
+.plan-card.featured{border-color:rgba(0,229,176,.35);background:rgba(0,229,176,.04);}
+.plan-name{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px;}
+.plan-price{font-family:var(--display);font-size:36px;color:var(--text);line-height:1;margin-bottom:4px;}
+.plan-price.free{color:var(--c);}
+.plan-detail{font-family:var(--mono);font-size:8px;color:var(--muted);margin-bottom:12px;}
+
+/* ══════════════════════════════════════
+   AIKRE8TIVE — Unified Tool Portal
+══════════════════════════════════════ */
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.tool-card{
+  background:var(--panel);border:1px solid var(--rim);border-radius:8px;
+  padding:14px;cursor:pointer;transition:all .15s;
+}
+.tool-card:hover{border-color:rgba(0,229,176,.25);transform:translateY(-2px);}
+.tool-icon{font-size:22px;margin-bottom:8px;}
+.tool-name{font-size:12px;font-weight:700;margin-bottom:3px;}
+.tool-desc{font-size:10px;color:var(--muted);line-height:1.5;margin-bottom:10px;}
+.tool-status{display:flex;align-items:center;justify-content:space-between;}
+.tool-badge{font-family:var(--mono);font-size:7px;padding:2px 6px;border-radius:3px;}
+.tool-open{font-family:var(--mono);font-size:8px;color:var(--c);cursor:pointer;}
+.quick-actions{display:flex;flex-direction:column;gap:6px;}
+.qa-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 14px;background:var(--surf);border:1px solid var(--rim);border-radius:6px;cursor:pointer;transition:all .15s;
+}
+.qa-row:hover{border-color:rgba(0,229,176,.2);background:rgba(0,229,176,.02);}
+.qa-name{font-size:12px;}
+.qa-type{font-family:var(--mono);font-size:8px;color:var(--muted);}
+
+/* ══════════════════════════════════════
+   YESQUID — Coding Standards
+══════════════════════════════════════ */
+.yq-layout{display:flex;flex:1;overflow:hidden;}
+.yq-sidebar{width:200px;flex-shrink:0;background:var(--surf);border-right:1px solid var(--rim);padding:16px;overflow-y:auto;}
+.yq-content{flex:1;padding:24px;overflow-y:auto;}
+.yq-nav-item{padding:8px 10px;border-radius:5px;cursor:pointer;font-size:12px;color:var(--muted);margin-bottom:2px;transition:all .15s;}
+.yq-nav-item:hover{color:var(--text);background:rgba(255,255,255,.03);}
+.yq-nav-item.active{color:var(--c);background:rgba(0,229,176,.06);}
+.code-block{background:#000;border:1px solid var(--rim);border-radius:6px;padding:14px;font-family:var(--mono);font-size:9px;line-height:1.9;overflow-x:auto;margin:10px 0;}
+.c-g{color:#0f0;} .c-b{color:var(--blue);} .c-y{color:var(--gold);} .c-v{color:var(--violet);} .c-m{color:var(--muted);}
+.rule-block{background:var(--panel);border:1px solid var(--rim);border-radius:6px;padding:14px;margin-bottom:10px;}
+.rule-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-weight:600;font-size:13px;}
+.rule-items{font-size:11px;color:var(--muted);line-height:2;}
+.rule-items li{margin-left:16px;}
+.avoid-block{background:rgba(244,63,94,.05);border:1px solid rgba(244,63,94,.2);border-radius:5px;padding:10px;margin:6px 0;}
+.prefer-block{background:rgba(0,229,176,.05);border:1px solid rgba(0,229,176,.2);border-radius:5px;padding:10px;margin:6px 0;}
+
+/* ══════════════════════════════════════
+   AGENT COMMAND CONSOLE (MrGGTP)
+══════════════════════════════════════ */
+.acc-layout{display:flex;flex:1;overflow:hidden;}
+.acc-agents{width:260px;flex-shrink:0;background:var(--surf);border-right:1px solid var(--rim);overflow-y:auto;}
+.acc-main{flex:1;padding:20px;overflow-y:auto;}
+.acc-agent-item{padding:12px 16px;border-left:2px solid transparent;cursor:pointer;transition:all .15s;border-bottom:1px solid rgba(24,24,48,.5);}
+.acc-agent-item:hover{background:rgba(0,229,176,.03);}
+.acc-agent-item.sel{border-left-color:var(--c);background:rgba(0,229,176,.05);}
+.acc-agent-name{font-size:12px;font-weight:700;display:flex;align-items:center;gap:6px;}
+.acc-agent-role{font-family:var(--mono);font-size:8px;color:var(--muted);margin-top:2px;}
+.acc-agent-port{font-family:var(--mono);font-size:8px;color:var(--muted);}
+.big-console{background:#000;border:1px solid rgba(0,229,176,.2);border-radius:8px;overflow:hidden;}
+.big-console-header{background:#0a0a0a;border-bottom:1px solid rgba(0,229,176,.1);padding:8px 14px;display:flex;align-items:center;gap:8px;}
+.console-dot{width:8px;height:8px;border-radius:50%;}
+.big-console-out{padding:16px;font-family:var(--mono);font-size:10px;color:#0f0;height:280px;overflow-y:auto;line-height:1.9;}
+.big-console-in{border-top:1px solid rgba(0,229,176,.1);display:flex;align-items:center;padding:10px 14px;gap:10px;}
+.big-console-prompt{font-family:var(--mono);font-size:10px;color:var(--c);}
+.big-console-field{flex:1;background:transparent;border:none;outline:none;font-family:var(--mono);font-size:10px;color:#0f0;caret-color:var(--c);}
+.run-btn{background:var(--c);color:#000;border:none;padding:5px 12px;border-radius:4px;font-family:var(--mono);font-size:9px;font-weight:700;cursor:pointer;}
+.quick-cmds{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.qcmd{font-family:var(--mono);font-size:9px;padding:5px 10px;border-radius:4px;background:var(--dim);border:1px solid var(--rim);color:var(--muted);cursor:pointer;transition:all .15s;}
+.qcmd:hover{border-color:var(--c);color:var(--c);}
+.sys-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px;}
+.ss-card{background:var(--panel);border:1px solid var(--rim);border-radius:7px;padding:12px;text-align:center;}
+.ss-val{font-family:var(--display);font-size:28px;color:var(--c);line-height:1;}
+.ss-label{font-family:var(--mono);font-size:7px;color:var(--muted);letter-spacing:1.5px;margin-top:3px;}
+
+/* ══════════════════════════════════════
+   INTEGRATIONS
+══════════════════════════════════════ */
+.int-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.int-card{background:var(--panel);border:1px solid var(--rim);border-radius:8px;padding:16px;}
+.int-name{font-size:13px;font-weight:700;margin-bottom:6px;}
+.int-field{font-family:var(--mono);font-size:9px;color:var(--muted);margin-bottom:4px;}
+.int-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;}
+.int-btn{font-family:var(--mono);font-size:8px;padding:4px 8px;border-radius:4px;cursor:pointer;border:1px solid var(--rim);background:var(--dim);color:var(--muted);transition:all .15s;}
+.int-btn:hover{border-color:var(--c);color:var(--c);}
+.int-btn.enabled{background:rgba(0,229,176,.1);border-color:rgba(0,229,176,.3);color:var(--c);}
+.int-status-row{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(24,24,48,.5);font-size:11px;}
+
+/* ══════════════════════════════════════
+   AIMETAVERSE
+══════════════════════════════════════ */
+.mv-canvas{
+  width:100%;height:260px;background:#000;border:1px solid var(--rim);border-radius:10px;
+  position:relative;overflow:hidden;margin-bottom:16px;cursor:pointer;
+}
+.mv-canvas::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(139,92,246,.2),transparent 70%);
+}
+.mv-planet{
+  position:absolute;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.3),transparent);
+  border:1px solid rgba(255,255,255,.15);
+  animation:orbit var(--speed,8s) linear infinite;
+}
+@keyframes orbit{from{transform:rotate(0deg) translateX(var(--r,80px)) rotate(0deg)}
+                 to{transform:rotate(360deg) translateX(var(--r,80px)) rotate(-360deg)}}
+.mv-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:60px;height:60px;border-radius:50%;
+  background:radial-gradient(circle,var(--c),rgba(0,229,176,.3));
+  box-shadow:0 0 40px rgba(0,229,176,.5);display:flex;align-items:center;justify-content:center;font-size:24px;}
+.mv-ring{position:absolute;top:50%;left:50%;border-radius:50%;border:1px solid rgba(0,229,176,.15);transform:translate(-50%,-50%);}
+.space-rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.space-room{background:var(--panel);border:1px solid var(--rim);border-radius:8px;padding:14px;cursor:pointer;transition:all .15s;}
+.space-room:hover{border-color:rgba(139,92,246,.4);transform:translateY(-2px);}
+.sr-title{font-size:12px;font-weight:700;margin-bottom:4px;}
+.sr-desc{font-size:10px;color:var(--muted);margin-bottom:10px;line-height:1.5;}
+.sr-count{font-family:var(--mono);font-size:8px;color:var(--violet);}
+
+/* ══════════════════════════════════════
+   VIDEOCOURTS
+══════════════════════════════════════ */
+.vc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.vc-card{background:var(--panel);border:1px solid var(--rim);border-radius:8px;overflow:hidden;cursor:pointer;transition:all .15s;}
+.vc-card:hover{border-color:rgba(240,180,41,.3);transform:translateY(-2px);}
+.vc-thumb{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative;}
+.vc-bar{position:absolute;bottom:0;left:0;height:3px;background:var(--red);}
+.vc-body{padding:12px;}
+.vc-title{font-size:12px;font-weight:700;margin-bottom:4px;}
+.vc-meta{font-family:var(--mono);font-size:8px;color:var(--muted);}
+.vc-progress{height:3px;background:var(--dim);border-radius:2px;margin-top:10px;overflow:hidden;}
+.vc-prog-fill{height:100%;background:var(--red);border-radius:2px;}
+
+/* ══════════════════════════════════════
+   MYBUY'O — Shopping
+══════════════════════════════════════ */
+.shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.shop-card{background:var(--panel);border:1px solid var(--rim);border-radius:8px;padding:14px;cursor:pointer;transition:all .15s;}
+.shop-card:hover{border-color:rgba(240,180,41,.3);}
+.shop-icon{font-size:32px;text-align:center;margin-bottom:10px;}
+.shop-name{font-size:12px;font-weight:700;margin-bottom:3px;}
+.shop-price{font-family:var(--mono);font-size:13px;color:var(--gold);margin-bottom:8px;}
+.shop-orig{font-family:var(--mono);font-size:9px;color:var(--muted);text-decoration:line-through;margin-left:4px;}
+.cart-bar{
+  position:sticky;bottom:0;background:var(--surf);border-top:1px solid var(--rim);
+  padding:12px 28px;display:flex;align-items:center;justify-content:space-between;
+}
+.cart-count{font-family:var(--mono);font-size:10px;color:var(--muted);}
+.cart-total{font-family:var(--display);font-size:24px;color:var(--gold);}
+
+/* modal overlay for notifications */
+.toast{
+  position:fixed;bottom:24px;right:24px;z-index:9999;
+  background:var(--surf);border:1px solid var(--c);
+  border-radius:8px;padding:12px 18px;
+  font-family:var(--mono);font-size:10px;color:var(--c);
+  transform:translateY(60px);opacity:0;transition:all .3s ease;
+  pointer-events:none;
+}
+.toast.show{transform:translateY(0);opacity:1;}
+
+/* responsive */
+@media(max-width:900px){
+  .product-grid,.tools-grid,.shop-grid{grid-template-columns:1fr 1fr;}
+  .g4,.mod-row{grid-template-columns:1fr 1fr;}
+  .sgtp-right,.sgtp-left{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="nebula"></div>
+<div class="toast" id="toast"></div>
+
+<!-- ══ TOP NAVBAR ══ -->
+<nav class="navbar">
+  <div class="nb-logo" onclick="showView('home')">Constellation<em>25</em></div>
+  <div class="nb-sep"></div>
+  <button class="nb-btn active" onclick="showView('home')" id="nav-home"><span class="ic">🌌</span> Home</button>
+  <button class="nb-btn" onclick="showView('agents')" id="nav-agents"><span class="ic">🪐</span> Agents</button>
+  <button class="nb-btn" onclick="showView('records')" id="nav-records"><span class="ic">🎵</span> Ai.RECORDS</button>
+  <button class="nb-btn" onclick="showView('facepay')" id="nav-facepay"><span class="ic">👁</span> FacePrintPay</button>
+  <button class="nb-btn" onclick="showView('aikre8')" id="nav-aikre8"><span class="ic">⚡</span> ARC.AI</button>
+  <button class="nb-btn" onclick="showView('metaverse')" id="nav-metaverse"><span class="ic">🌀</span> AiMetaverse</button>
+  <button class="nb-btn" onclick="showView('videocourts')" id="nav-videocourts"><span class="ic">🎬</span> VideoCourts</button>
+  <button class="nb-btn" onclick="showView('shop')" id="nav-shop"><span class="ic">🛒</span> MyBUY'o</button>
+  <button class="nb-btn" onclick="showView('yesquid')" id="nav-yesquid"><span class="ic">📋</span> YesQuid</button>
+  <button class="nb-btn" onclick="showView('integrations')" id="nav-integrations"><span class="ic">🔗</span> Integrations</button>
+  <button class="nb-cta" onclick="toast('Welcome to Constellation25 — Start Free Trial coming soon!')">Start Free Trial</button>
+</nav>
+
+<div class="shell">
+
+<!-- ══════════════════════════════════════
+     HOME
+══════════════════════════════════════ -->
+<div class="view active" id="view-home">
+  <div class="home-hero">
+    <div class="hero-word">Constellation<em>25</em></div>
+    <div class="hero-sub">SOVEREIGN AI PLATFORM · SOLO BUILT · @MrGGTP · EST. 2021 · NO VC</div>
+    <div class="hero-btns">
+      <button class="btn btn-p" onclick="showView('agents')">🪐 Launch Agents</button>
+      <button class="btn btn-s" onclick="showView('records')">🎵 Browse Music</button>
+      <button class="btn btn-s" onclick="showView('facepay')">👁 Verify Identity</button>
+      <button class="btn btn-s" onclick="showView('aikre8')">⚡ Explore Tools</button>
+    </div>
+  </div>
+
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title">Your <span class="hl">Platforms</span></div>
+      <div class="ph-sub">CLICK ANY PRODUCT TO LAUNCH IT — ALL FULLY FUNCTIONAL</div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card" style="--pc:var(--violet)" onclick="showView('agents')">
+        <div class="pc-icon">🪐</div>
+        <div class="pc-name">SovereignGTP</div>
+        <div class="pc-desc">NDA-gated planetary agent command center. Run commands, talk to agents, manage deployments.</div>
+        <div class="pc-launch" style="background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:var(--violet)">→ LAUNCH</div>
+      </div>
+      <div class="product-card" onclick="showView('records')">
+        <div class="pc-icon">🎵</div>
+        <div class="pc-name">Ai.RECORDS</div>
+        <div class="pc-desc">Discover, stream, and license AI-generated music by mood, scene, and story. Open-source label.</div>
+        <div class="pc-launch">→ BROWSE MUSIC</div>
+      </div>
+      <div class="product-card" style="--pc:var(--red)" onclick="showView('facepay')">
+        <div class="pc-icon">👁</div>
+        <div class="pc-name">FacePrintPay</div>
+        <div class="pc-desc">Biometric face verification. Live demo, liveness detection, 99.8%+ accuracy. Start free.</div>
+        <div class="pc-launch" style="background:rgba(244,63,94,.1);border-color:rgba(244,63,94,.3);color:var(--red)">→ RUN DEMO</div>
+      </div>
+      <div class="product-card" style="--pc:var(--gold)" onclick="showView('aikre8')">
+        <div class="pc-icon">⚡</div>
+        <div class="pc-name">ARC.AI</div>
+        <div class="pc-desc">Unified AI tool portal. Access 20k+ models, agents studio, XR/Metaverse, and more.</div>
+        <div class="pc-launch" style="background:rgba(240,180,41,.1);border-color:rgba(240,180,41,.3);color:var(--gold)">→ EXPLORE TOOLS</div>
+      </div>
+      <div class="product-card" style="--pc:var(--violet)" onclick="showView('metaverse')">
+        <div class="pc-icon">🌀</div>
+        <div class="pc-name">AiMetaverse</div>
+        <div class="pc-desc">Social persistent spaces for events, learning, and play. Enter virtual worlds powered by AI.</div>
+        <div class="pc-launch" style="background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:var(--violet)">→ ENTER</div>
+      </div>
+      <div class="product-card" style="--pc:var(--red)" onclick="showView('videocourts')">
+        <div class="pc-icon">🎬</div>
+        <div class="pc-name">VideoCourts</div>
+        <div class="pc-desc">AI-powered video learning platform. Courses, playlists, and justice-focused media content.</div>
+        <div class="pc-launch" style="background:rgba(244,63,94,.1);border-color:rgba(244,63,94,.3);color:var(--red)">→ WATCH NOW</div>
+      </div>
+      <div class="product-card" style="--pc:var(--gold)" onclick="showView('shop')">
+        <div class="pc-icon">🛒</div>
+        <div class="pc-name">MyBUY'o</div>
+        <div class="pc-desc">AI-assisted shopping with smart bundles, deals, and curated brand experiences.</div>
+        <div class="pc-launch" style="background:rgba(240,180,41,.1);border-color:rgba(240,180,41,.3);color:var(--gold)">→ SHOP NOW</div>
+      </div>
+      <div class="product-card" style="--pc:var(--blue)" onclick="showView('yesquid')">
+        <div class="pc-icon">📋</div>
+        <div class="pc-name">YesQuid Pro</div>
+        <div class="pc-desc">Coding standards, playbooks, and component docs for the Constellation25 ecosystem.</div>
+        <div class="pc-launch" style="background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.3);color:var(--blue)">→ OPEN DOCS</div>
+      </div>
+    </div>
+
+    <div class="mt">
+      <div class="card-title">RECENTLY ACTIVE</div>
+      <div class="log">
+        <div class="log-line ok"><span class="lt">NOW</span><span class="lm"><b>SovereignGTP</b> — Agent cluster online · Pathos :3100 ready</span></div>
+        <div class="log-line ok"><span class="lt">2m</span><span class="lm"><b>Ai.RECORDS</b> — Lo-fi playlist curated · 12 new tracks</span></div>
+        <div class="log-line ok"><span class="lt">5m</span><span class="lm"><b>MyBUY'o</b> — 3 smart bundles generated</span></div>
+        <div class="log-line info"><span class="lt">8m</span><span class="lm"><b>AiMetaverse</b> — New terrain map released · ExplorerMars</span></div>
+        <div class="log-line warn"><span class="lt">12m</span><span class="lm"><b>Pipeline</b> — Phase 4 compile running · Earth agent active</span></div>
+        <div class="log-line ok"><span class="lt">15m</span><span class="lm"><b>FacePrintPay</b> — 247 verifications today · 99.9% pass rate</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SOVEREIGNGTP — AGENT COMMAND CENTER
+══════════════════════════════════════ -->
+<div class="view" id="view-agents">
+  <div class="sgtp-layout" style="flex:1;overflow:hidden;">
+    <!-- Left: agent list -->
+    <div class="sgtp-left">
+      <div style="font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">PLANETARY AGENTS · 25</div>
+      <div id="agent-list"></div>
+      <div style="margin-top:16px;">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:8px;">FILTERS</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <label style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" checked id="f-online" onchange="renderAgents()"> Online only</label>
+          <label style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" id="f-busy" onchange="renderAgents()"> Busy</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mid: console -->
+    <div class="sgtp-mid">
+      <div style="margin-bottom:16px;">
+        <div style="font-size:18px;font-weight:700;">SovereignGTP <span style="font-family:var(--mono);font-size:11px;color:var(--muted);">Command Center</span></div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:4px;">NDA-gated planetary agents · Pathos-Sovereign-1 :3100</div>
+      </div>
+
+      <div class="big-console">
+        <div class="big-console-header">
+          <div class="console-dot" style="background:#f43f5e;"></div>
+          <div class="console-dot" style="background:var(--gold);"></div>
+          <div class="console-dot" style="background:var(--c);"></div>
+          <span style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-left:8px;" id="console-agent-label">SovereignGTP · Pathos-Sovereign-1</span>
+          <span class="tag tag-g" style="margin-left:auto;">LIVE</span>
+        </div>
+        <div class="big-console-out" id="console-out">[SovereignGTP] Pathos-Sovereign-1 initialized.
+[SovereignGTP] 25 planetary agents registered.
+[SovereignGTP] Awaiting commands...
+</div>
+        <div class="big-console-in">
+          <span class="big-console-prompt">$</span>
+          <input class="big-console-field" id="console-field" placeholder="Enter command or select an agent..." onkeydown="if(event.key==='Enter')runCmd()">
+          <button class="run-btn" onclick="runCmd()">RUN</button>
+        </div>
+      </div>
+
+      <div class="quick-cmds mt">
+        <div class="qcmd" onclick="setCmd('agent.ping --all')">📡 Ping All</div>
+        <div class="qcmd" onclick="setCmd('agent.status --verbose')">📊 Status</div>
+        <div class="qcmd" onclick="setCmd('agent.run earth --task compile')">🌍 Earth: Compile</div>
+        <div class="qcmd" onclick="setCmd('agent.run moon --task test')">🌙 Moon: Test</div>
+        <div class="qcmd" onclick="setCmd('agent.run sun --task deploy')">☀️ Sun: Deploy</div>
+        <div class="qcmd" onclick="setCmd('pipeline.start c25-robust-ship.sh')">⚡ Start Pipeline</div>
+        <div class="qcmd" onclick="setCmd('restore.canius --point 2026-03-16')">🔄 Restore Canius</div>
+        <div class="qcmd" onclick="setCmd('git.push --all --org Constillation25')">📦 Push All Repos</div>
+      </div>
+
+      <div class="sys-stats mt">
+        <div class="ss-card"><div class="ss-val">17</div><div class="ss-label">AGENTS ONLINE</div></div>
+        <div class="ss-card"><div class="ss-val" id="cmd-count">0</div><div class="ss-label">CMDS EXECUTED</div></div>
+        <div class="ss-card"><div class="ss-val">99.9%</div><div class="ss-label">UPTIME</div></div>
+        <div class="ss-card"><div class="ss-val">:3100</div><div class="ss-label">PATHOS PORT</div></div>
+      </div>
+    </div>
+
+    <!-- Right: NDA + Chat -->
+    <div class="sgtp-right">
+      <div class="nda-panel" id="nda-panel">
+        <div class="nda-title">🔐 NDA Required</div>
+        <div class="nda-text">By accessing gated agents you agree to confidentiality and usage restrictions under the Constellation25 Digital NDA policy.</div>
+        <div class="nda-btns">
+          <button class="nda-accept" onclick="acceptNDA()">✓ Accept</button>
+          <button class="nda-review">Review</button>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <div class="card-title">SPEAK WITH AGENT</div>
+        <div class="chat-wrap" id="agent-chat">
+          <div class="chat-bubble agent"><strong>Pathos:</strong> Connected to Sovereign Agent (simulated). Ask me about orchestration, deployments, or NDA policy.</div>
+          <div class="chat-bubble agent"><strong>Mars:</strong> API deploy & integration ready. What endpoint do you need?</div>
+        </div>
+        <div class="chat-input-wrap">
+          <input class="input" id="chat-input" placeholder="Type message..." onkeydown="if(event.key==='Enter')sendChat()" style="font-size:11px;">
+          <button class="btn btn-p" style="padding:8px 12px;font-size:11px;" onclick="sendChat()">Send</button>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <div class="card-title">SYSTEM STATUS</div>
+        <div class="metric-row"><span class="metric-label">Uptime</span><span class="metric-val good">99.98%</span></div>
+        <div class="metric-row"><span class="metric-label">Load</span><span class="metric-val good">42%</span></div>
+        <div class="metric-row"><span class="metric-label">NDA</span><span class="metric-val good">Active</span></div>
+        <div class="metric-row"><span class="metric-label">Pathos</span><span class="metric-val good">Online :3100</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     AI.RECORDS
+══════════════════════════════════════ -->
+<div class="view" id="view-records">
+  <div class="music-hero">
+    <div class="ph-title" style="font-family:var(--display);font-size:28px;letter-spacing:2px;">Ai.<span class="hl">RECORDS</span></div>
+    <div class="ph-sub">OPEN-SOURCE AI MUSIC LABEL · DISCOVER · LICENSE · REMIX</div>
+    <div class="hero-btns" style="margin-top:14px;">
+      <button class="btn btn-p" onclick="toast('Browsing all tracks...')">🎵 Browse All</button>
+      <button class="btn btn-s" onclick="toast('Opening shop...')">🛒 Shop</button>
+      <button class="btn btn-s" onclick="toast('Sign in to My Account')">👤 My Account</button>
+    </div>
+  </div>
+  <div class="pg">
+    <div class="cat-pills" id="music-cats">
+      <div class="cat-pill on" onclick="filterMusic('all',this)">All</div>
+      <div class="cat-pill" onclick="filterMusic('lofi',this)">🎧 Lo-fi Beats</div>
+      <div class="cat-pill" onclick="filterMusic('hype',this)">🔥 Hard Hype</div>
+      <div class="cat-pill" onclick="filterMusic('edm',this)">💫 Club & EDM</div>
+      <div class="cat-pill" onclick="filterMusic('cinematic',this)">🎬 Cinematic</div>
+      <div class="cat-pill" onclick="filterMusic('ambient',this)">🌿 Ambient</div>
+      <div class="cat-pill" onclick="filterMusic('afro',this)">🌍 Afro & World</div>
+    </div>
+    <div class="track-grid" id="track-grid"></div>
+  </div>
+  <div class="player-bar" id="player-bar" style="display:none;">
+    <div class="player-info">
+      <div class="player-name" id="player-name">Track Name</div>
+      <div class="player-genre" id="player-genre">Genre</div>
+    </div>
+    <div class="player-controls">
+      <button class="p-btn" onclick="toast('Previous track')">⏮</button>
+      <button class="p-btn main" id="play-btn" onclick="togglePlay()">⏸</button>
+      <button class="p-btn" onclick="toast('Next track')">⏭</button>
+    </div>
+    <div class="prog-outer" onclick="seekTrack(event)">
+      <div class="prog-inner" id="prog-inner"></div>
+    </div>
+    <div style="font-family:var(--mono);font-size:9px;color:var(--muted);width:70px;text-align:right;" id="track-time">0:35 / 3:24</div>
+    <button class="btn btn-p" style="font-size:10px;padding:6px 12px;" onclick="toast('License purchased!')">License $4.99</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     FACEPRINTPAY
+══════════════════════════════════════ -->
+<div class="view" id="view-facepay">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title"><span class="hl">Face</span>PrintPay</div>
+      <div class="ph-sub">BIOMETRIC IDENTITY VERIFICATION · 99.8%+ ACCURACY · LIVENESS DETECTION</div>
+    </div>
+    <div class="face-layout">
+      <div>
+        <div class="face-demo card">
+          <div class="card-title">LIVE DEMO · CLICK TO SCAN</div>
+          <div class="face-canvas" id="face-canvas" onclick="startFaceScan()">
+            <div class="mv-ring" style="width:180px;height:180px;"></div>
+            <div class="mv-ring" style="width:140px;height:140px;border-style:dashed;border-color:rgba(0,229,176,.2);"></div>
+            <div class="face-ring" id="face-ring"></div>
+            <div class="face-ring2" id="face-ring2"></div>
+            <div class="face-icon" id="face-icon">👤</div>
+            <div class="face-dots" style="top:35%;left:42%;--d:0s;"></div>
+            <div class="face-dots" style="top:35%;left:55%;animation-delay:.3s;"></div>
+            <div class="face-dots" style="top:42%;left:48%;animation-delay:.6s;"></div>
+            <div class="face-dots" style="top:52%;left:40%;animation-delay:.9s;"></div>
+            <div class="face-dots" style="top:52%;left:58%;animation-delay:1.2s;"></div>
+          </div>
+          <div class="face-status scanning" id="face-status">● READY — Click to begin scan</div>
+          <div class="face-form">
+            <input class="input" id="ff-name" placeholder="Full name">
+            <input class="input" id="ff-email" placeholder="Work email">
+            <input class="input" id="ff-company" placeholder="Company">
+            <select class="input" id="ff-vol" style="cursor:pointer;">
+              <option>Expected Verifications: 10k-50k/mo</option>
+              <option>1k-10k/mo</option>
+              <option>50k+/mo</option>
+            </select>
+            <button class="btn btn-p" style="width:100%;" onclick="runVerification()">🔍 Run Sample Check</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="face-results card">
+          <div class="card-title">VERIFICATION RESULTS</div>
+          <div id="face-results-empty" style="color:var(--muted);font-size:12px;padding:20px 0;">Run a verification to see results here.</div>
+          <div id="face-results-data" style="display:none;">
+            <div class="metric-row"><span class="metric-label">Face Match</span><span class="metric-val good" id="res-match">—</span></div>
+            <div class="metric-row"><span class="metric-label">Liveness</span><span class="metric-val good" id="res-liveness">—</span></div>
+            <div class="metric-row"><span class="metric-label">Anti-spoofing</span><span class="metric-val good" id="res-spoof">—</span></div>
+            <div class="metric-row"><span class="metric-label">Latency</span><span class="metric-val good" id="res-latency">—</span></div>
+            <div class="metric-row"><span class="metric-label">Risk Score</span><span class="metric-val good" id="res-risk">—</span></div>
+            <div class="metric-row"><span class="metric-label">Decision</span><span class="metric-val good" id="res-decision">—</span></div>
+          </div>
+          <div class="mt">
+            <div class="card-title">FEATURES</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:11px;color:var(--muted);line-height:2;">
+              <div>✓ Blink / Turn / Smile<br>✓ 2D/3D mask defense<br>✓ On-device replay protection</div>
+              <div>✓ NIST-tested accuracy<br>✓ SOC2, GDPR<br>✓ Web, iOS, Android SDKs</div>
+            </div>
+          </div>
+        </div>
+        <div class="plans-row">
+          <div class="plan-card">
+            <div class="plan-name">STARTER</div>
+            <div class="plan-price free">$0</div>
+            <div class="plan-detail">500 verifications/mo · Email support</div>
+            <button class="btn btn-s" style="width:100%;font-size:11px;" onclick="toast('Starting free plan...')">Try Free</button>
+          </div>
+          <div class="plan-card featured">
+            <div class="plan-name">GROWTH</div>
+            <div class="plan-price">$299</div>
+            <div class="plan-detail">10k/mo · 99.9% SLA</div>
+            <button class="btn btn-p" style="width:100%;font-size:11px;" onclick="toast('Redirecting to checkout...')">Choose Plan</button>
+          </div>
+          <div class="plan-card">
+            <div class="plan-name">ENTERPRISE</div>
+            <div class="plan-price" style="font-size:24px;">Custom</div>
+            <div class="plan-detail">50k+/mo · HiPAA, GDPR</div>
+            <button class="btn btn-s" style="width:100%;font-size:11px;" onclick="toast('Opening sales contact...')">Talk to Sales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     AIKRE8TIVE TOOLS
+══════════════════════════════════════ -->
+<div class="view" id="view-aikre8">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title"><span class="hl">ARC.AI</span> — Unified AI Workspace</div>
+      <div class="ph-sub">EXPLORE MODELS · MANAGE AGENTS · XR/VR · LAUNCH PROJECTS · ACCESS 20,000+ AI MODELS</div>
+    </div>
+    <div class="g2">
+      <div>
+        <div class="card-title">CORE MODULES</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;">
+          <div class="card" style="cursor:pointer;" onclick="toast('Opening Models Registry — 20k+ models')">
+            <div style="font-size:20px;margin-bottom:6px;">🤖</div>
+            <div style="font-size:12px;font-weight:700;">Models Registry</div>
+            <div style="font-size:10px;color:var(--muted);">Browse 20k+ models by task</div>
+            <div style="font-family:var(--mono);font-size:8px;color:var(--c);margin-top:8px;cursor:pointer;">→ START FREE TRIAL</div>
+          </div>
+          <div class="card" style="cursor:pointer;" onclick="toast('Opening Agents Studio')">
+            <div style="font-size:20px;margin-bottom:6px;">🪐</div>
+            <div style="font-size:12px;font-weight:700;">Agents Studio</div>
+            <div style="font-size:10px;color:var(--muted);">Build autonomous agents</div>
+            <div style="font-family:var(--mono);font-size:8px;color:var(--c);margin-top:8px;cursor:pointer;">→ QUICK DEMO</div>
+          </div>
+          <div class="card" style="cursor:pointer;" onclick="showView('metaverse')">
+            <div style="font-size:20px;margin-bottom:6px;">🌀</div>
+            <div style="font-size:12px;font-weight:700;">XR / Metaverse</div>
+            <div style="font-size:10px;color:var(--muted);">Explore immersive spaces</div>
+            <div style="font-family:var(--mono);font-size:8px;color:var(--c);margin-top:8px;cursor:pointer;">→ ENTER</div>
+          </div>
+        </div>
+
+        <div class="card-title">COMMAND CONSOLE</div>
+        <div class="big-console">
+          <div class="big-console-out" id="ai-console-out" style="height:140px;"># Try:
+models search speech-to-text --provider=openai
+agent create --template=customer-support
+xr launch sandbox --space=constellation25-hub
+</div>
+          <div class="big-console-in">
+            <span class="big-console-prompt">$</span>
+            <input class="big-console-field" id="ai-console-field" placeholder="Type a command or paste a cURL..." onkeydown="if(event.key==='Enter')runAiCmd()">
+            <button class="run-btn" onclick="runAiCmd()">RUN</button>
+          </div>
+        </div>
+
+        <div class="mt">
+          <div class="card-title">RECOMMENDED MODELS</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+            <div class="card" style="cursor:pointer;padding:12px;" onclick="toast('Loading gpt-4o-mini...')">
+              <div style="font-size:10px;font-weight:700;">gpt-4o-mini</div>
+              <div style="font-size:9px;color:var(--muted);">Fast multimodal</div>
+            </div>
+            <div class="card" style="cursor:pointer;padding:12px;" onclick="toast('Loading sdxl-turbo...')">
+              <div style="font-size:10px;font-weight:700;">sdxl-turbo</div>
+              <div style="font-size:9px;color:var(--muted);">Real-time imaging</div>
+            </div>
+            <div class="card" style="cursor:pointer;padding:12px;" onclick="toast('Loading sonic-tts...')">
+              <div style="font-size:10px;font-weight:700;">sonic-tts</div>
+              <div style="font-size:9px;color:var(--muted);">High-fidelity TTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card-title">QUICK START</div>
+        <div class="quick-actions">
+          <div class="qa-row" onclick="toast('Starting new project from prompt...')"><span class="qa-name">✦ New project from prompt</span><span class="qa-type">NLP</span></div>
+          <div class="qa-row" onclick="toast('Opening provider connect...')"><span class="qa-name">🔗 Connect Providers</span><span class="qa-type">Integrations</span></div>
+          <div class="qa-row" onclick="showView('yesquid')"><span class="qa-name">📋 Docs</span><span class="qa-type">YesQuid</span></div>
+          <div class="qa-row" onclick="toast('Importing dataset...')"><span class="qa-name">📥 Import dataset</span><span class="qa-type">Data</span></div>
+        </div>
+
+        <div class="card-title mt">TRIAL STATUS</div>
+        <div class="card">
+          <div class="metric-row"><span class="metric-label">Credits</span><span class="metric-val good">2,500</span></div>
+          <div class="metric-row"><span class="metric-label">Days Left</span><span class="metric-val">14</span></div>
+          <div class="metric-row"><span class="metric-label">Workspace</span><span class="metric-val good">aikre8tive</span></div>
+          <div class="metric-row"><span class="metric-label">Status</span><span class="metric-val good">Healthy</span></div>
+          <button class="btn btn-p" style="width:100%;margin-top:12px;" onclick="toast('Upgrading plan...')">⚡ Upgrade Plan</button>
+        </div>
+
+        <div class="card-title mt">LEARNING LIBRARY</div>
+        <div class="quick-actions">
+          <div class="qa-row" onclick="toast('Opening: Intro to Agents')"><span class="qa-name">🎓 Intro to Agents</span></div>
+          <div class="qa-row" onclick="toast('Opening: Metaverse SDK Starter')"><span class="qa-name">🌀 Metaverse SDK Starter</span></div>
+          <div class="qa-row" onclick="toast('Opening: Legal & Compliance Guide')"><span class="qa-name">⚖️ Legal & Compliance Guide</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     AIMETAVERSE
+══════════════════════════════════════ -->
+<div class="view" id="view-metaverse">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title">Ai<span class="hl">Metaverse</span></div>
+      <div class="ph-sub">SOCIAL PERSISTENT SPACES · EVENTS · LEARNING · PLAY · EST. JAN 2023</div>
+    </div>
+    <div class="mv-canvas" id="mv-canvas" onclick="enterSpace()">
+      <div class="mv-ring" style="width:220px;height:220px;"></div>
+      <div class="mv-ring" style="width:160px;height:160px;border-color:rgba(139,92,246,.2);"></div>
+      <div class="mv-ring" style="width:100px;height:100px;border-color:rgba(240,180,41,.15);"></div>
+      <div class="mv-center">🌌</div>
+      <!-- Orbiting planets -->
+      <div class="mv-planet" style="width:20px;height:20px;background:radial-gradient(var(--c),#003);--speed:6s;--r:110px;top:calc(50% - 10px);left:calc(50% - 10px);"></div>
+      <div class="mv-planet" style="width:14px;height:14px;background:radial-gradient(var(--violet),#003);--speed:9s;--r:80px;top:calc(50% - 7px);left:calc(50% - 7px);animation-delay:-3s;"></div>
+      <div class="mv-planet" style="width:18px;height:18px;background:radial-gradient(var(--gold),#003);--speed:12s;--r:130px;top:calc(50% - 9px);left:calc(50% - 9px);animation-delay:-6s;"></div>
+      <div style="position:absolute;bottom:16px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;color:rgba(0,229,176,.7);letter-spacing:2px;">CLICK TO ENTER THE STARGATE</div>
+    </div>
+    <div class="space-rooms">
+      <div class="space-room" onclick="toast('Entering Jupiter Lab — High-level reasoning playground')">
+        <div style="font-size:20px;margin-bottom:6px;">♃ Jupiter Lab</div>
+        <div class="sr-title">Reasoning</div>
+        <div class="sr-desc">High-level reasoning playground to prototype AI chains.</div>
+        <div class="sr-count">→ LAUNCH</div>
+      </div>
+      <div class="space-room" onclick="toast('Connecting Mercury Relay...')">
+        <div style="font-size:20px;margin-bottom:6px;">☿ Mercury Relay</div>
+        <div class="sr-title">Signals</div>
+        <div class="sr-desc">Signal relay and communications hub for agents and apps.</div>
+        <div class="sr-count">→ CONNECT</div>
+      </div>
+      <div class="space-room" onclick="toast('Opening Venus Studio — Avatar customization')">
+        <div style="font-size:20px;margin-bottom:6px;">♀ Venus Studio</div>
+        <div class="sr-title">Avatars</div>
+        <div class="sr-desc">Avatar, GPT, and identity customization across the platform.</div>
+        <div class="sr-count">→ CUSTOMIZE</div>
+      </div>
+      <div class="space-room" onclick="toast('Opening Neptune Ops — Uptime dashboard')">
+        <div style="font-size:20px;margin-bottom:6px;">♆ Neptune Ops</div>
+        <div class="sr-title">Uptime</div>
+        <div class="sr-desc">Uptime, load balancing, and health monitoring for services.</div>
+        <div class="sr-count">→ VIEW</div>
+      </div>
+      <div class="space-room" onclick="toast('Launching ExplorerMars — New terrain map released!')">
+        <div style="font-size:20px;margin-bottom:6px;">🔴 ExplorerMars</div>
+        <div class="sr-title">Explore</div>
+        <div class="sr-desc">Simulated missions, datasets, and visualizations — discover Mars.</div>
+        <div class="sr-count">→ EXPLORE</div>
+      </div>
+      <div class="space-room" onclick="toast('Opening AiMetaverse main space...')">
+        <div style="font-size:20px;margin-bottom:6px;">🌀 AiMetaverse</div>
+        <div class="sr-title">Worlds</div>
+        <div class="sr-desc">Social, persistent spaces for events, learning, and play.</div>
+        <div class="sr-count">→ ENTER</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIDEOCOURTS
+══════════════════════════════════════ -->
+<div class="view" id="view-videocourts">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title">Video<span class="hl">Courts</span></div>
+      <div class="ph-sub">AI-POWERED VIDEO LEARNING · JUSTICE · MUSIC · SPACE · EST. NOV 2021</div>
+    </div>
+    <div class="vc-grid" id="vc-grid"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MYBUY'O
+══════════════════════════════════════ -->
+<div class="view" id="view-shop">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title">My<span class="hl">BUY'o</span></div>
+      <div class="ph-sub">AI-ASSISTED SHOPPING · SMART BUNDLES · DEALS · CONSTELLATION25 MARKETPLACE</div>
+    </div>
+    <div class="cat-pills" id="shop-cats">
+      <div class="cat-pill on" onclick="filterShop('all',this)">All</div>
+      <div class="cat-pill" onclick="filterShop('tech',this)">💻 Tech</div>
+      <div class="cat-pill" onclick="filterShop('music',this)">🎵 Music</div>
+      <div class="cat-pill" onclick="filterShop('ai',this)">🤖 AI Tools</div>
+      <div class="cat-pill" onclick="filterShop('media',this)">🎬 Media</div>
+    </div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </div>
+  <div class="cart-bar">
+    <div class="cart-count"><span id="cart-count">0</span> items in cart</div>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Total:</div>
+    <div class="cart-total">$<span id="cart-total">0.00</span></div>
+    <button class="btn btn-p" onclick="toast('Proceeding to checkout...')">→ Checkout</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     YESQUID PRO
+══════════════════════════════════════ -->
+<div class="view" id="view-yesquid">
+  <div class="yq-layout" style="flex:1;overflow:hidden;">
+    <div class="yq-sidebar">
+      <div style="font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">READ ORDER</div>
+      <div class="yq-nav-item active" onclick="yqSection('overview',this)">0 · Overview</div>
+      <div class="yq-nav-item" onclick="yqSection('html',this)">1 · HTML Standards</div>
+      <div class="yq-nav-item" onclick="yqSection('css',this)">2 · CSS / Tailwind</div>
+      <div class="yq-nav-item" onclick="yqSection('js',this)">3 · JavaScript</div>
+      <div class="yq-nav-item" onclick="yqSection('bash',this)">4 · Bash / Termux</div>
+      <div class="yq-nav-item" onclick="yqSection('git',this)">5 · Git Standards</div>
+      <div class="yq-nav-item" onclick="yqSection('checklist',this)">6 · Review Checklist</div>
+      <div style="margin-top:20px;">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:10px;">SHORTCUTS</div>
+        <div class="yq-nav-item" onclick="toast('Downloading guidelines PDF...')"># File structure</div>
+        <div class="yq-nav-item" onclick="toast('Opening commit format guide...')">@ Commit format</div>
+        <div class="yq-nav-item" onclick="toast('Opening review template...')">* Review template</div>
+      </div>
+      <div style="margin-top:20px;">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:10px;">ENVIRONMENT</div>
+        <div style="font-size:10px;color:var(--muted);line-height:2;">
+          Project: <span style="color:var(--c);">constellation25</span><br>
+          Status: <span style="color:var(--c);">Ready</span><br>
+          Target: <span style="color:var(--c);">Vercel</span>
+        </div>
+      </div>
+    </div>
+    <div class="yq-content" id="yq-content"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     INTEGRATIONS
+══════════════════════════════════════ -->
+<div class="view" id="view-integrations">
+  <div class="pg">
+    <div class="ph">
+      <div class="ph-title"><span class="hl">Integrations</span> — Enterprise Connectors</div>
+      <div class="ph-sub">CONNECT DATABASES · DEPLOY · AUTH · WEBHOOKS · BIOMETRIC NDA ACCESS</div>
+    </div>
+    <div class="g2">
+      <div>
+        <div class="card-title">AVAILABLE CONNECTORS</div>
+        <div class="int-grid" id="int-grid"></div>
+      </div>
+      <div>
+        <div class="card-title">INTEGRATION STATUS</div>
+        <div class="card">
+          <div class="int-status-row"><span>PostgreSQL</span><span class="tag tag-g">OK</span></div>
+          <div class="int-status-row"><span>Slack</span><span class="tag tag-a">Auth</span></div>
+          <div class="int-status-row"><span>AWS</span><span class="tag tag-g">Ready</span></div>
+          <div class="int-status-row"><span>GitHub</span><span class="tag tag-b">Syncing</span></div>
+          <div class="int-status-row"><span>Stripe</span><span class="tag tag-r">Missing webhook</span></div>
+          <div class="int-status-row"><span>Notion</span><span class="tag tag-g">OK</span></div>
+        </div>
+
+        <div class="card-title mt">DEPLOYMENT COMMANDS</div>
+        <div class="code-block">
+<span class="c-m"># Deploy to AWS</span>
+<span class="c-g">deploy</span> --target aws \
+  --region us-east-1 \
+  --stack constellation25-sov
+
+<span class="c-m"># Agent console deploy</span>
+<span class="c-b">agent.run</span> sun --task deploy \
+  --target vercel \
+  --env production
+        </div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button class="btn btn-p" onclick="toast('Executing deployment...')">▶ Execute</button>
+          <button class="btn btn-s" onclick="toast('Scheduling deployment...')">🕐 Schedule</button>
+          <button class="btn btn-s" onclick="toast('Opening agent chat...')">💬 Talk with Agent</button>
+        </div>
+
+        <div class="card-title mt">ANALYTICS</div>
+        <div class="card">
+          <div class="metric-row"><span class="metric-label">Req/day</span><span class="metric-val good">18,240</span></div>
+          <div class="metric-row"><span class="metric-label">Success</span><span class="metric-val good">99.1%</span></div>
+          <div class="metric-row"><span class="metric-label">P95 Latency</span><span class="metric-val warn">680ms</span></div>
+          <div class="metric-row"><span class="metric-label">Active Agents</span><span class="metric-val good">12 planetary</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end shell -->
+
+<script>
+// ── STATE ──
+let currentView = 'home';
+let cmdCount = 0;
+let ndaAccepted = false;
+let playingTrack = null;
+let playing = false;
+let progInterval = null;
+let progVal = 35;
+let cartItems = 0;
+let cartTotal = 0;
+
+const AGENTS = [
+  {name:'Mercury',role:'Signal relay',port:'8001',status:'on',icon:'☿'},
+  {name:'Venus',role:'Avatar & GPT',port:'8002',status:'on',icon:'♀'},
+  {name:'Earth',role:'Compile & NLP',port:'8003',status:'busy',icon:'🌍'},
+  {name:'Mars',role:'API deploy',port:'8004',status:'on',icon:'♂'},
+  {name:'Jupiter',role:'Reasoning',port:'8005',status:'busy',icon:'♃'},
+  {name:'Saturn',role:'Scheduling',port:'8006',status:'on',icon:'♄'},
+  {name:'Uranus',role:'Innovation',port:'8007',status:'on',icon:'♅'},
+  {name:'Neptune',role:'Uptime & LB',port:'8008',status:'on',icon:'♆'},
+  {name:'Pluto',role:'Memory & recall',port:'8009',status:'on',icon:'♇'},
+  {name:'Sun',role:'Deploy pipeline',port:'8010',status:'busy',icon:'☀'},
+  {name:'Moon',role:'Test & QA',port:'8011',status:'busy',icon:'🌙'},
+  {name:'Pathos',role:'Orchestrator',port:'3100',status:'on',icon:'⭐'},
+  {name:'Sirius',role:'Intelligence',port:'8013',status:'on',icon:'🌟'},
+  {name:'Polaris',role:'Navigation',port:'8014',status:'on',icon:'🧭'},
+  {name:'Andromeda',role:'Expansion',port:'8015',status:'on',icon:'🌀'},
+  {name:'Orion',role:'Comms',port:'8016',status:'off',icon:'🔭'},
+  {name:'Rigel',role:'Data layer',port:'8017',status:'off',icon:'💫'},
+  {name:'DeployAgent',role:'CI/CD root',port:'4f841bb',status:'on',icon:'👁'},
+  {name:'Canius',role:'Restore point',port:'—',status:'off',icon:'⚡'},
+];
+
+const TRACKS = [
+  {name:'Midnight Protocol',genre:'Lo-fi Beats',desc:'Focus, study, calm',price:'4.99',cat:'lofi',bg:'#0a0a1a',emoji:'🎧'},
+  {name:'Sovereign Pulse',genre:'Hard Hype',desc:'Workout, esports',price:'5.99',cat:'hype',bg:'#1a0a0a',emoji:'🔥'},
+  {name:'Orbit Drift',genre:'Ambient & Nature',desc:'Meditation, wellness',price:'3.99',cat:'ambient',bg:'#0a1a0a',emoji:'🌿'},
+  {name:'Galactic Rush',genre:'Club & EDM',desc:'Events, festivals',price:'6.99',cat:'edm',bg:'#1a0a1a',emoji:'💫'},
+  {name:'Lagos Signal',genre:'Afro & World',desc:'Culture, dance',price:'4.99',cat:'afro',bg:'#1a1a0a',emoji:'🌍'},
+  {name:'Nebula Score',genre:'Cinematic',desc:'Scenes, storytelling',price:'7.99',cat:'cinematic',bg:'#0a0a1a',emoji:'🎬'},
+  {name:'Deep Loop 44',genre:'Lo-fi Beats',desc:'Late night coding',price:'4.99',cat:'lofi',bg:'#0a0a1a',emoji:'🎧'},
+  {name:'Constellation',genre:'Ambient & Nature',desc:'Space meditation',price:'3.99',cat:'ambient',bg:'#0a1a0a',emoji:'🌌'},
+  {name:'Zero Day Drop',genre:'Hard Hype',desc:'Tournament energy',price:'5.99',cat:'hype',bg:'#1a0a0a',emoji:'⚡'},
+];
+
+const SHOP_ITEMS = [
+  {name:'Ai.RECORDS License Bundle',cat:'music',price:'19.99',icon:'🎵',desc:'50 tracks, commercial use'},
+  {name:'ARC.AI Pro Month',cat:'ai',price:'49.99',icon:'⚡',desc:'Full AI workspace access'},
+  {name:'FacePrintPay Starter',cat:'tech',price:'0.00',icon:'👁',desc:'500 verifications free'},
+  {name:'VideoCourts All Access',cat:'media',price:'29.99',icon:'🎬',desc:'All courses unlocked'},
+  {name:'Sovereign Stack Credits',cat:'ai',price:'9.99',icon:'🪐',desc:'2,500 agent credits'},
+  {name:'ZILL Token Pack',cat:'tech',price:'4.99',icon:'🪙',desc:'100 ZILL tokens'},
+  {name:'YesQuid Pro Annual',cat:'tech',price:'99.00',icon:'📋',desc:'Full coding standards suite'},
+  {name:'MyBUY\'o Smart Bundle',cat:'ai',price:'14.99',icon:'🛒',desc:'AI-curated 3-product bundle'},
+];
+
+const CONNECTORS = [
+  {name:'PostgreSQL',icon:'🗃️',fields:['postgres://host:5432/db','Username','Password'],actions:['Test','Import Schema']},
+  {name:'Slack',icon:'💬',fields:['Signing Secret','Bot Token'],actions:['Send Test DM','Create Webhook']},
+  {name:'AWS',icon:'☁️',fields:['Access Key','Secret','Region'],actions:['Deploy','Validate IAM']},
+  {name:'GitHub',icon:'🐙',fields:['Personal Access Token'],actions:['Link Repo','Commit Hook']},
+  {name:'Notion',icon:'📝',fields:['Integration Token'],actions:['Index Pages','Sync Wiki']},
+  {name:'Stripe',icon:'💳',fields:['Secret Key'],actions:['Test Charge','Webhook']},
+];
+
+const YQ_SECTIONS = {
+  overview:`<h2 style="font-family:var(--display);font-size:28px;letter-spacing:2px;margin-bottom:8px;">YesQuid Pro <span style="color:var(--c);">Coding Standards</span></h2>
+<p style="color:var(--muted);font-size:12px;line-height:1.8;margin-bottom:16px;">Comprehensive guidelines for consistent, maintainable HTML, CSS/Tailwind, JavaScript, Bash, and Git practices for the Constellation25 ecosystem.</p>
+<ul style="color:var(--muted);font-size:12px;line-height:2;margin-left:16px;">
+<li>Use a consistent document structure and semantic HTML.</li>
+<li>Prefer Tailwind utilities with small, well-structured custom CSS.</li>
+<li>Write clear, documented JavaScript with strong error handling.</li>
+<li>Keep a clean Git history using Conventional Commits.</li>
+<li>All bash: <code style="color:var(--c);">#!/usr/bin/env bash</code> — never hardcode Termux paths.</li>
+</ul>`,
+  html:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">HTML <span style="color:var(--c);">Standards</span></h2>
+<div class="g2">
+<div class="rule-block"><div class="rule-head">📄 Document Structure</div><ul class="rule-items"><li>Always include HTML5 DOCTYPE</li><li>Use semantic HTML5 elements</li><li>Include lang attribute on html tag</li><li>Proper meta tags (charset, viewport)</li><li>Meaningful page titles</li></ul></div>
+<div class="rule-block"><div class="rule-head">🏷️ Element Guidelines</div><ul class="rule-items"><li>Use lowercase for all tags and attributes</li><li>Always close tags properly</li><li>Use double quotes for attributes</li><li>Include alt text for all images</li><li>Use semantic layout elements</li></ul></div>
+</div>
+<div class="avoid-block"><span style="color:var(--red);">✗ Avoid:</span><div class="code-block" style="margin:4px 0 0;">&lt;DIV Class='container'&gt;&lt;IMG src=image.jpg&gt;</div></div>
+<div class="prefer-block"><span style="color:var(--c);">✓ Prefer:</span><div class="code-block" style="margin:4px 0 0;">&lt;div class="container"&gt;&lt;img src="image.jpg" alt="Description"&gt;</div></div>`,
+  bash:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">Bash / <span style="color:var(--c);">Termux</span> Standards</h2>
+<div class="rule-block"><div class="rule-head">✓ Required Patterns</div><ul class="rule-items">
+<li>Always use <code style="color:var(--c);">#!/usr/bin/env bash</code> — never hardcode Termux path</li>
+<li>Dynamic BASE detection — never hardcode base paths</li>
+<li>Check file existence before referencing</li>
+<li>Never use <code style="color:var(--red);">2>/dev/null</code> to suppress errors</li>
+<li>Use <code style="color:var(--c);">df -k</code> not df -m in Termux</li>
+<li>Use <code style="color:var(--c);">find ... -prune</code> not -exec rm -rf</li>
+<li>tmpfile-based loops — preserve counter scope</li>
+<li>trap 'cd "$PREV_DIR"' RETURN for dir restore</li>
+<li>set -e with per-block error handling</li>
+</ul></div>
+<div class="code-block">
+<span class="c-m">#!/usr/bin/env bash</span>
+<span class="c-m"># Constellation25 compliant template</span>
+<span class="c-b">set</span> -e
+
+<span class="c-m"># Dynamic base detection</span>
+<span class="c-g">BASE_DIR</span>=<span class="c-y">"$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"</span>
+
+<span class="c-m"># Directory restore trap</span>
+<span class="c-g">PREV_DIR</span>=<span class="c-y">"$(pwd)"</span>
+<span class="c-b">trap</span> <span class="c-y">'cd "$PREV_DIR"'</span> RETURN
+
+<span class="c-m"># File existence check</span>
+<span class="c-b">if</span> [[ ! -f <span class="c-y">"$BASE_DIR/config.sh"</span> ]]; <span class="c-b">then</span>
+  <span class="c-b">echo</span> <span class="c-y">"ERROR: config.sh not found"</span> &gt;&amp;2; <span class="c-b">exit</span> 1
+<span class="c-b">fi</span>
+
+<span class="c-m"># Termux disk check (use -k)</span>
+<span class="c-g">DISK</span>=$(df -k <span class="c-y">"$HOME"</span> | awk <span class="c-y">'NR==2{print $4}'</span>)
+
+<span class="c-m"># tmpfile loop — preserves counter scope</span>
+<span class="c-g">TMPF</span>=$(mktemp)
+find <span class="c-y">"$BASE_DIR"</span> -name <span class="c-y">"*.sh"</span> &gt; <span class="c-y">"$TMPF"</span>
+<span class="c-g">COUNT</span>=0
+<span class="c-b">while</span> IFS= read -r f; <span class="c-b">do</span> (( COUNT++ )); <span class="c-b">done</span> &lt; <span class="c-y">"$TMPF"</span>
+rm -f <span class="c-y">"$TMPF"</span>
+</div>`,
+  git:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">Git <span style="color:var(--c);">Standards</span></h2>
+<div class="rule-block"><div class="rule-head">🔧 Global Config</div><div class="code-block">
+git config --global user.email <span class="c-y">"kre8tivekonceptz@gmail.com"</span>
+git config --global user.name <span class="c-y">"Cygel White"</span>
+git config --global credential.helper store
+</div></div>
+<div class="rule-block"><div class="rule-head">🚀 Fix Empty Repo Push Error</div>
+<div style="color:var(--red);font-size:11px;margin-bottom:6px;">Error: src refspec main does not match any</div>
+<div class="code-block">
+<span class="c-m"># Fix — commit before push</span>
+git add .
+git commit <span class="c-g">--allow-empty</span> -m <span class="c-y">"init: Constellation25 scaffold"</span>
+git push origin main
+</div></div>
+<div class="rule-block"><div class="rule-head">📦 Push All 6 Scaffold Repos</div><div class="code-block">
+<span class="c-b">for</span> repo in constellation25 videocourts digital-dollar \
+             c25-monorepo sovereign-gtp aimetaverse; <span class="c-b">do</span>
+  <span class="c-b">cd</span> ~/github-repos/$repo
+  git commit <span class="c-g">--allow-empty</span> -m <span class="c-y">"init: $repo"</span>
+  git push origin main
+<span class="c-b">done</span>
+</div></div>`,
+  checklist:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">Review <span style="color:var(--c);">Checklist</span></h2>
+<div id="checklist-items"></div>`,
+  css:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">CSS / <span style="color:var(--c);">Tailwind</span></h2>
+<div class="rule-block"><div class="rule-head">🎨 Guidelines</div><ul class="rule-items"><li>Use CSS variables for theme consistency</li><li>Prefer Tailwind utilities — minimal custom CSS</li><li>BEM naming for custom components</li><li>Mobile-first responsive design</li><li>No inline styles in production</li></ul></div>`,
+  js:`<h2 style="font-family:var(--display);font-size:24px;letter-spacing:2px;margin-bottom:14px;">JavaScript <span style="color:var(--c);">Standards</span></h2>
+<div class="rule-block"><div class="rule-head">⚡ Rules</div><ul class="rule-items"><li>Use const/let — never var</li><li>Always handle Promise rejections</li><li>Use async/await over .then chains</li><li>Document all public functions with JSDoc</li><li>No console.log in production</li></ul></div>`,
+};
+
+const CHECKLIST_ITEMS = [
+  {text:'HTML5 DOCTYPE present',done:true},
+  {text:'All images have alt text',done:true},
+  {text:'#!/usr/bin/env bash shebang',done:true},
+  {text:'No hardcoded BASE paths',done:true},
+  {text:'No 2>/dev/null suppression',done:false},
+  {text:'df -k used in Termux',done:true},
+  {text:'tmpfile-based loops',done:true},
+  {text:'Git email set: kre8tivekonceptz@',done:true},
+  {text:'Docker username: aimetaverse',done:false},
+  {text:'MCP path: constellation25 (no hyphen)',done:true},
+  {text:'set -e with per-block error handling',done:true},
+  {text:'File existence checks before referencing',done:true},
+];
+
+const VC_COURSES = [
+  {title:'Intro to Sovereign AI',cat:'AI',progress:65,emoji:'🤖',bg:'#0a0a1a'},
+  {title:'Constellation25 Builder',cat:'Dev',progress:30,emoji:'🪐',bg:'#0a0a18'},
+  {title:'Justice & Tech Law',cat:'Legal',progress:90,emoji:'⚖️',bg:'#1a0a0a'},
+  {title:'Music Metaverse 101',cat:'Music',progress:0,emoji:'🎵',bg:'#0a1a0a'},
+  {title:'FacePrintPay API Course',cat:'Dev',progress:45,emoji:'👁',bg:'#1a0a1a'},
+  {title:'Space Division',cat:'Science',progress:15,emoji:'🚀',bg:'#0a0a1a'},
+];
+
+// ── INIT ──
+function init() {
+  renderAgents();
+  renderTracks('all');
+  renderShop('all');
+  renderIntegrations();
+  renderVideoCourts();
+  renderYQSection('overview');
+  renderChecklist();
+}
+
+// ── NAVIGATION ──
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nb-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('view-' + id).classList.add('active');
+  const nb = document.getElementById('nav-' + id);
+  if(nb) nb.classList.add('active');
+  currentView = id;
+}
+
+// ── TOAST ──
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ── AGENTS ──
+function renderAgents() {
+  const onlyOnline = document.getElementById('f-online')?.checked;
+  const showBusy = document.getElementById('f-busy')?.checked;
+  const list = document.getElementById('agent-list');
+  if(!list) return;
+  list.innerHTML = AGENTS.filter(a => {
+    if(onlyOnline && a.status === 'off') return false;
+    if(showBusy && a.status !== 'busy') return false;
+    return true;
+  }).map(a => `
+    <div class="agent-row" onclick="selectAgent('${a.name}')">
+      <div>
+        <div class="ar-name">${a.icon} ${a.name}</div>
+        <div class="ar-role">${a.role} · :${a.port}</div>
+      </div>
+      <div class="ar-status ${a.status}"></div>
+    </div>`).join('');
+}
+
+function selectAgent(name) {
+  document.querySelectorAll('.agent-row').forEach(r => r.classList.remove('selected'));
+  event.currentTarget.classList.add('selected');
+  document.getElementById('console-agent-label').textContent = `Agent: ${name}`;
+  appendConsole(`[${name}] Agent selected. Type a command or use Quick Commands below.`);
+}
+
+function runCmd() {
+  const f = document.getElementById('console-field');
+  const cmd = f.value.trim();
+  if(!cmd) return;
+  if(!ndaAccepted) { toast('⚠️ Accept the NDA first to run agent commands'); return; }
+  cmdCount++;
+  document.getElementById('cmd-count').textContent = cmdCount;
+  appendConsole(`$ ${cmd}`);
+  setTimeout(() => {
+    let resp = simulateCmd(cmd);
+    appendConsole(resp);
+  }, 600);
+  f.value = '';
+}
+
+function setCmd(cmd) {
+  document.getElementById('console-field').value = cmd;
+  document.getElementById('console-field').focus();
+}
+
+function simulateCmd(cmd) {
+  if(cmd.includes('ping')) return '[OK] All 17 online agents responded. 8 offline. Pathos :3100 healthy.';
+  if(cmd.includes('status')) return '[STATUS] Earth: BUSY (compile) | Moon: BUSY (test) | Sun: BUSY (deploy) | Jupiter: BUSY (sync) | Others: ONLINE';
+  if(cmd.includes('earth')) return '[Earth :8003] Compile phase started. Processing 112 c25-* repos + 65 extras...';
+  if(cmd.includes('moon')) return '[Moon :8011] Test suite initiated. Running 7,288 bash scripts through syntax checker...';
+  if(cmd.includes('sun')) return '[Sun :8010] Deploy agent triggered. Target: Vercel. vercel.json confirmed. Pushing...';
+  if(cmd.includes('pipeline')) return '[Pipeline] c25-robust-ship.sh started. Phase 1: History extraction... Phase 2: Parse...';
+  if(cmd.includes('canius')) return '[Canius] Restore point 2026-03-16 loaded. Scaffolds: constellation25, videocourts, digital-dollar, c25-monorepo, sovereign-gtp, aimetaverse. Earth→Moon→Sun pipeline restored.';
+  if(cmd.includes('git.push')) return '[Git] Pushing all repos to Constillation25 org... Fix: git commit --allow-empty -m "init" && git push origin main';
+  return `[OK] Command executed: ${cmd}`;
+}
+
+function appendConsole(line) {
+  const out = document.getElementById('console-out');
+  out.textContent += '\n' + line;
+  out.scrollTop = out.scrollHeight;
+}
+
+function acceptNDA() {
+  ndaAccepted = true;
+  const panel = document.getElementById('nda-panel');
+  panel.style.background = 'rgba(0,229,176,.05)';
+  panel.style.borderColor = 'rgba(0,229,176,.25)';
+  panel.innerHTML = '<div style="color:var(--c);font-family:var(--mono);font-size:9px;letter-spacing:1px;">✓ NDA ACCEPTED · FULL ACCESS GRANTED</div>';
+  appendConsole('[NDA] Digital NDA accepted. Full agent access granted. Welcome, @MrGGTP.');
+  toast('✓ NDA accepted — full access granted');
+}
+
+function sendChat() {
+  const f = document.getElementById('chat-input');
+  const msg = f.value.trim();
+  if(!msg) return;
+  const chat = document.getElementById('agent-chat');
+  chat.innerHTML += `<div class="chat-bubble user">${msg}</div>`;
+  f.value = '';
+  setTimeout(() => {
+    const reply = simulateChat(msg);
+    chat.innerHTML += `<div class="chat-bubble agent"><strong>Pathos:</strong> ${reply}</div>`;
+    chat.scrollTop = chat.scrollHeight;
+  }, 800);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function simulateChat(msg) {
+  const m = msg.toLowerCase();
+  if(m.includes('deploy')) return 'Triggering deploy via Sun agent. Run: agent.run sun --task deploy --target vercel';
+  if(m.includes('error') || m.includes('push')) return 'For the git push error: git commit --allow-empty -m "init" && git push origin main. Docker username must be aimetaverse.';
+  if(m.includes('agent')) return 'We have 25 planetary agents. 17 currently online. Pathos orchestrates at :3100. Which agent do you need?';
+  if(m.includes('nda')) return 'NDA is Digital — covers confidentiality and usage restrictions across all Constellation25 platforms.';
+  if(m.includes('pipeline')) return 'Pipeline: c25-robust-ship.sh. 6 phases: History → Parse → Prune → Compile → Train → Sync. Currently on Phase 4.';
+  return 'Understood. I can help with orchestration, deployments, agent status, or NDA policy. What do you need?';
+}
+
+// ── MUSIC ──
+function renderTracks(cat) {
+  const grid = document.getElementById('track-grid');
+  const tracks = cat === 'all' ? TRACKS : TRACKS.filter(t => t.cat === cat);
+  grid.innerHTML = tracks.map((t,i) => `
+    <div class="track-card ${playingTrack === t.name ? 'playing' : ''}" id="tc-${i}">
+      <div class="tc-genre">${t.genre.toUpperCase()}</div>
+      <div style="font-size:30px;text-align:center;padding:12px 0;background:${t.bg};border-radius:6px;margin-bottom:10px;">${t.emoji}</div>
+      <div class="tc-name">${t.name}</div>
+      <div class="tc-desc">${t.desc}</div>
+      <div class="tc-meta">
+        <span class="tc-price">$${t.price}</span>
+        <button class="tc-play" onclick="playTrack('${t.name}','${t.genre}',${i})">${playingTrack === t.name && playing ? '⏸' : '▶'}</button>
+      </div>
+    </div>`).join('');
+}
+
+function filterMusic(cat, el) {
+  document.querySelectorAll('#music-cats .cat-pill').forEach(p => p.classList.remove('on'));
+  el.classList.add('on');
+  renderTracks(cat);
+}
+
+function playTrack(name, genre, idx) {
+  if(playingTrack === name) { togglePlay(); return; }
+  playingTrack = name;
+  playing = true;
+  document.getElementById('player-bar').style.display = 'flex';
+  document.getElementById('player-name').textContent = name;
+  document.getElementById('player-genre').textContent = genre;
+  document.getElementById('play-btn').textContent = '⏸';
+  progVal = 0;
+  clearInterval(progInterval);
+  progInterval = setInterval(() => {
+    progVal = Math.min(progVal + 0.3, 100);
+    document.getElementById('prog-inner').style.width = progVal + '%';
+    const secs = Math.floor(progVal * 2.04);
+    const m = Math.floor(secs/60), s = secs%60;
+    document.getElementById('track-time').textContent = `${m}:${s.toString().padStart(2,'0')} / 3:24`;
+    if(progVal >= 100) clearInterval(progInterval);
+  }, 100);
+  renderTracks('all');
+  toast(`▶ Now playing: ${name}`);
+}
+
+function togglePlay() {
+  playing = !playing;
+  document.getElementById('play-btn').textContent = playing ? '⏸' : '▶';
+  if(playing) {
+    progInterval = setInterval(() => {
+      progVal = Math.min(progVal + 0.3, 100);
+      document.getElementById('prog-inner').style.width = progVal + '%';
+    }, 100);
+  } else {
+    clearInterval(progInterval);
+  }
+}
+
+function seekTrack(e) {
+  const bar = e.currentTarget;
+  const pct = e.offsetX / bar.offsetWidth * 100;
+  progVal = pct;
+  document.getElementById('prog-inner').style.width = pct + '%';
+}
+
+// ── FACE SCAN ──
+let scanState = 'ready';
+function startFaceScan() {
+  if(scanState === 'scanning') return;
+  scanState = 'scanning';
+  const status = document.getElementById('face-status');
+  const icon = document.getElementById('face-icon');
+  status.className = 'face-status scanning';
+  status.textContent = '◆ SCANNING — Hold still...';
+  icon.textContent = '🔍';
+  setTimeout(() => {
+    status.textContent = '◆ DETECTING LIVENESS — Blink detection...';
+    icon.textContent = '👁';
+  }, 1000);
+  setTimeout(() => {
+    status.textContent = '◆ MATCHING — Running biometric check...';
+    icon.textContent = '🔄';
+  }, 2000);
+  setTimeout(() => runVerification(), 3000);
+}
+
+function runVerification() {
+  const status = document.getElementById('face-status');
+  const icon = document.getElementById('face-icon');
+  status.className = 'face-status ok';
+  status.textContent = '✓ VERIFIED — Identity confirmed';
+  icon.textContent = '✅';
+  scanState = 'done';
+  document.getElementById('face-results-empty').style.display = 'none';
+  document.getElementById('face-results-data').style.display = 'block';
+  document.getElementById('res-match').textContent = '99.8%';
+  document.getElementById('res-liveness').textContent = 'Active & Passive — PASS';
+  document.getElementById('res-spoof').textContent = '2D/3D mask — CLEAR';
+  document.getElementById('res-latency').textContent = '< 2s';
+  document.getElementById('res-risk').textContent = 'LOW (0.02)';
+  document.getElementById('res-decision').textContent = '✓ APPROVED';
+  toast('✓ Verification complete — Identity confirmed');
+  setTimeout(() => { scanState = 'ready'; }, 3000);
+}
+
+// ── SHOP ──
+function renderShop(cat) {
+  const items = cat === 'all' ? SHOP_ITEMS : SHOP_ITEMS.filter(i => i.cat === cat);
+  document.getElementById('shop-grid').innerHTML = items.map(i => `
+    <div class="shop-card">
+      <div class="shop-icon">${i.icon}</div>
+      <div class="shop-name">${i.name}</div>
+      <div style="font-size:10px;color:var(--muted);margin-bottom:8px;">${i.desc}</div>
+      <div class="row-between">
+        <div><span class="shop-price">$${i.price}</span></div>
+        <button class="btn btn-p" style="font-size:10px;padding:5px 10px;" onclick="addToCart('${i.name}',${i.price})">+ Cart</button>
+      </div>
+    </div>`).join('');
+}
+
+function filterShop(cat, el) {
+  document.querySelectorAll('#shop-cats .cat-pill').forEach(p => p.classList.remove('on'));
+  el.classList.add('on');
+  renderShop(cat);
+}
+
+function addToCart(name, price) {
+  cartItems++;
+  cartTotal = parseFloat((cartTotal + parseFloat(price)).toFixed(2));
+  document.getElementById('cart-count').textContent = cartItems;
+  document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
+  toast(`✓ Added to cart: ${name}`);
+}
+
+// ── INTEGRATIONS ──
+function renderIntegrations() {
+  document.getElementById('int-grid').innerHTML = CONNECTORS.map(c => `
+    <div class="int-card">
+      <div class="int-name">${c.icon} ${c.name}</div>
+      ${c.fields.map(f => `<div class="int-field">${f}</div>`).join('')}
+      <div class="int-actions">
+        <button class="int-btn enabled" onclick="toast('${c.name} enabled!')">Enable</button>
+        ${c.actions.map(a => `<button class="int-btn" onclick="toast('${a} — ${c.name}')">${a}</button>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+// ── VIDEOCOURTS ──
+function renderVideoCourts() {
+  document.getElementById('vc-grid').innerHTML = VC_COURSES.map(c => `
+    <div class="vc-card" onclick="toast('Opening: ${c.title}')">
+      <div class="vc-thumb" style="background:${c.bg};">
+        <span>${c.emoji}</span>
+        <div class="vc-bar" style="width:${c.progress}%;"></div>
+      </div>
+      <div class="vc-body">
+        <div class="vc-title">${c.title}</div>
+        <div class="vc-meta">${c.cat} · ${c.progress}% complete</div>
+        <div class="vc-progress"><div class="vc-prog-fill" style="width:${c.progress}%;"></div></div>
+      </div>
+    </div>`).join('');
+}
+
+// ── YESQUID ──
+function renderYQSection(key) {
+  document.getElementById('yq-content').innerHTML = YQ_SECTIONS[key] || YQ_SECTIONS['overview'];
+  if(key === 'checklist') renderChecklist();
+}
+
+function yqSection(key, el) {
+  document.querySelectorAll('.yq-nav-item').forEach(n => n.classList.remove('active'));
+  el.classList.add('active');
+  renderYQSection(key);
+}
+
+function renderChecklist() {
+  const el = document.getElementById('checklist-items');
+  if(!el) return;
+  el.innerHTML = CHECKLIST_ITEMS.map((item, i) => `
+    <div class="rule-block" style="display:flex;align-items:center;gap:12px;padding:12px 14px;cursor:pointer;" onclick="toggleCheck(${i})">
+      <div style="width:18px;height:18px;border-radius:4px;border:2px solid ${item.done?'var(--c)':'var(--rim)'};background:${item.done?'rgba(0,229,176,.15)':'transparent'};display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;">${item.done?'✓':''}</div>
+      <div style="font-size:12px;color:${item.done?'var(--text)':'var(--muted)'};">${item.text}</div>
+    </div>`).join('');
+}
+
+function toggleCheck(i) {
+  CHECKLIST_ITEMS[i].done = !CHECKLIST_ITEMS[i].done;
+  renderChecklist();
+  const done = CHECKLIST_ITEMS.filter(c => c.done).length;
+  toast(`Checklist: ${done}/${CHECKLIST_ITEMS.length} complete`);
+}
+
+// ── ARC.AI CMD ──
+function runAiCmd() {
+  const f = document.getElementById('ai-console-field');
+  const cmd = f.value.trim();
+  if(!cmd) return;
+  const out = document.getElementById('ai-console-out');
+  out.textContent += `\n$ ${cmd}\n`;
+  setTimeout(() => {
+    let resp = '# Command received. Processing...';
+    if(cmd.includes('models search')) resp = '# Found 847 matching models. Top: whisper-large-v3, openai-whisper, wav2vec2';
+    if(cmd.includes('agent create')) resp = '# Agent template loaded: customer-support. Config saved to agents/customer-support.yaml';
+    if(cmd.includes('xr launch')) resp = '# XR sandbox launching... Space: constellation25-hub. Join URL: xr.constellation25.io/hub';
+    out.textContent += resp + '\n';
+    out.scrollTop = out.scrollHeight;
+  }, 500);
+  f.value = '';
+  out.scrollTop = out.scrollHeight;
+}
+
+function enterSpace() {
+  toast('🌌 Entering the Stargate — AiMetaverse loading...');
+}
+
+// ── BOOT ──
+init();
+</script>
+</body>
+</html>

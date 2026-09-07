@@ -1,0 +1,39 @@
+
+[0;36m[1m=== PHASE 0: ENVIRONMENT ===[0m
+[0;32m[C25][0m ollama found: /data/data/com.termux/files/usr/bin/ollama
+[0;32m[C25][0m node found: /data/data/com.termux/files/usr/bin/node
+[0;32m[C25][0m python3 found: /data/data/com.termux/files/usr/bin/python3
+[0;32m[C25][0m git found: /data/data/com.termux/files/usr/bin/git
+[0;32m[C25][0m npm found: /data/data/com.termux/files/usr/bin/npm
+[0;32m[C25][0m curl found: /data/data/com.termux/files/usr/bin/curl
+[0;32m[C25][0m C25_ROOT: /storage/emulated/0/c25_sovereign_product
+Disk: used=98G avail=10G use%=91%
+
+[0;36m[1m=== PHASE 1: DEDUP & CLEAN ===[0m
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/llamacpp/llama.cpp
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/llamacpp/llama.cpp
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/constellation25/constellation25
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/constellation25/constellation25
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/aikre8tive/aikre8tive
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/aikre8tive/aikre8tive
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/examples/examples
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/examples/examples
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/ci/ci
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/ci/ci
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/sycl/sycl
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/sycl/sycl
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/mtmd/mtmd
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/mtmd/mtmd
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/server/server
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/server/server
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/quantize/quantize
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/quantize/quantize
+[1;33m[WARN][0m Removing duplicate: /storage/emulated/0/c25_sovereign_product/src/apple/apple
+[0;32m[C25][0m Removed: /storage/emulated/0/c25_sovereign_product/src/apple/apple
+
+[0;36m[1m=== PHASE 2: SOURCE MANIFEST ===[0m
+[0;32m[C25][0m Your source files: 1143
+[0;32m[C25][0m Third-party files: 0
+[0;32m[C25][0m Manifest saved: /storage/emulated/0/c25_sovereign_product/build_out/c25_source_manifest.txt
+
+[0;36m[1m=== PHASE 3: CREDENTIAL SCAN ===[0m

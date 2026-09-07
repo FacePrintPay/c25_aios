@@ -1,0 +1,45 @@
+name: Build llama.cpp Vulkan
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'vulkan.Dockerfile'
+      - '.github/workflows/build-vulkan.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build with Docker
+        run: |
+          docker build -f vulkan.Dockerfile -t c25-llama-vulkan .
+          
+      - name: Extract binaries
+        run: |
+          docker create --name temp c25-llama-vulkan
+          docker cp temp:/usr/local/bin/llama-cli ./llama-cli-vulkan-android
+          docker cp temp:/usr/local/bin/llama-server ./llama-server-vulkan-android 2>/dev/null || true
+          docker rm temp
+          
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: llama-vulkan-binaries
+          path: |
+            llama-cli-vulkan-android
+            llama-server-vulkan-android
+            
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            llama-cli-vulkan-android
+            llama-server-vulkan-android
+          body: |
+            Pre-built llama.cpp Vulkan binaries for Android/Termux
+            Built from commit: ${{ github.sha }}

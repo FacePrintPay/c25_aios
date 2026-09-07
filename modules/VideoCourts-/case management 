@@ -1,0 +1,5 @@
+GET    /api/v1/cases/search             // Search by case/phone
+GET    /api/v1/cases/:id                // Get case details
+GET    /api/v1/cases/:id/parties        // Get case parties
+GET    /api/v1/cases/:id/documents      // Get case documents
+POST   /api/v1/cases/:id/join           // Join case session

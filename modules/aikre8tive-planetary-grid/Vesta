@@ -1,0 +1,13 @@
+Vesta
+
+File: agents/vesta/vesta.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Vesta Agent - Token Manager")
+
+@app.get("/")
+def root():
+    return {"agent": "Vesta", "mission": "Token Management", "status": "Online"}
+
+✅ Vesta mission: manage and secure API tokens, authentication credentials, and planetary session tokens

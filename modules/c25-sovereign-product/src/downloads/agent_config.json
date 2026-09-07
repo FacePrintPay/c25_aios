@@ -1,0 +1,8 @@
+{
+  "constellation": "Constellation25",
+  "agents": [
+    { "name": "SCAF", "status": "active", "sync": true },
+    { "name": "Ledger", "status": "active", "sync": true },
+    { "name": "Starg8", "status": "active", "sync": true }
+  ]
+}

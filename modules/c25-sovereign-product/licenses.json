@@ -1,0 +1,42 @@
+[
+  {
+    "license_id": "67182405-a55b-4feb-bfb8-cbf0146a2a58",
+    "tier": "ENTERPRISE_SOVEREIGN",
+    "client": "Client_A_1",
+    "secret_key": "1196347AD5BF6ACEA41893644DCF2DBA",
+    "issued": "2026-06-18T13:57:47.948690",
+    "status": "PENDING_DELIVERY"
+  },
+  {
+    "license_id": "35c8f65e-0053-4d6e-b6ba-154c77d4ef18",
+    "tier": "ENTERPRISE_SOVEREIGN",
+    "client": "Client_A_2",
+    "secret_key": "A565AA1ACF0C1E68A0804313D748EFC8",
+    "issued": "2026-06-18T13:57:47.948731",
+    "status": "PENDING_DELIVERY"
+  },
+  {
+    "license_id": "a37da2bf-c321-4482-942d-6bace3de6b32",
+    "tier": "FPP_API_WHITE_LABEL",
+    "client": "Client_B_1",
+    "secret_key": "A09C15859DF4ACD3944AC3D83F52394C",
+    "issued": "2026-06-18T13:57:47.948757",
+    "status": "PENDING_DELIVERY"
+  },
+  {
+    "license_id": "118a86cc-173a-43d6-88c1-0e8b4a20ac41",
+    "tier": "FPP_API_WHITE_LABEL",
+    "client": "Client_B_2",
+    "secret_key": "A34D37360DB0FA9267C6BBA1027185FB",
+    "issued": "2026-06-18T13:57:47.948779",
+    "status": "PENDING_DELIVERY"
+  },
+  {
+    "license_id": "5845fe08-8cc3-40e0-81d9-c4afb8c34359",
+    "tier": "FPP_API_WHITE_LABEL",
+    "client": "Client_B_3",
+    "secret_key": "42512C2B86AD163DFA7D4DB1F9A8CDA1",
+    "issued": "2026-06-18T13:57:47.948800",
+    "status": "PENDING_DELIVERY"
+  }
+]

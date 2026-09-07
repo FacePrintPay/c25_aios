@@ -1,0 +1,5 @@
+POST   /api/v1/auth/enroll              // Bio-enrollment gateway
+POST   /api/v1/auth/login               // User login
+POST   /api/v1/auth/idme-verify         // ID.me verification callback
+GET    /api/v1/auth/session             // Get current session
+POST   /api/v1/auth/logout              // Logout

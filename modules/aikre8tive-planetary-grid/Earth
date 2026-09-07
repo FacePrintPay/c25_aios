@@ -1,0 +1,13 @@
+Earth
+
+File: agents/earth/earth.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Earth Agent - Data Cleaner")
+
+@app.get("/")
+def root():
+    return {"agent": "Earth", "mission": "Data Cleaner", "status": "Online"}
+
+✅ Earth mission: clean and normalize raw data across planetary input streams

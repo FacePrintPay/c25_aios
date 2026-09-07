@@ -1,0 +1,13 @@
+Hygiea
+
+File: agents/hygiea/hygiea.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Hygiea Agent - Responsible AI & Bias Auditor")
+
+@app.get("/")
+def root():
+    return {"agent": "Hygiea", "mission": "Responsible AI & Bias Audit", "status": "Online"}
+
+✅ Hygiea mission: audit planetary models for fairness, transparency, and ethical compliance

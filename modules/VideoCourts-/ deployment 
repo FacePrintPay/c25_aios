@@ -1,0 +1,1 @@
+5: DeploymentPush your code to GitHub.SSH into your GoDaddy VPS: git clone <your-repo>Run npm install in the backend folder.Start the server: pm2 start server.js --name "videocourts-api"Configure Nginx to serve the pilot-index.html as the frontend and proxy /api/ requests to localhost:3000.7

@@ -1,0 +1,13 @@
+Ariel (final of the standard 25)
+
+File: agents/ariel/ariel.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Ariel Agent - Reporting & Visualization")
+
+@app.get("/")
+def root():
+    return {"agent": "Ariel", "mission": "Reporting and Visualization", "status": "Online"}
+
+✅ Ariel mission: generate mission reports and visual dashboards for planetary oversight

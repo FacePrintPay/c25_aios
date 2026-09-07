@@ -1,0 +1,13 @@
+Ceres
+
+File: agents/ceres/ceres.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Ceres Agent - Performance Metrics Collector")
+
+@app.get("/")
+def root():
+    return {"agent": "Ceres", "mission": "Performance Metrics Collector", "status": "Online"}
+
+✅ Ceres mission: collect, monitor, and report system performance metrics for the entire planetary grid

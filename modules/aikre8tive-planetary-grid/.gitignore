@@ -1,0 +1,32 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+nano .gitignore
+# VSCode / JetBrains
+.vscode/
+.idea/
+
+# PM2 logs
+logs/
+*.log
+*.pm2
+
+# shell scripts temporary outputs
+*.sh~
+
+# redis accidental files
+redis
+redisy
+
+# node junk
+node_modules/
+npm-debug.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# mission typo
+mission_bus.pyimport

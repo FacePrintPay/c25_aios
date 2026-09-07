@@ -1,0 +1,59 @@
+
+# --- Node ---
+# --- OS ---
+# --- Python ---
+# --- Rust / Cargo ---
+# --- Termux / local junk ---
+# ---- Caches that should NEVER be committed ----
+# ---- Nested repo folder (don’t track as embedded repo) ----
+# ---- Termux/OS junk ----
+# Caches
+# Node
+# Python
+# Rust (DO NOT COMMIT REGISTRY)
+# Termux / OS
+*.db
+*.key
+*.log
+*.partial
+*.pem
+*.pid
+*.pyc
+*.secret
+*.sqlite
+.DS_Store
+.cache/
+.cargo/
+.cargo/git/
+.cargo/registry/
+.config/
+.env
+.env*
+.env.tokens
+.gnupg/
+.node-gyp/
+.npm/
+.pids/
+.pnpm-store/
+.rustup/
+.ssh/
+.termux/
+.tmp/
+.venv/
+.vercel
+.yarn/
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+AGENTIK/
+Thumbs.db
+__pycache__/
+node_modules/
+npm-debug.log*
+outputs/
+pnpm-lock.yaml
+target/
+tasks/
+venv/
+yarn-debug.log*
+yarn-error.log*

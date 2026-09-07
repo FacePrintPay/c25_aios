@@ -1,0 +1,13 @@
+Mars
+
+File: agents/mars/mars.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Mars Agent - Vectorizer")
+
+@app.get("/")
+def root():
+    return {"agent": "Mars", "mission": "Text Vectorizer", "status": "Online"}
+
+✅ Mars mission: transform planetary text data into embeddings and vector representations for retrieval

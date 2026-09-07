@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C25 Ultimate 2026 - Build Updates</title>
+    <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+    <description>Automated build updates from C25 Planetary Agents</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2026 18:10:21 -0400</lastBuildDate>
+    <atom:link href="https://c25.kre8tivekonceptz.com/builds.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Build: echo "  ranger ~/c25_ranger_unified"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  ranger ~/c25_ranger_unified"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>446cc00d1bbffd54d1a72c257ba955be</guid>
+    </item>
+    <item>
+      <title>Build: echo "  python3 -m http.server 8080 -d ~/c25_deterministic_html"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  python3 -m http.server 8080 -d ~/c25_deterministic_html"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>0a0ae98ff58c1489ac359695449e4b7b</guid>
+    </item>
+    <item>
+      <title>Build: echo "  cat ~/.c25_rss/c25-builds.xml"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  cat ~/.c25_rss/c25-builds.xml"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>a4883526cd5cd118dd11d6efe5a564b3</guid>
+    </item>
+    <item>
+      <title>Build: echo "  ~/c25_viral_automation.sh"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  ~/c25_viral_automation.sh"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>3453d1be6bc1ac0ac66e616c1256c3d4</guid>
+    </item>
+    <item>
+      <title>Build: echo "  4. Run: ~/c25_viral_automation.sh"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  4. Run: ~/c25_viral_automation.sh"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>d9b6d8bafc507ab7d12916ef160558ba</guid>
+    </item>
+    <item>
+      <title>Build: echo "  2. Edit: ~/.c25_cloud/alibaba/config.env"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  2. Edit: ~/.c25_cloud/alibaba/config.env"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>2a8bf3ea1da102da73d9c4763d82893b</guid>
+    </item>
+    <item>
+      <title>Build: echo "  5. 📡 Generate automated RSS feed for build updates"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  5. 📡 Generate automated RSS feed for build updates"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>09150ff8a2d7cb533ec35538a97db240</guid>
+    </item>
+    <item>
+      <title>Build: echo "  2. 🔧 Fix & deploy ALL GitHub repos + monorepos + Vercel"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  2. 🔧 Fix & deploy ALL GitHub repos + monorepos + Vercel"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>657b473f474c30732bb217996ae22626</guid>
+    </item>
+    <item>
+      <title>Build: echo "  1. 🔍 Parse Termux bash history for build commands"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  1. 🔍 Parse Termux bash history for build commands"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>392973ff1cf3886b7529e6cd779d6a0c</guid>
+    </item>
+    <item>
+      <title>Build: echo "  ~/c25_viral_automation.sh"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  ~/c25_viral_automation.sh"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>3453d1be6bc1ac0ac66e616c1256c3d4</guid>
+    </item>
+    <item>
+      <title>Build: chmod +x "$HOME/c25_viral_automation.sh"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: chmod +x "$HOME/c25_viral_automation.sh"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>cd02922b68f9e15e5071c758f5ae0775</guid>
+    </item>
+    <item>
+      <title>Build: echo "  4. Check report: cat ~/.c25_deploy_report.md"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  4. Check report: cat ~/.c25_deploy_report.md"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>0857d4b3ce43cb127f6d851bc7799074</guid>
+    </item>
+    <item>
+      <title>Build: echo "  3. Open Ranger: ranger ~/c25_ranger_unified"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  3. Open Ranger: ranger ~/c25_ranger_unified"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>5a157c6ae33ed680a4d5b936027de003</guid>
+    </item>
+    <item>
+      <title>Build: echo "  2. Host HTML: python3 -m http.server 8080 -d ~/c25_deterministic_html"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  2. Host HTML: python3 -m http.server 8080 -d ~/c25_deterministic_html"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:22 -0400</pubDate>
+      <guid>e5f64a071c6ae231380eb8ae93c874e7</guid>
+    </item>
+    <item>
+      <title>Build: echo "  1. Share RSS: ~/.c25_rss/c25-builds.xml"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  1. Share RSS: ~/.c25_rss/c25-builds.xml"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>06fe32867f1274b42e2902937e17a06b</guid>
+    </item>
+    <item>
+      <title>Build: echo "  • RSS feed: ~/.c25_rss/c25-builds.xml"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  • RSS feed: ~/.c25_rss/c25-builds.xml"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>452a3eea36c523f548b1845ae5bdbf35</guid>
+    </item>
+    <item>
+      <title>Build: echo "  • HTML build: $HOME/c25_deterministic_html/index.html"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  • HTML build: $HOME/c25_deterministic_html/index.html"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>603a819eda8e0ddcfe1c23652b5962fb</guid>
+    </item>
+    <item>
+      <title>Build: echo "  • Ranger sync: $HOME/c25_ranger_unified"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  • Ranger sync: $HOME/c25_ranger_unified"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>e79517c4dae4edca13a9020027a0b145</guid>
+    </item>
+    <item>
+      <title>Build: echo "  • Repos fixed: $(grep -c '✅' ~/.c25_deploy_report.md 2>/dev/null || </title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  • Repos fixed: $(grep -c '✅' ~/.c25_deploy_report.md 2>/dev/null || echo 0)"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>60b556f2abfb25d2dd5b35d18435a77a</guid>
+    </item>
+    <item>
+      <title>Build: echo "  • Parsed commands: $(wc -l < ~/.c25_parsed_commands.jsonl)"</title>
+      <link>https://c25.kre8tivekonceptz.com/builds.xml</link>
+      <description>Command executed: echo "  • Parsed commands: $(wc -l < ~/.c25_parsed_commands.jsonl)"</description>
+      <pubDate>Sat, 25 Apr 2026 18:10:23 -0400</pubDate>
+      <guid>815b9602874c0fa1a004ccd0bccfb92f</guid>
+    </item>
+  </channel>
+</rss>

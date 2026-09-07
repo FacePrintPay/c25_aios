@@ -1,0 +1,5 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║  MEMORIA™ — Sovereign Terminal Memory Engine                           ║
+║  Created by: CyGeL White & Kre8tive Konceptz LLC                       ║
+║  Powered by: Claude (Anthropic)                                        ║
+╚══════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,7 @@
+GET    /api/v1/evidence/review          // Evidence needing review
+POST   /api/v1/evidence/upload          // Upload evidence
+GET    /api/v1/evidence/:id             // Get evidence details
+POST   /api/v1/evidence/:id/approve     // Approve evidence
+POST   /api/v1/evidence/:id/reject      // Reject evidence
+GET    /api/v1/forensics/bundles        // Get forensic bundles
+GET    /api/v1/forensics/audit          // Audit trail

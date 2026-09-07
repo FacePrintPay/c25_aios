@@ -1,0 +1,3 @@
+.c25_diag/test1.sh
+.c25_diag/test2.json
+.c25_diag/test3.yaml

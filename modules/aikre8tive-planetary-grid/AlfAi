@@ -1,0 +1,17 @@
+Alfai
+
+File: agents/alfai/alfai.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Alfai Agent - Planetary Legal Counsel")
+
+@app.get("/")
+def root():
+    return {
+        "agent": "Alfai",
+        "mission": "Planetary Legal Counsel and Compliance Advisor",
+        "status": "Online"
+    }
+
+✅ Alfai mission: oversee legal frameworks, contracts, and compliance strategy for planetary operations

@@ -1,0 +1,11 @@
+Example Public Bug Bounty
+Announced: Today
+
+Some Company announced A new public bug bounty program for their web application.
+
+Target: https://target.example.com
+Scope: Web application, specifically the user authentication and account recovery flows.
+Out of Scope: DoS attacks, social engineering, physical attacks.
+Reward: Up to $5000 for critical vulnerabilities.
+Special Instructions: Testers must use the Cloudflare Zero Trust WARP client (Team: examplecompany-bugcrowd) for all testing traffic. Submissions without clear WARP usage will be rejected.
+Please review the detailed brief for full scope and rules.

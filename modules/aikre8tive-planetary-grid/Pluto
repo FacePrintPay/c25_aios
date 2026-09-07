@@ -1,0 +1,13 @@
+Pluto
+
+File: agents/pluto/pluto.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Pluto Agent - Retry Queue Manager")
+
+@app.get("/")
+def root():
+    return {"agent": "Pluto", "mission": "Retry Queue Manager", "status": "Online"}
+
+✅ Pluto mission: manage retry logic, failed jobs, and recovery queues across the planetary swarm

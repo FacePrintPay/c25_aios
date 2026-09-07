@@ -1,0 +1,65 @@
+// frontend/assets/js/termux-bridge.js
+class TermuxBridge {
+  constructor() {
+    this.apiUrl = 'http://localhost:8080/api/v1'; // Your backend
+    this.deviceId = this.getDeviceId();
+  }
+
+  // Request biometric enrollment
+  async enrollBiometrics() {
+    try {
+      const response = await fetch(`${this.apiUrl}/biometric/enroll`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Device-ID': this.deviceId
+        }
+      });
+      return await response.json();
+    } catch (error) {
+      console.error('Biometric enrollment failed:', error);
+      throw error;
+    }
+  }
+
+  // Verify identity via Termux
+  async verifyIdentity() {
+    try {
+      const response = await fetch(`${this.apiUrl}/biometric/verify`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Device-ID': this.deviceId
+        }
+      });
+      return await response.json();
+    } catch (error) {
+      console.error('Identity verification failed:', error);
+      throw error;
+    }
+  }
+
+  // Capture face via Termux camera
+  async captureFace() {
+    try {
+      const response = await fetch(`${this.apiUrl}/biometric/face`, {
+        method: 'POST',
+        headers: {
+          'X-Device-ID': this.deviceId
+        }
+      });
+      return await response.json();
+    } catch (error) {
+      console.error('Face capture failed:', error);
+      throw error;
+    }
+  }
+
+  getDeviceId() {
+    return localStorage.getItem('termux_device_id') || 
+           'termux_' + Math.random().toString(36).substr(2, 9);
+  }
+}
+
+// Initialize
+window.termuxBridge = new TermuxBridge();

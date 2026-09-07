@@ -1,0 +1,1722 @@
+[
+  {
+    "name": "FacePrintPay",
+    "files": 130,
+    "path": "modules/FacePrintPay"
+  },
+  {
+    "name": "PaThosAi",
+    "files": 35,
+    "path": "modules/PaThosAi"
+  },
+  {
+    "name": "Orange",
+    "files": 19,
+    "path": "modules/Orange"
+  },
+  {
+    "name": "AiKre8tive_Sovereign_Genesis",
+    "files": 24,
+    "path": "modules/AiKre8tive_Sovereign_Genesis"
+  },
+  {
+    "name": "recon-agent",
+    "files": 1,
+    "path": "modules/recon-agent"
+  },
+  {
+    "name": "videocourts-main",
+    "files": 1,
+    "path": "modules/videocourts-main"
+  },
+  {
+    "name": "clean_build_fresh",
+    "files": 1,
+    "path": "modules/clean_build_fresh"
+  },
+  {
+    "name": "ai-kre8tive-stargate-tzs9",
+    "files": 1,
+    "path": "modules/ai-kre8tive-stargate-tzs9"
+  },
+  {
+    "name": "ai-kre8tive-stargate-qp9p",
+    "files": 1,
+    "path": "modules/ai-kre8tive-stargate-qp9p"
+  },
+  {
+    "name": "ai-kre8tive-stargate-wgpk",
+    "files": 1,
+    "path": "modules/ai-kre8tive-stargate-wgpk"
+  },
+  {
+    "name": "ai-kre8tive-stargate",
+    "files": 1,
+    "path": "modules/ai-kre8tive-stargate"
+  },
+  {
+    "name": "c25-deploy-v3-0",
+    "files": 1,
+    "path": "modules/c25-deploy-v3-0"
+  },
+  {
+    "name": "pathos-campaign",
+    "files": 1,
+    "path": "modules/pathos-campaign"
+  },
+  {
+    "name": "frontend",
+    "files": 1,
+    "path": "modules/frontend"
+  },
+  {
+    "name": "neptune-agent",
+    "files": 1,
+    "path": "modules/neptune-agent"
+  },
+  {
+    "name": "app-directory",
+    "files": 170,
+    "path": "modules/app-directory"
+  },
+  {
+    "name": "constellation25",
+    "files": 58742,
+    "path": "modules/constellation25"
+  },
+  {
+    "name": "c25-sovereign-product",
+    "files": 4880,
+    "path": "modules/c25-sovereign-product"
+  },
+  {
+    "name": "FacePrintPay-Consolidated",
+    "files": 6,
+    "path": "modules/FacePrintPay-Consolidated"
+  },
+  {
+    "name": "stargate-grpc-nosqlbench",
+    "files": 3198,
+    "path": "modules/stargate-grpc-nosqlbench"
+  },
+  {
+    "name": "stargate-dtest",
+    "files": 289,
+    "path": "modules/stargate-dtest"
+  },
+  {
+    "name": "linker",
+    "files": 80,
+    "path": "modules/linker"
+  },
+  {
+    "name": "VideoCourts-",
+    "files": 21,
+    "path": "modules/VideoCourts-"
+  },
+  {
+    "name": "stargate",
+    "files": 1991,
+    "path": "modules/stargate"
+  },
+  {
+    "name": "public",
+    "files": 0,
+    "path": "modules/public"
+  },
+  {
+    "name": "src",
+    "files": 0,
+    "path": "modules/src"
+  },
+  {
+    "name": "docs",
+    "files": 0,
+    "path": "modules/docs"
+  },
+  {
+    "name": "agents",
+    "files": 0,
+    "path": "modules/agents"
+  },
+  {
+    "name": "versed-ai",
+    "files": 4,
+    "path": "modules/versed-ai"
+  },
+  {
+    "name": "master",
+    "files": 8,
+    "path": "modules/master"
+  },
+  {
+    "name": "tests",
+    "files": 0,
+    "path": "modules/tests"
+  },
+  {
+    "name": "c25-agent-api",
+    "files": 40,
+    "path": "modules/c25-agent-api"
+  },
+  {
+    "name": "constellation25-adserver",
+    "files": 7,
+    "path": "modules/constellation25-adserver"
+  },
+  {
+    "name": "constellation25-recon",
+    "files": 12,
+    "path": "modules/constellation25-recon"
+  },
+  {
+    "name": "linked2-platform-salvage-1779151043",
+    "files": 177,
+    "path": "modules/linked2-platform-salvage-1779151043"
+  },
+  {
+    "name": "linked2-platform",
+    "files": 196,
+    "path": "modules/linked2-platform"
+  },
+  {
+    "name": "videocourts",
+    "files": 3,
+    "path": "modules/videocourts"
+  },
+  {
+    "name": "ai-web-extensions",
+    "files": 5088,
+    "path": "modules/ai-web-extensions"
+  },
+  {
+    "name": "vite-react",
+    "files": 16,
+    "path": "modules/vite-react"
+  },
+  {
+    "name": "kre8tive-konceptz",
+    "files": 10,
+    "path": "modules/kre8tive-konceptz"
+  },
+  {
+    "name": "zeroeye",
+    "files": 179,
+    "path": "modules/zeroeye"
+  },
+  {
+    "name": "nextjs-boilerplate",
+    "files": 18,
+    "path": "modules/nextjs-boilerplate"
+  },
+  {
+    "name": "npm-documentation",
+    "files": 813,
+    "path": "modules/npm-documentation"
+  },
+  {
+    "name": "c25-agent-core",
+    "files": 27,
+    "path": "modules/c25-agent-core"
+  },
+  {
+    "name": "yesquid-pro",
+    "files": 21,
+    "path": "modules/yesquid-pro"
+  },
+  {
+    "name": "coral-server",
+    "files": 80,
+    "path": "modules/coral-server"
+  },
+  {
+    "name": "ai-kre8tive-sovereign-genesis",
+    "files": 28,
+    "path": "modules/ai-kre8tive-sovereign-genesis"
+  },
+  {
+    "name": "aikre8tive-sovereign-genesis",
+    "files": 27,
+    "path": "modules/aikre8tive-sovereign-genesis"
+  },
+  {
+    "name": "AiKre8tive-Stargate",
+    "files": 183,
+    "path": "modules/AiKre8tive-Stargate"
+  },
+  {
+    "name": "kreativekoncepts",
+    "files": 2278,
+    "path": "modules/kreativekoncepts"
+  },
+  {
+    "name": "json-formatter",
+    "files": 29,
+    "path": "modules/json-formatter"
+  },
+  {
+    "name": ".c25",
+    "files": 45,
+    "path": "modules/.c25"
+  },
+  {
+    "name": "claude-artifacts-downloader",
+    "files": 11,
+    "path": "modules/claude-artifacts-downloader"
+  },
+  {
+    "name": "scripts",
+    "files": 60,
+    "path": "modules/scripts"
+  },
+  {
+    "name": "examples",
+    "files": 204,
+    "path": "modules/examples"
+  },
+  {
+    "name": "sovereign",
+    "files": 15,
+    "path": "modules/sovereign"
+  },
+  {
+    "name": "obsidian-vault-bare",
+    "files": 23,
+    "path": "modules/obsidian-vault-bare"
+  },
+  {
+    "name": ".oh-my-zsh",
+    "files": 0,
+    "path": "modules/.oh-my-zsh"
+  },
+  {
+    "name": ".mybuyo",
+    "files": 1,
+    "path": "modules/.mybuyo"
+  },
+  {
+    "name": ".github",
+    "files": 2,
+    "path": "modules/.github"
+  },
+  {
+    "name": ".devcontainer",
+    "files": 2,
+    "path": "modules/.devcontainer"
+  },
+  {
+    "name": ".cloudflared",
+    "files": 1,
+    "path": "modules/.cloudflared"
+  },
+  {
+    "name": ".c25_upgrade",
+    "files": 1,
+    "path": "modules/.c25_upgrade"
+  },
+  {
+    "name": ".c25_rss",
+    "files": 2,
+    "path": "modules/.c25_rss"
+  },
+  {
+    "name": ".c25_migrations",
+    "files": 4,
+    "path": "modules/.c25_migrations"
+  },
+  {
+    "name": ".c25_mesh",
+    "files": 2,
+    "path": "modules/.c25_mesh"
+  },
+  {
+    "name": ".c25_mcp",
+    "files": 34,
+    "path": "modules/.c25_mcp"
+  },
+  {
+    "name": ".c25_integrity",
+    "files": 2,
+    "path": "modules/.c25_integrity"
+  },
+  {
+    "name": ".c25_emergency_quarantine",
+    "files": 29,
+    "path": "modules/.c25_emergency_quarantine"
+  },
+  {
+    "name": ".c25_diag",
+    "files": 10,
+    "path": "modules/.c25_diag"
+  },
+  {
+    "name": ".c25_deps",
+    "files": 1,
+    "path": "modules/.c25_deps"
+  },
+  {
+    "name": ".c25_deploy_fix",
+    "files": 1,
+    "path": "modules/.c25_deploy_fix"
+  },
+  {
+    "name": ".c25_debug",
+    "files": 1,
+    "path": "modules/.c25_debug"
+  },
+  {
+    "name": ".c25_db",
+    "files": 2,
+    "path": "modules/.c25_db"
+  },
+  {
+    "name": ".c25_connector",
+    "files": 2,
+    "path": "modules/.c25_connector"
+  },
+  {
+    "name": ".c25_bridge",
+    "files": 3,
+    "path": "modules/.c25_bridge"
+  },
+  {
+    "name": ".c25_backend",
+    "files": 2,
+    "path": "modules/.c25_backend"
+  },
+  {
+    "name": ".agent-engine",
+    "files": 1,
+    "path": "modules/.agent-engine"
+  },
+  {
+    "name": "downloads",
+    "files": 7,
+    "path": "modules/downloads"
+  },
+  {
+    "name": "server",
+    "files": 531,
+    "path": "modules/server"
+  },
+  {
+    "name": "quantize",
+    "files": 5,
+    "path": "modules/quantize"
+  },
+  {
+    "name": "mtmd",
+    "files": 59,
+    "path": "modules/mtmd"
+  },
+  {
+    "name": "gguf-split",
+    "files": 5,
+    "path": "modules/gguf-split"
+  },
+  {
+    "name": "apple",
+    "files": 6,
+    "path": "modules/apple"
+  },
+  {
+    "name": "sycl",
+    "files": 10,
+    "path": "modules/sycl"
+  },
+  {
+    "name": "ci",
+    "files": 4,
+    "path": "modules/ci"
+  },
+  {
+    "name": "llama.cpp",
+    "files": 0,
+    "path": "modules/llama.cpp"
+  },
+  {
+    "name": "build",
+    "files": 9,
+    "path": "modules/build"
+  },
+  {
+    "name": "c25-graph-viewer",
+    "files": 3,
+    "path": "modules/c25-graph-viewer"
+  },
+  {
+    "name": "constellation25-mono",
+    "files": 0,
+    "path": "modules/constellation25-mono"
+  },
+  {
+    "name": "camel-search-maths",
+    "files": 10,
+    "path": "modules/camel-search-maths"
+  },
+  {
+    "name": "starter-workflows",
+    "files": 506,
+    "path": "modules/starter-workflows"
+  },
+  {
+    "name": "antora-ui-stargate",
+    "files": 123,
+    "path": "modules/antora-ui-stargate"
+  },
+  {
+    "name": "c25-agents",
+    "files": 10,
+    "path": "modules/c25-agents"
+  },
+  {
+    "name": "mybuyo-restore",
+    "files": 143,
+    "path": "modules/mybuyo-restore"
+  },
+  {
+    "name": "constellation-25",
+    "files": 18,
+    "path": "modules/constellation-25"
+  },
+  {
+    "name": "aikre8tive",
+    "files": 98,
+    "path": "modules/aikre8tive"
+  },
+  {
+    "name": "bolt.new",
+    "files": 142,
+    "path": "modules/bolt.new"
+  },
+  {
+    "name": "c25-yesquid-task-worker",
+    "files": 11,
+    "path": "modules/c25-yesquid-task-worker"
+  },
+  {
+    "name": "VeRseD_Ai",
+    "files": 659,
+    "path": "modules/VeRseD_Ai"
+  },
+  {
+    "name": "empathic-voice-interface-starter",
+    "files": 39,
+    "path": "modules/empathic-voice-interface-starter"
+  },
+  {
+    "name": "AiMeta",
+    "files": 33,
+    "path": "modules/AiMeta"
+  },
+  {
+    "name": "sovereign-ad-serve",
+    "files": 9,
+    "path": "modules/sovereign-ad-serve"
+  },
+  {
+    "name": "nextjs-enterprise-boilerplate",
+    "files": 43,
+    "path": "modules/nextjs-enterprise-boilerplate"
+  },
+  {
+    "name": "stargate-grpc-node-client",
+    "files": 72,
+    "path": "modules/stargate-grpc-node-client"
+  },
+  {
+    "name": "-",
+    "files": 0,
+    "path": "modules/-"
+  },
+  {
+    "name": "https-github-com-faceprintpay-portaled-",
+    "files": 19,
+    "path": "modules/https-github-com-faceprintpay-portaled-"
+  },
+  {
+    "name": "https-github.com-FacePrintPay-PoRTaLed-",
+    "files": 18,
+    "path": "modules/https-github.com-FacePrintPay-PoRTaLed-"
+  },
+  {
+    "name": "stargate-grpc-go-client",
+    "files": 22,
+    "path": "modules/stargate-grpc-go-client"
+  },
+  {
+    "name": "docs-content",
+    "files": 4648,
+    "path": "modules/docs-content"
+  },
+  {
+    "name": "vscode-project-manager",
+    "files": 83,
+    "path": "modules/vscode-project-manager"
+  },
+  {
+    "name": "RepoDepot-Stargate",
+    "files": 45,
+    "path": "modules/RepoDepot-Stargate"
+  },
+  {
+    "name": "agentik",
+    "files": 78,
+    "path": "modules/agentik"
+  },
+  {
+    "name": "dynamoDB-adapter",
+    "files": 80,
+    "path": "modules/dynamoDB-adapter"
+  },
+  {
+    "name": "data-api",
+    "files": 1208,
+    "path": "modules/data-api"
+  },
+  {
+    "name": "django-dynamic-api",
+    "files": 19,
+    "path": "modules/django-dynamic-api"
+  },
+  {
+    "name": "constellation25-mvp",
+    "files": 9,
+    "path": "modules/constellation25-mvp"
+  },
+  {
+    "name": "codespaces-react",
+    "files": 30,
+    "path": "modules/codespaces-react"
+  },
+  {
+    "name": "c25_static_master",
+    "files": 12,
+    "path": "modules/c25_static_master"
+  },
+  {
+    "name": "c25-whisper-holiday-bash",
+    "files": 8,
+    "path": "modules/c25-whisper-holiday-bash"
+  },
+  {
+    "name": "c25-whisper-auto-loop",
+    "files": 8,
+    "path": "modules/c25-whisper-auto-loop"
+  },
+  {
+    "name": "c25-vercel-secrets-sync",
+    "files": 8,
+    "path": "modules/c25-vercel-secrets-sync"
+  },
+  {
+    "name": "c25-vercel-deploy",
+    "files": 13,
+    "path": "modules/c25-vercel-deploy"
+  },
+  {
+    "name": "c25-totalrecall-audit",
+    "files": 8,
+    "path": "modules/c25-totalrecall-audit"
+  },
+  {
+    "name": "c25-throne",
+    "files": 8,
+    "path": "modules/c25-throne"
+  },
+  {
+    "name": "c25-test-project",
+    "files": 8,
+    "path": "modules/c25-test-project"
+  },
+  {
+    "name": "c25-test-agents",
+    "files": 8,
+    "path": "modules/c25-test-agents"
+  },
+  {
+    "name": "c25-tailwind-view",
+    "files": 8,
+    "path": "modules/c25-tailwind-view"
+  },
+  {
+    "name": "c25-sync-to-obsidian",
+    "files": 8,
+    "path": "modules/c25-sync-to-obsidian"
+  },
+  {
+    "name": "c25-sync-obsidian-cloud",
+    "files": 8,
+    "path": "modules/c25-sync-obsidian-cloud"
+  },
+  {
+    "name": "c25-start-stack",
+    "files": 8,
+    "path": "modules/c25-start-stack"
+  },
+  {
+    "name": "c25-sovereigngtp",
+    "files": 8,
+    "path": "modules/c25-sovereigngtp"
+  },
+  {
+    "name": "c25-sovereign-unified-launch",
+    "files": 8,
+    "path": "modules/c25-sovereign-unified-launch"
+  },
+  {
+    "name": "c25-sovereign-push-everywhere",
+    "files": 8,
+    "path": "modules/c25-sovereign-push-everywhere"
+  },
+  {
+    "name": "c25-sovereign-launch",
+    "files": 8,
+    "path": "modules/c25-sovereign-launch"
+  },
+  {
+    "name": "c25-sovereign-deployer",
+    "files": 8,
+    "path": "modules/c25-sovereign-deployer"
+  },
+  {
+    "name": "c25-sovereign-auto-start",
+    "files": 8,
+    "path": "modules/c25-sovereign-auto-start"
+  },
+  {
+    "name": "c25-setup",
+    "files": 8,
+    "path": "modules/c25-setup"
+  },
+  {
+    "name": "c25-setup-vscode",
+    "files": 8,
+    "path": "modules/c25-setup-vscode"
+  },
+  {
+    "name": "c25-setup-termux-obsidian-sync",
+    "files": 8,
+    "path": "modules/c25-setup-termux-obsidian-sync"
+  },
+  {
+    "name": "c25-setup-ssh",
+    "files": 8,
+    "path": "modules/c25-setup-ssh"
+  },
+  {
+    "name": "c25-setup-single-repo",
+    "files": 8,
+    "path": "modules/c25-setup-single-repo"
+  },
+  {
+    "name": "c25-setup-shizuku",
+    "files": 8,
+    "path": "modules/c25-setup-shizuku"
+  },
+  {
+    "name": "c25-setup-pingpang-demo",
+    "files": 8,
+    "path": "modules/c25-setup-pingpang-demo"
+  },
+  {
+    "name": "c25-setup-multi-repo",
+    "files": 8,
+    "path": "modules/c25-setup-multi-repo"
+  },
+  {
+    "name": "c25-send-echo-trace",
+    "files": 8,
+    "path": "modules/c25-send-echo-trace"
+  },
+  {
+    "name": "c25-secure-github-auth",
+    "files": 8,
+    "path": "modules/c25-secure-github-auth"
+  },
+  {
+    "name": "c25-run",
+    "files": 8,
+    "path": "modules/c25-run"
+  },
+  {
+    "name": "c25-run-stack",
+    "files": 8,
+    "path": "modules/c25-run-stack"
+  },
+  {
+    "name": "c25-run-monorepo",
+    "files": 8,
+    "path": "modules/c25-run-monorepo"
+  },
+  {
+    "name": "c25-run-all-home",
+    "files": 8,
+    "path": "modules/c25-run-all-home"
+  },
+  {
+    "name": "c25-run-all-tasks",
+    "files": 8,
+    "path": "modules/c25-run-all-tasks"
+  },
+  {
+    "name": "c25-run-all-apps",
+    "files": 8,
+    "path": "modules/c25-run-all-apps"
+  },
+  {
+    "name": "c25-pypi",
+    "files": 12,
+    "path": "modules/c25-pypi"
+  },
+  {
+    "name": "c25-planetary-crawl-inject-loop",
+    "files": 12,
+    "path": "modules/c25-planetary-crawl-inject-loop"
+  },
+  {
+    "name": "c25-ping-agents",
+    "files": 12,
+    "path": "modules/c25-ping-agents"
+  },
+  {
+    "name": "c25-parasol-termux",
+    "files": 12,
+    "path": "modules/c25-parasol-termux"
+  },
+  {
+    "name": "c25-meaningful-inventory",
+    "files": 12,
+    "path": "modules/c25-meaningful-inventory"
+  },
+  {
+    "name": "c25-meaningful-inventory-fixed",
+    "files": 12,
+    "path": "modules/c25-meaningful-inventory-fixed"
+  },
+  {
+    "name": "c25-launch-tunnel",
+    "files": 12,
+    "path": "modules/c25-launch-tunnel"
+  },
+  {
+    "name": "c25-launch-agents",
+    "files": 12,
+    "path": "modules/c25-launch-agents"
+  },
+  {
+    "name": "c25-kre8tive-portfolio-build",
+    "files": 12,
+    "path": "modules/c25-kre8tive-portfolio-build"
+  },
+  {
+    "name": "c25-integrity-run",
+    "files": 13,
+    "path": "modules/c25-integrity-run"
+  },
+  {
+    "name": "c25-install-qrencode",
+    "files": 12,
+    "path": "modules/c25-install-qrencode"
+  },
+  {
+    "name": "c25-inject-versedna",
+    "files": 12,
+    "path": "modules/c25-inject-versedna"
+  },
+  {
+    "name": "c25-generate-qr-affiliate",
+    "files": 12,
+    "path": "modules/c25-generate-qr-affiliate"
+  },
+  {
+    "name": "c25-fp-clean-forks",
+    "files": 12,
+    "path": "modules/c25-fp-clean-forks"
+  },
+  {
+    "name": "c25-find-and-run-everything",
+    "files": 12,
+    "path": "modules/c25-find-and-run-everything"
+  },
+  {
+    "name": "c25-do",
+    "files": 12,
+    "path": "modules/c25-do"
+  },
+  {
+    "name": "c25-direct-agent-activation",
+    "files": 12,
+    "path": "modules/c25-direct-agent-activation"
+  },
+  {
+    "name": "c25-deploy",
+    "files": 13,
+    "path": "modules/c25-deploy"
+  },
+  {
+    "name": "c25-deploy-to-github",
+    "files": 12,
+    "path": "modules/c25-deploy-to-github"
+  },
+  {
+    "name": "c25-deploy-linked2",
+    "files": 12,
+    "path": "modules/c25-deploy-linked2"
+  },
+  {
+    "name": "c25-create-home-symlinks",
+    "files": 12,
+    "path": "modules/c25-create-home-symlinks"
+  },
+  {
+    "name": "c25-constellation25",
+    "files": 12,
+    "path": "modules/c25-constellation25"
+  },
+  {
+    "name": "c25-constellation-25",
+    "files": 12,
+    "path": "modules/c25-constellation-25"
+  },
+  {
+    "name": "c25-check-todo",
+    "files": 12,
+    "path": "modules/c25-check-todo"
+  },
+  {
+    "name": "c25-check-status",
+    "files": 12,
+    "path": "modules/c25-check-status"
+  },
+  {
+    "name": "c25-c25-ranger",
+    "files": 12,
+    "path": "modules/c25-c25-ranger"
+  },
+  {
+    "name": "c25-buzzblast",
+    "files": 12,
+    "path": "modules/c25-buzzblast"
+  },
+  {
+    "name": "c25-build",
+    "files": 13,
+    "path": "modules/c25-build"
+  },
+  {
+    "name": "c25-build-precedence-dossier",
+    "files": 12,
+    "path": "modules/c25-build-precedence-dossier"
+  },
+  {
+    "name": "c25-build-memoria",
+    "files": 12,
+    "path": "modules/c25-build-memoria"
+  },
+  {
+    "name": "c25-build-fixer-agent",
+    "files": 12,
+    "path": "modules/c25-build-fixer-agent"
+  },
+  {
+    "name": "c25-build-broccoli",
+    "files": 12,
+    "path": "modules/c25-build-broccoli"
+  },
+  {
+    "name": "c25-build-bash",
+    "files": 14,
+    "path": "modules/c25-build-bash"
+  },
+  {
+    "name": "c25-bio-push",
+    "files": 12,
+    "path": "modules/c25-bio-push"
+  },
+  {
+    "name": "c25-arcai-copy-4",
+    "files": 12,
+    "path": "modules/c25-arcai-copy-4"
+  },
+  {
+    "name": "c25-arcai-copy-3",
+    "files": 13,
+    "path": "modules/c25-arcai-copy-3"
+  },
+  {
+    "name": "c25-agent-deploy",
+    "files": 31,
+    "path": "modules/c25-agent-deploy"
+  },
+  {
+    "name": "c25-agent-dashboard",
+    "files": 12,
+    "path": "modules/c25-agent-dashboard"
+  },
+  {
+    "name": "c25-agent-automation",
+    "files": 12,
+    "path": "modules/c25-agent-automation"
+  },
+  {
+    "name": "c25-1basher",
+    "files": 14,
+    "path": "modules/c25-1basher"
+  },
+  {
+    "name": "Termux-Packages",
+    "files": 21,
+    "path": "modules/Termux-Packages"
+  },
+  {
+    "name": "THAT",
+    "files": 33,
+    "path": "modules/THAT"
+  },
+  {
+    "name": "NightSkyEngine",
+    "files": 3103,
+    "path": "modules/NightSkyEngine"
+  },
+  {
+    "name": "PlanetaryAgents",
+    "files": 13,
+    "path": "modules/PlanetaryAgents"
+  },
+  {
+    "name": "CodeAssist",
+    "files": 11774,
+    "path": "modules/CodeAssist"
+  },
+  {
+    "name": "NLP2Code",
+    "files": 7,
+    "path": "modules/NLP2Code"
+  },
+  {
+    "name": "LEGYC",
+    "files": 7,
+    "path": "modules/LEGYC"
+  },
+  {
+    "name": "DeVa-DevOps",
+    "files": 19,
+    "path": "modules/DeVa-DevOps"
+  },
+  {
+    "name": "AiKre8tive.us",
+    "files": 7,
+    "path": "modules/AiKre8tive.us"
+  },
+  {
+    "name": "AiKre8tive-",
+    "files": 11,
+    "path": "modules/AiKre8tive-"
+  },
+  {
+    "name": "AI",
+    "files": 204,
+    "path": "modules/AI"
+  },
+  {
+    "name": "7db57be9-902b-443b-9d9d-e73f93d2dbc6",
+    "files": 9,
+    "path": "modules/7db57be9-902b-443b-9d9d-e73f93d2dbc6"
+  },
+  {
+    "name": "2026-03-29_15.49",
+    "files": 9,
+    "path": "modules/2026-03-29_15.49"
+  },
+  {
+    "name": "fp-build-fixer",
+    "files": 7,
+    "path": "modules/fp-build-fixer"
+  },
+  {
+    "name": "flutter",
+    "files": 7983,
+    "path": "modules/flutter"
+  },
+  {
+    "name": "sentinel-lens",
+    "files": 111,
+    "path": "modules/sentinel-lens"
+  },
+  {
+    "name": "golf-course-project-mcp-server",
+    "files": 10,
+    "path": "modules/golf-course-project-mcp-server"
+  },
+  {
+    "name": "pkgs",
+    "files": 2,
+    "path": "modules/pkgs"
+  },
+  {
+    "name": "VideoCourts",
+    "files": 47,
+    "path": "modules/VideoCourts"
+  },
+  {
+    "name": "demo-repository",
+    "files": 6,
+    "path": "modules/demo-repository"
+  },
+  {
+    "name": "Agentik",
+    "files": 10,
+    "path": "modules/Agentik"
+  },
+  {
+    "name": "arcai-",
+    "files": 8,
+    "path": "modules/arcai-"
+  },
+  {
+    "name": "c25-monorepo",
+    "files": 10,
+    "path": "modules/c25-monorepo"
+  },
+  {
+    "name": "c25-outputs-20260316_192522",
+    "files": 52,
+    "path": "modules/c25-outputs-20260316_192522"
+  },
+  {
+    "name": "videocourts-org_BACKUP_1774926493",
+    "files": 14,
+    "path": "modules/videocourts-org_BACKUP_1774926493"
+  },
+  {
+    "name": "videocourts-org",
+    "files": 4,
+    "path": "modules/videocourts-org"
+  },
+  {
+    "name": "ledgers",
+    "files": 2,
+    "path": "modules/ledgers"
+  },
+  {
+    "name": "telegram_bot_build",
+    "files": 8,
+    "path": "modules/telegram_bot_build"
+  },
+  {
+    "name": "mybuyo-foodlion-mvp",
+    "files": 8,
+    "path": "modules/mybuyo-foodlion-mvp"
+  },
+  {
+    "name": "blackboxai-1742368461092",
+    "files": 13,
+    "path": "modules/blackboxai-1742368461092"
+  },
+  {
+    "name": "blackboxai-1742357245683",
+    "files": 14,
+    "path": "modules/blackboxai-1742357245683"
+  },
+  {
+    "name": "blackboxai-1742376990260",
+    "files": 32,
+    "path": "modules/blackboxai-1742376990260"
+  },
+  {
+    "name": "sovereign-gtp",
+    "files": 6,
+    "path": "modules/sovereign-gtp"
+  },
+  {
+    "name": "CyGeL-White-",
+    "files": 657,
+    "path": "modules/CyGeL-White-"
+  },
+  {
+    "name": "sovereign-ai-publish",
+    "files": 7,
+    "path": "modules/sovereign-ai-publish"
+  },
+  {
+    "name": "WideOpen-Obsidian",
+    "files": 49,
+    "path": "modules/WideOpen-Obsidian"
+  },
+  {
+    "name": "memoria-agent",
+    "files": 6,
+    "path": "modules/memoria-agent"
+  },
+  {
+    "name": "Kre8tive-Konceptz",
+    "files": 1,
+    "path": "modules/Kre8tive-Konceptz"
+  },
+  {
+    "name": "aikre8tive-planetary-grid",
+    "files": 72,
+    "path": "modules/aikre8tive-planetary-grid"
+  },
+  {
+    "name": "Versed_Ai",
+    "files": 50,
+    "path": "modules/Versed_Ai"
+  },
+  {
+    "name": "linked2xyz",
+    "files": 1,
+    "path": "modules/linked2xyz"
+  },
+  {
+    "name": "That",
+    "files": 2,
+    "path": "modules/That"
+  },
+  {
+    "name": "c25-recloak",
+    "files": 12,
+    "path": "modules/c25-recloak"
+  },
+  {
+    "name": "c25-rebuild-percellify",
+    "files": 12,
+    "path": "modules/c25-rebuild-percellify"
+  },
+  {
+    "name": "c25-reactivate-planetary-agents",
+    "files": 12,
+    "path": "modules/c25-reactivate-planetary-agents"
+  },
+  {
+    "name": "c25-quick-deploy",
+    "files": 12,
+    "path": "modules/c25-quick-deploy"
+  },
+  {
+    "name": "c25-package-portfolio",
+    "files": 12,
+    "path": "modules/c25-package-portfolio"
+  },
+  {
+    "name": "c25-mars-sharecrop",
+    "files": 12,
+    "path": "modules/c25-mars-sharecrop"
+  },
+  {
+    "name": "c25-live",
+    "files": 87,
+    "path": "modules/c25-live"
+  },
+  {
+    "name": "c25-link-github",
+    "files": 12,
+    "path": "modules/c25-link-github"
+  },
+  {
+    "name": "c25-launch",
+    "files": 13,
+    "path": "modules/c25-launch"
+  },
+  {
+    "name": "c25-launch-presskit",
+    "files": 13,
+    "path": "modules/c25-launch-presskit"
+  },
+  {
+    "name": "c25-key-rotate",
+    "files": 12,
+    "path": "modules/c25-key-rotate"
+  },
+  {
+    "name": "c25-install",
+    "files": 12,
+    "path": "modules/c25-install"
+  },
+  {
+    "name": "c25-git-autocommit",
+    "files": 12,
+    "path": "modules/c25-git-autocommit"
+  },
+  {
+    "name": "c25-fp-consolidate",
+    "files": 12,
+    "path": "modules/c25-fp-consolidate"
+  },
+  {
+    "name": "c25-fp-code-audit",
+    "files": 12,
+    "path": "modules/c25-fp-code-audit"
+  },
+  {
+    "name": "c25-forensic-scan-365d",
+    "files": 12,
+    "path": "modules/c25-forensic-scan-365d"
+  },
+  {
+    "name": "c25-fix-everything",
+    "files": 12,
+    "path": "modules/c25-fix-everything"
+  },
+  {
+    "name": "c25-find-videocourts",
+    "files": 12,
+    "path": "modules/c25-find-videocourts"
+  },
+  {
+    "name": "c25-final-sync",
+    "files": 12,
+    "path": "modules/c25-final-sync"
+  },
+  {
+    "name": "c25-deploy-universe",
+    "files": 12,
+    "path": "modules/c25-deploy-universe"
+  },
+  {
+    "name": "c25-deploy-sovereign",
+    "files": 12,
+    "path": "modules/c25-deploy-sovereign"
+  },
+  {
+    "name": "c25-deploy-log-dialog",
+    "files": 12,
+    "path": "modules/c25-deploy-log-dialog"
+  },
+  {
+    "name": "c25-deploy-all",
+    "files": 12,
+    "path": "modules/c25-deploy-all"
+  },
+  {
+    "name": "c25-deploy-agents",
+    "files": 13,
+    "path": "modules/c25-deploy-agents"
+  },
+  {
+    "name": "c25-demo-teaser",
+    "files": 8,
+    "path": "modules/c25-demo-teaser"
+  },
+  {
+    "name": "c25-dashboard",
+    "files": 12,
+    "path": "modules/c25-dashboard"
+  },
+  {
+    "name": "c25-constellation25-swarm",
+    "files": 12,
+    "path": "modules/c25-constellation25-swarm"
+  },
+  {
+    "name": "c25-constellation",
+    "files": 12,
+    "path": "modules/c25-constellation"
+  },
+  {
+    "name": "c25-consolidate-obsidian",
+    "files": 12,
+    "path": "modules/c25-consolidate-obsidian"
+  },
+  {
+    "name": "c25-cleanup-failed",
+    "files": 12,
+    "path": "modules/c25-cleanup-failed"
+  },
+  {
+    "name": "c25-c25-mirror-push",
+    "files": 11,
+    "path": "modules/c25-c25-mirror-push"
+  },
+  {
+    "name": "c25-broadcast-whisper-echo",
+    "files": 13,
+    "path": "modules/c25-broadcast-whisper-echo"
+  },
+  {
+    "name": "c25-blackbox-github-update",
+    "files": 12,
+    "path": "modules/c25-blackbox-github-update"
+  },
+  {
+    "name": "c25-bioauth",
+    "files": 12,
+    "path": "modules/c25-bioauth"
+  },
+  {
+    "name": "c25-backfill-artifacts-from-done",
+    "files": 12,
+    "path": "modules/c25-backfill-artifacts-from-done"
+  },
+  {
+    "name": "c25-archive-agentik",
+    "files": 12,
+    "path": "modules/c25-archive-agentik"
+  },
+  {
+    "name": "c25-arcai-original",
+    "files": 12,
+    "path": "modules/c25-arcai-original"
+  },
+  {
+    "name": "c25-arcai-original-oldest",
+    "files": 13,
+    "path": "modules/c25-arcai-original-oldest"
+  },
+  {
+    "name": "c25-arcai-deploy",
+    "files": 12,
+    "path": "modules/c25-arcai-deploy"
+  },
+  {
+    "name": "c25-arcai-copy-2",
+    "files": 12,
+    "path": "modules/c25-arcai-copy-2"
+  },
+  {
+    "name": "c25-arcai-copy-1",
+    "files": 13,
+    "path": "modules/c25-arcai-copy-1"
+  },
+  {
+    "name": "c25-agent-starter",
+    "files": 12,
+    "path": "modules/c25-agent-starter"
+  },
+  {
+    "name": "c25-agent-pipeline",
+    "files": 14,
+    "path": "modules/c25-agent-pipeline"
+  },
+  {
+    "name": "c25-agent-integrations",
+    "files": 12,
+    "path": "modules/c25-agent-integrations"
+  },
+  {
+    "name": "build-agentic-software-w-coral-os-agents",
+    "files": 27,
+    "path": "modules/build-agentic-software-w-coral-os-agents"
+  },
+  {
+    "name": "backend",
+    "files": 9,
+    "path": "modules/backend"
+  },
+  {
+    "name": "aimetaverse-demo",
+    "files": 13,
+    "path": "modules/aimetaverse-demo"
+  },
+  {
+    "name": "Z-Series-Exhibits",
+    "files": 9,
+    "path": "modules/Z-Series-Exhibits"
+  },
+  {
+    "name": "TheKre8tive",
+    "files": 7,
+    "path": "modules/TheKre8tive"
+  },
+  {
+    "name": "SovereignGTP",
+    "files": 12,
+    "path": "modules/SovereignGTP"
+  },
+  {
+    "name": "PoRTaLed-",
+    "files": 7,
+    "path": "modules/PoRTaLed-"
+  },
+  {
+    "name": "Push2Repo",
+    "files": 7,
+    "path": "modules/Push2Repo"
+  },
+  {
+    "name": "PaTHos-Ai-",
+    "files": 8,
+    "path": "modules/PaTHos-Ai-"
+  },
+  {
+    "name": "OneBasher",
+    "files": 7,
+    "path": "modules/OneBasher"
+  },
+  {
+    "name": "NoteTal",
+    "files": 7,
+    "path": "modules/NoteTal"
+  },
+  {
+    "name": "MatrixOS",
+    "files": 324,
+    "path": "modules/MatrixOS"
+  },
+  {
+    "name": "CygNusMaster-",
+    "files": 194,
+    "path": "modules/CygNusMaster-"
+  },
+  {
+    "name": "Apollo-11",
+    "files": 258,
+    "path": "modules/Apollo-11"
+  },
+  {
+    "name": "C25-mono",
+    "files": 5954,
+    "path": "modules/C25-mono"
+  },
+  {
+    "name": "AiMetaverse",
+    "files": 13,
+    "path": "modules/AiMetaverse"
+  },
+  {
+    "name": "AiMetaverse-Orgin",
+    "files": 10,
+    "path": "modules/AiMetaverse-Orgin"
+  },
+  {
+    "name": "ALL-FILES",
+    "files": 10,
+    "path": "modules/ALL-FILES"
+  },
+  {
+    "name": "22971520-65a0-4178-8759-4d187cbe12b0",
+    "files": 9,
+    "path": "modules/22971520-65a0-4178-8759-4d187cbe12b0"
+  },
+  {
+    "name": "2026-03-20_19.48",
+    "files": 9,
+    "path": "modules/2026-03-20_19.48"
+  },
+  {
+    "name": "1111",
+    "files": 9,
+    "path": "modules/1111"
+  },
+  {
+    "name": "-https-github.com-TheKre8tive-linked2xyz-ui.git-",
+    "files": 0,
+    "path": "modules/-https-github.com-TheKre8tive-linked2xyz-ui.git-"
+  },
+  {
+    "name": "home",
+    "files": 11,
+    "path": "modules/home"
+  },
+  {
+    "name": "fp-build-audit-20260311-081904",
+    "files": 210,
+    "path": "modules/fp-build-audit-20260311-081904"
+  },
+  {
+    "name": "termux-ngrok",
+    "files": 5,
+    "path": "modules/termux-ngrok"
+  },
+  {
+    "name": "stargate-grpc-java-client",
+    "files": 5,
+    "path": "modules/stargate-grpc-java-client"
+  },
+  {
+    "name": "sovereign-ai-empire",
+    "files": 2,
+    "path": "modules/sovereign-ai-empire"
+  },
+  {
+    "name": "https-github.com-FacePrintPay-PoRTaLed-Nasa1",
+    "files": 15,
+    "path": "modules/https-github.com-FacePrintPay-PoRTaLed-Nasa1"
+  },
+  {
+    "name": "sovereign-architect",
+    "files": 3080,
+    "path": "modules/sovereign-architect"
+  },
+  {
+    "name": "morphic-ai-answer-engine-generative-ui",
+    "files": 197,
+    "path": "modules/morphic-ai-answer-engine-generative-ui"
+  },
+  {
+    "name": "lib",
+    "files": 51,
+    "path": "modules/lib"
+  },
+  {
+    "name": "banani-prototype",
+    "files": 17,
+    "path": "modules/banani-prototype"
+  },
+  {
+    "name": "c25-deploy-router",
+    "files": 3,
+    "path": "modules/c25-deploy-router"
+  },
+  {
+    "name": "c25-fdroid-repo",
+    "files": 8,
+    "path": "modules/c25-fdroid-repo"
+  },
+  {
+    "name": "obsidian-vault",
+    "files": 4,
+    "path": "modules/obsidian-vault"
+  },
+  {
+    "name": "mybuyo-biometric-saas",
+    "files": 4,
+    "path": "modules/mybuyo-biometric-saas"
+  },
+  {
+    "name": "c25-training-corpus",
+    "files": 8,
+    "path": "modules/c25-training-corpus"
+  },
+  {
+    "name": "c25-repodepo",
+    "files": 78,
+    "path": "modules/c25-repodepo"
+  },
+  {
+    "name": "c25-master",
+    "files": 82,
+    "path": "modules/c25-master"
+  },
+  {
+    "name": "c25-termux-addon",
+    "files": 10,
+    "path": "modules/c25-termux-addon"
+  },
+  {
+    "name": "videocourts_backend",
+    "files": 6041,
+    "path": "modules/videocourts_backend"
+  },
+  {
+    "name": "mybuyoxfoodlion-pitch",
+    "files": 6,
+    "path": "modules/mybuyoxfoodlion-pitch"
+  },
+  {
+    "name": "pathos",
+    "files": 18,
+    "path": "modules/pathos"
+  },
+  {
+    "name": "Remote-Evidence-Collector",
+    "files": 6,
+    "path": "modules/Remote-Evidence-Collector"
+  },
+  {
+    "name": "blackboxai-1742356607403",
+    "files": 13,
+    "path": "modules/blackboxai-1742356607403"
+  },
+  {
+    "name": "blackboxai-1742367771175",
+    "files": 13,
+    "path": "modules/blackboxai-1742367771175"
+  },
+  {
+    "name": "blackboxai-1742374192849",
+    "files": 13,
+    "path": "modules/blackboxai-1742374192849"
+  },
+  {
+    "name": "blackboxai-1741225183777",
+    "files": 33,
+    "path": "modules/blackboxai-1741225183777"
+  },
+  {
+    "name": "funding-extracted",
+    "files": 374,
+    "path": "modules/funding-extracted"
+  },
+  {
+    "name": "bard-totalrecall",
+    "files": 162,
+    "path": "modules/bard-totalrecall"
+  },
+  {
+    "name": "constellation-25-live",
+    "files": 44,
+    "path": "modules/constellation-25-live"
+  },
+  {
+    "name": "ranger-git",
+    "files": 161,
+    "path": "modules/ranger-git"
+  },
+  {
+    "name": "digital-dollar",
+    "files": 4,
+    "path": "modules/digital-dollar"
+  },
+  {
+    "name": "faceprintpay_monorepo",
+    "files": 1,
+    "path": "modules/faceprintpay_monorepo"
+  },
+  {
+    "name": "agentik_ghpages_build",
+    "files": 2,
+    "path": "modules/agentik_ghpages_build"
+  },
+  {
+    "name": "Sovereign",
+    "files": 62,
+    "path": "modules/Sovereign"
+  },
+  {
+    "name": "AiKre8tive-Investor-Assets",
+    "files": 7,
+    "path": "modules/AiKre8tive-Investor-Assets"
+  },
+  {
+    "name": "AiKre8tive-Sovereign-GTP-",
+    "files": 53,
+    "path": "modules/AiKre8tive-Sovereign-GTP-"
+  },
+  {
+    "name": "brewery",
+    "files": 2142,
+    "path": "modules/brewery"
+  },
+  {
+    "name": "Linked2-platform",
+    "files": 127,
+    "path": "modules/Linked2-platform"
+  },
+  {
+    "name": "AiKre8tive-Sovereign",
+    "files": 13,
+    "path": "modules/AiKre8tive-Sovereign"
+  },
+  {
+    "name": "AiKre8tive-ProofStack",
+    "files": 49,
+    "path": "modules/AiKre8tive-ProofStack"
+  },
+  {
+    "name": "PaTHos-OS",
+    "files": 3,
+    "path": "modules/PaTHos-OS"
+  },
+  {
+    "name": "Sovvey",
+    "files": 5,
+    "path": "modules/Sovvey"
+  },
+  {
+    "name": "vite",
+    "files": 2378,
+    "path": "modules/vite"
+  }
+]

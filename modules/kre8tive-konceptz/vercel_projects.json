@@ -1,0 +1,7 @@
+{"projects":[
+  {"name":"kre8tive-konceptz","framework":"static","alias":["kre8tive.space"],"updatedAt":"2026-06-23 20:03"},
+  {"name":"constellation25-recon","framework":"static","alias":["constellation25-recon.vercel.app"],"updatedAt":"2026-06-23 20:03"},
+  {"name":"constellation25-adserver","framework":"static","alias":["constellation25-adserver.vercel.app"],"updatedAt":"2026-06-23 20:03"},
+  {"name":"linked2-platform","framework":"nextjs","alias":["linked2-platform.vercel.app"],"updatedAt":"2026-06-23 20:03"},
+  {"name":"constellation25-ui","framework":"nextjs","alias":["constellation25-ui.vercel.app"],"updatedAt":"2026-06-23 20:03"}
+]}

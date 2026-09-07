@@ -1,0 +1,30 @@
+module.exports = {
+  apps: [
+    { name: "mercury", script: "uvicorn", interpreter: "python3", args: "agents.mercury.mercury:app --host 0.0.0.0 --port 8001" },
+    { name: "venus", script: "uvicorn", interpreter: "python3", args: "agents.venus.venus:app --host 0.0.0.0 --port 8002" },
+    { name: "earth", script: "uvicorn", interpreter: "python3", args: "agents.earth.earth:app --host 0.0.0.0 --port 8003" },
+    { name: "mars", script: "uvicorn", interpreter: "python3", args: "agents.mars.mars:app --host 0.0.0.0 --port 8004" },
+    { name: "jupiter", script: "uvicorn", interpreter: "python3", args: "agents.jupiter.jupiter:app --host 0.0.0.0 --port 8005" },
+    { name: "saturn", script: "uvicorn", interpreter: "python3", args: "agents.saturn.saturn:app --host 0.0.0.0 --port 8006" },
+    { name: "uranus", script: "uvicorn", interpreter: "python3", args: "agents.uranus.uranus:app --host 0.0.0.0 --port 8007" },
+    { name: "neptune", script: "uvicorn", interpreter: "python3", args: "agents.neptune.neptune:app --host 0.0.0.0 --port 8008" },
+    { name: "pluto", script: "uvicorn", interpreter: "python3", args: "agents.pluto.pluto:app --host 0.0.0.0 --port 8009" },
+    { name: "ceres", script: "uvicorn", interpreter: "python3", args: "agents.ceres.ceres:app --host 0.0.0.0 --port 8010" },
+    { name: "pallas", script: "uvicorn", interpreter: "python3", args: "agents.pallas.pallas:app --host 0.0.0.0 --port 8011" },
+    { name: "hygiea", script: "uvicorn", interpreter: "python3", args: "agents.hygiea.hygiea:app --host 0.0.0.0 --port 8012" },
+    { name: "vesta", script: "uvicorn", interpreter: "python3", args: "agents.vesta.vesta:app --host 0.0.0.0 --port 8013" },
+    { name: "eris", script: "uvicorn", interpreter: "python3", args: "agents.eris.eris:app --host 0.0.0.0 --port 8014" },
+    { name: "haumea", script: "uvicorn", interpreter: "python3", args: "agents.haumea.haumea:app --host 0.0.0.0 --port 8015" },
+    { name: "makemake", script: "uvicorn", interpreter: "python3", args: "agents.makemake.makemake:app --host 0.0.0.0 --port 8016" },
+    { name: "sedna", script: "uvicorn", interpreter: "python3", args: "agents.sedna.sedna:app --host 0.0.0.0 --port 8017" },
+    { name: "quaoar", script: "uvicorn", interpreter: "python3", args: "agents.quaoar.quaoar:app --host 0.0.0.0 --port 8018" },
+    { name: "orcus", script: "uvicorn", interpreter: "python3", args: "agents.orcus.orcus:app --host 0.0.0.0 --port 8019" },
+    { name: "ixion", script: "uvicorn", interpreter: "python3", args: "agents.ixion.ixion:app --host 0.0.0.0 --port 8020" },
+    { name: "varuna", script: "uvicorn", interpreter: "python3", args: "agents.varuna.varuna:app --host 0.0.0.0 --port 8021" },
+    { name: "triton", script: "uvicorn", interpreter: "python3", args: "agents.triton.triton:app --host 0.0.0.0 --port 8022" },
+    { name: "titania", script: "uvicorn", interpreter: "python3", args: "agents.titania.titania:app --host 0.0.0.0 --port 8023" },
+    { name: "oberon", script: "uvicorn", interpreter: "python3", args: "agents.oberon.oberon:app --host 0.0.0.0 --port 8024" },
+    { name: "ariel", script: "uvicorn", interpreter: "python3", args: "agents.ariel.ariel:app --host 0.0.0.0 --port 8025" },
+    { name: "alfai", script: "uvicorn", interpreter: "python3", args: "agents.alfai.alfai:app --host 0.0.0.0 --port 8026" }
+  ]
+};

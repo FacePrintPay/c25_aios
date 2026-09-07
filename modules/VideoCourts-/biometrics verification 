@@ -1,0 +1,6 @@
+POST   /api/v1/biometric/enroll         // Enroll biometrics (Termux)
+POST   /api/v1/biometric/verify         // Verify identity (Termux)
+GET    /api/v1/biometric/status         // Check enrollment status
+POST   /api/v1/biometric/face           // Capture face (Termux API)
+POST   /api/v1/biometric/fingerprint    // Capture fingerprint (Termux API)
+POST   /api/v1/biometric/voice          // Capture voice (Termux API)

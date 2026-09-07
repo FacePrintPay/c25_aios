@@ -1,0 +1,3 @@
+GET    /api/v1/dashboard/operator       // Court operator dashboard data
+GET    /api/v1/dashboard/user           // User/attorney dashboard data
+GET    /api/v1/dashboard/stats          // Statistics (hearings, verifications, etc.)

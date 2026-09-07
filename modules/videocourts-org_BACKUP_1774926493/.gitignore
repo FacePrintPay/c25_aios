@@ -1,0 +1,15 @@
+*.db
+*.log
+*.partial
+*.pid
+*.sqlite
+.DS_Store
+.cache/
+.env
+.env*
+.env*.local
+.vercel
+.vercel/
+__pycache__/
+dist/
+node_modules/

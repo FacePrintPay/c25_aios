@@ -1,0 +1,3 @@
+POST   /api/v1/payments/remote-access   // Pay remote access fee
+GET    /api/v1/payments/receipts        // Get payment receipts
+POST   /api/v1/payments/verify          // Verify payment

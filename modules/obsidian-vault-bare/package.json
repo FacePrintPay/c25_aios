@@ -1,0 +1,13 @@
+{
+  "name": "obsidian-vault-bare.git",
+  "version": "1.0.0",
+  "description": "Constellation25 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["constellation25", "sovereign"],
+  "author": "Cygel Sampson White",
+  "license": "MIT"
+}

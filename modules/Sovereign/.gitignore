@@ -1,0 +1,11 @@
+*.json
+*.plist
+*.key
+*.pem
+.env
+*.log
+__pycache__/
+*.py[cod]
+venv/
+node_modules/
+.termux/

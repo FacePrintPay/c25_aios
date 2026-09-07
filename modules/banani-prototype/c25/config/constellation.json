@@ -1,0 +1,29 @@
+{
+    "version": "1.0.0",
+    "platform": "Constellation25",
+    "clusters": {
+        "SCAFFOLD": ["Mercury", "Venus", "Earth", "Mars"],
+        "SECURITY": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+        "RUNTIME": ["Pluto", "Ceres", "Eris", "Makemake"],
+        "ORCHESTR": ["Haumea", "Sedna", "Quaoar", "Orcus"],
+        "DEPLOY": ["Varuna", "Ixion", "Chaos", "Huya"],
+        "MONITOR": ["Salacia", "Altjira", "Varda", "Gonggong", "Deimos"]
+    },
+    "paths": {
+        "agents": "./agents",
+        "config": "./config",
+        "manifest": "./manifest",
+        "logs": "./logs",
+        "modules": "./modules",
+        "deploy": "./deploy",
+        "docs": "./docs",
+        "runtime": "./runtime",
+        "security": "./security",
+        "orchestrator": "./orchestrator"
+    },
+    "termux": {
+        "prefix": "/data/data/com.termux/files/usr",
+        "home": "/data/data/com.termux/files/home",
+        "api_enabled": true
+    }
+}

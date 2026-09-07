@@ -1,0 +1,28 @@
+To implement it in your HTML:
+Replace the placeholder div in the Courtroom view with this Video.js setup: <!-- Add to <head> -->
+<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+<!-- Replace the courtroom placeholder div with this -->
+<div class="relative z-10 bg-black rounded-xl overflow-hidden mb-5 aspect-video">
+  <video id="courtroom-player" class="video-js vjs-default-skin vjs-big-play-centered w-full h-full" controls preload="auto">
+    <!-- For WebRTC (Interactive Courtroom) -->
+    <source src="your-webrtc-stream-url" type="application/webrtc" />
+    <!-- For HLS (Broadcast/Recording Playback) -->
+    <!-- <source src="your-hls-playlist.m3u8" type="application/x-mpegURL" /> -->
+  </video>
+</div>
+
+<!-- Add before closing </body> -->
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script>
+  // Initialize Video.js Player
+  const player = videojs('courtroom-player', {
+    controls: true,
+    autoplay: false,
+    preload: 'auto',
+    fluid: true,
+    html5: {
+      hls: { overrideNative: true }
+    }
+  });
+</script>

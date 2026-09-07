@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>C25 · Constellation25 Sovereign Platform</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700;800&display=swap');
+:root{
+  --bg:#020408;--bg2:#050b12;--panel:#080f18;--border:#0d1f33;
+  --cyan:#00e5ff;--green:#27c93f;--yellow:#ffbd2e;--red:#ff5f56;
+  --purple:#d946ef;--orange:#f97316;--text:#c8d8e8;--muted:#2a4060;
+  --font-mono:'Share Tech Mono',monospace;
+  --font-hd:'Orbitron',monospace;
+  --font-body:'Rajdhani',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;min-height:100vh;background:var(--bg);color:var(--text);font-family:var(--font-body);}
+canvas#stars{position:fixed;inset:0;z-index:0;pointer-events:none;}
+#app{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;}
+
+/* HEADER */
+header{padding:14px 20px;border-bottom:1px solid var(--border);background:rgba(2,4,8,0.94);
+  backdrop-filter:blur(12px);display:flex;align-items:center;gap:12px;
+  position:sticky;top:0;z-index:100;flex-wrap:wrap;}
+.logo{font-family:var(--font-hd);font-size:16px;font-weight:900;
+  background:linear-gradient(90deg,var(--cyan),var(--purple),#ff6eb4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px;}
+.badge{font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:20px;
+  border:1px solid var(--cyan);color:var(--cyan);background:rgba(0,229,255,0.05);}
+.hdr-btns{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.pill{font-family:var(--font-mono);font-size:9px;padding:5px 12px;border-radius:20px;
+  cursor:pointer;border:1px solid;transition:all 0.2s;}
+.pill-cyan{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,0.06);}
+.pill-green{border-color:var(--green);color:var(--green);background:rgba(39,201,63,0.06);}
+.pill-off{border-color:var(--red);color:var(--red);background:rgba(255,95,86,0.06);}
+#status-pill{cursor:pointer;}
+
+/* TABS */
+nav{display:flex;gap:0;border-bottom:1px solid var(--border);background:var(--bg2);
+  overflow-x:auto;padding:0 16px;}
+.tab{font-family:var(--font-mono);font-size:10px;padding:11px 16px;cursor:pointer;
+  border-bottom:2px solid transparent;color:var(--muted);transition:all 0.2s;
+  white-space:nowrap;letter-spacing:1px;}
+.tab:hover{color:var(--cyan);}
+.tab.active{color:var(--cyan);border-bottom-color:var(--cyan);}
+
+/* PANELS */
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:16px;}
+.panel-head{padding:11px 15px;border-bottom:1px solid var(--border);display:flex;
+  align-items:center;gap:8px;background:rgba(255,255,255,0.01);}
+.panel-head h3{font-family:var(--font-mono);font-size:10px;color:var(--cyan);letter-spacing:1px;flex:1;}
+
+/* TERMINAL */
+.term{background:#010508;border:1px solid var(--border);border-radius:10px;overflow:hidden;
+  font-family:var(--font-mono);}
+.term-bar{display:flex;align-items:center;gap:5px;padding:7px 11px;
+  background:rgba(255,255,255,0.02);border-bottom:1px solid var(--border);}
+.td{width:9px;height:9px;border-radius:50%;}
+.term-title{flex:1;text-align:center;font-size:9px;color:var(--muted);letter-spacing:1px;}
+.term-body{padding:10px;max-height:260px;overflow-y:auto;min-height:80px;}
+.term-body::-webkit-scrollbar{width:3px;}
+.term-body::-webkit-scrollbar-thumb{background:var(--border);}
+.tl{font-size:11px;line-height:1.9;}
+.tl.cmd{color:var(--yellow);}
+.tl.ok{color:var(--green);font-weight:700;}
+.tl.err{color:var(--red);}
+.tl.info{color:var(--muted);}
+.tl.neo{color:#a78bfa;}
+.tl.mor{color:#fb923c;}
+.tl.ori{color:#34d399;}
+.cursor{display:inline-block;width:7px;height:13px;background:var(--cyan);
+  vertical-align:middle;animation:blink 1s step-end infinite;}
+
+/* BUTTONS */
+.btn{font-family:var(--font-mono);font-size:10px;padding:8px 16px;border-radius:8px;
+  cursor:pointer;border:1px solid;transition:all 0.2s;letter-spacing:1px;}
+.btn-cyan{background:rgba(0,229,255,0.08);color:var(--cyan);border-color:var(--cyan);}
+.btn-cyan:hover{background:rgba(0,229,255,0.16);}
+.btn-green{background:rgba(39,201,63,0.08);color:var(--green);border-color:var(--green);}
+.btn-green:hover{background:rgba(39,201,63,0.16);}
+.btn-purple{background:rgba(217,70,239,0.08);color:var(--purple);border-color:var(--purple);}
+.btn-red{background:rgba(255,95,86,0.08);color:var(--red);border-color:var(--red);}
+.btn-red:hover{background:rgba(255,95,86,0.16);}
+.btn-yellow{background:rgba(255,189,46,0.08);color:var(--yellow);border-color:var(--yellow);}
+
+/* INPUTS */
+.inp{width:100%;background:rgba(255,255,255,0.03);border:1px solid var(--border);
+  color:var(--text);padding:9px 12px;border-radius:8px;font-family:var(--font-mono);
+  font-size:11px;outline:none;}
+.inp:focus{border-color:var(--cyan);}
+
+/* AGENT CARDS */
+.agent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;padding:14px;}
+.ac{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);
+  border-radius:10px;padding:11px;cursor:pointer;transition:all 0.2s;position:relative;}
+.ac:hover{transform:translateY(-2px);}
+.ac.deployed{border-color:var(--agent-c,var(--cyan))44;}
+.ac.running{border-color:var(--yellow)44;}
+.ac-top{display:flex;align-items:center;gap:7px;margin-bottom:7px;}
+.ac-icon{font-size:20px;}
+.ac-name{font-family:var(--font-hd);font-size:10px;font-weight:700;color:#dde2f0;}
+.ac-dot{width:6px;height:6px;border-radius:50%;margin-left:auto;background:var(--muted);}
+.ac.deployed .ac-dot{background:var(--agent-c,var(--cyan));box-shadow:0 0 6px var(--agent-c,var(--cyan));}
+.ac.running .ac-dot{background:var(--yellow);animation:pulse 0.8s ease infinite;}
+.ac-task{font-size:9.5px;color:var(--muted);line-height:1.4;margin-bottom:6px;}
+.ac-cluster{font-family:var(--font-mono);font-size:8px;padding:1px 7px;border-radius:10px;
+  background:rgba(0,229,255,0.06);color:var(--cyan);border:1px solid rgba(0,229,255,0.15);}
+.ac-status{font-family:var(--font-mono);font-size:8px;margin-top:5px;padding:1px 7px;
+  border-radius:10px;display:inline-block;}
+.s-pend{background:rgba(255,255,255,0.03);color:var(--muted);border:1px solid rgba(255,255,255,0.06);}
+.s-run{background:rgba(255,189,46,0.1);color:var(--yellow);border:1px solid rgba(255,189,46,0.2);}
+.s-done{background:rgba(39,201,63,0.08);color:var(--green);border:1px solid rgba(39,201,63,0.2);}
+
+/* STATS */
+.stats{display:flex;gap:10px;flex-wrap:wrap;padding:14px;}
+.stat{flex:1;min-width:80px;background:rgba(255,255,255,0.02);border:1px solid var(--border);
+  border-radius:10px;padding:11px 13px;text-align:center;}
+.sv{font-family:var(--font-hd);font-size:22px;font-weight:700;color:var(--cyan);}
+.sl{font-family:var(--font-mono);font-size:8px;color:var(--muted);margin-top:3px;letter-spacing:1px;}
+
+/* TOAST */
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+  font-family:var(--font-mono);font-size:11px;padding:10px 20px;border-radius:10px;
+  background:rgba(0,229,255,0.12);border:1px solid var(--cyan);color:var(--cyan);
+  z-index:999;opacity:0;transition:opacity 0.3s;pointer-events:none;}
+
+/* CHANNEL CARDS (mesh) */
+.ch-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;}
+.ch{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:10px;
+  padding:12px;text-align:center;transition:all 0.3s;}
+.ch.calling{border-color:var(--yellow)66;animation:pulse-border 0.8s ease infinite;}
+.ch.done{border-color:var(--green)44;}
+.ch-icon{font-size:28px;margin-bottom:6px;}
+.ch-name{font-family:var(--font-mono);font-size:10px;color:var(--text);margin-bottom:3px;}
+.ch-desc{font-size:9px;color:var(--muted);margin-bottom:8px;}
+.ch-badge{font-family:var(--font-mono);font-size:8px;padding:2px 10px;border-radius:10px;display:inline-block;}
+.cb-wait{background:rgba(255,255,255,0.03);color:var(--muted);border:1px solid rgba(255,255,255,0.06);}
+.cb-call{background:rgba(255,189,46,0.1);color:var(--yellow);border:1px solid rgba(255,189,46,0.2);}
+.cb-done{background:rgba(39,201,63,0.08);color:var(--green);border:1px solid rgba(39,201,63,0.2);}
+.ch-result{font-size:9px;color:var(--muted);margin-top:6px;font-family:var(--font-mono);}
+
+/* NEO BASH */
+.neo-panel{background:rgba(167,139,250,0.04);border:1px solid rgba(167,139,250,0.2);
+  border-radius:12px;overflow:hidden;margin:16px;}
+.neo-head{padding:11px 15px;background:rgba(167,139,250,0.08);border-bottom:1px solid rgba(167,139,250,0.15);
+  display:flex;align-items:center;gap:8px;}
+.neo-head h3{font-family:var(--font-mono);font-size:10px;color:#a78bfa;letter-spacing:1px;flex:1;}
+.neo-agent{display:flex;align-items:center;gap:8px;padding:10px 14px;
+  border-bottom:1px solid rgba(255,255,255,0.04);}
+.na-icon{font-size:18px;}
+.na-name{font-family:var(--font-mono);font-size:11px;color:#a78bfa;font-weight:700;}
+.na-role{font-size:9px;color:var(--muted);}
+.na-status{margin-left:auto;font-family:var(--font-mono);font-size:8px;padding:2px 8px;
+  border-radius:10px;background:rgba(167,139,250,0.1);color:#a78bfa;
+  border:1px solid rgba(167,139,250,0.2);}
+
+/* OUTPUT CONSTELLATION */
+.out-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;}
+.out-card{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:10px;
+  padding:12px;opacity:0;transform:translateY(10px);transition:all 0.4s;}
+.out-card.visible{opacity:1;transform:none;}
+.out-label{font-family:var(--font-mono);font-size:8px;color:var(--muted);margin-bottom:4px;letter-spacing:1px;}
+.out-title{font-size:12px;color:var(--text);font-weight:700;margin-bottom:3px;}
+.out-sub{font-size:9px;color:var(--muted);}
+.out-icon{font-size:20px;margin-bottom:6px;}
+
+/* CONSTELLATION COMPLETE */
+.cc-box{background:rgba(0,229,255,0.04);border:1px solid rgba(0,229,255,0.2);
+  border-radius:14px;padding:20px;text-align:center;margin:14px;}
+.cc-title{font-family:var(--font-hd);font-size:clamp(24px,5vw,36px);font-weight:900;
+  background:linear-gradient(90deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px;}
+.cc-url{font-family:var(--font-mono);font-size:10px;color:var(--cyan);margin-bottom:14px;}
+.cc-scores{display:flex;gap:16px;justify-content:center;margin-bottom:16px;}
+.cc-s{text-align:center;}
+.cc-sv{font-family:var(--font-hd);font-size:28px;font-weight:700;color:var(--green);}
+.cc-sl{font-family:var(--font-mono);font-size:8px;color:var(--muted);margin-top:2px;}
+.cc-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;}
+
+/* GAMMA LANDING */
+#gamma-view{min-height:100vh;display:flex;flex-direction:column;}
+.gamma-hero{padding:60px 20px 40px;text-align:center;}
+.gamma-badge{display:inline-block;font-family:var(--font-mono);font-size:9px;
+  padding:4px 16px;border-radius:20px;border:1px solid var(--cyan);
+  color:var(--cyan);background:rgba(0,229,255,0.06);margin-bottom:24px;}
+.gamma-h1{font-family:var(--font-body);font-size:clamp(36px,10vw,72px);font-weight:800;
+  line-height:1.05;text-transform:uppercase;margin-bottom:16px;}
+.gamma-h1 span{color:var(--green);}
+.gamma-sub{font-size:15px;color:var(--muted);line-height:1.6;max-width:480px;margin:0 auto 36px;}
+.build-shell{background:#010508;border:1px solid var(--border);border-radius:14px;
+  overflow:hidden;max-width:640px;margin:0 auto;}
+.build-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;
+  background:rgba(255,255,255,0.02);border-bottom:1px solid var(--border);}
+.build-bar span{font-family:var(--font-mono);font-size:9px;color:var(--muted);
+  flex:1;text-align:center;letter-spacing:1px;}
+.build-status{font-family:var(--font-mono);font-size:8px;color:var(--green);}
+.build-tabs{display:flex;border-bottom:1px solid var(--border);}
+.build-tab{flex:1;font-family:var(--font-mono);font-size:9px;padding:9px;text-align:center;
+  cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all 0.2s;}
+.build-tab.active{color:var(--green);border-bottom-color:var(--green);}
+.build-body{padding:16px;}
+.build-label{font-family:var(--font-mono);font-size:9px;color:var(--muted);
+  margin-bottom:8px;letter-spacing:1px;}
+textarea.inp{resize:vertical;min-height:90px;font-size:11px;line-height:1.6;}
+.big-btn{width:100%;font-family:var(--font-hd);font-size:13px;font-weight:700;
+  letter-spacing:2px;padding:14px;border-radius:10px;cursor:pointer;
+  border:1px solid var(--green);background:rgba(39,201,63,0.08);color:var(--green);
+  transition:all 0.3s;text-shadow:0 0 10px rgba(39,201,63,0.4);}
+.big-btn:hover{background:rgba(39,201,63,0.16);}
+.big-btn:disabled{opacity:0.4;cursor:not-allowed;}
+
+/* AGENT PIPELINE */
+.pipeline{display:flex;gap:10px;padding:14px;justify-content:center;flex-wrap:wrap;}
+.pipe-agent{text-align:center;flex:1;min-width:80px;}
+.pa-circle{width:48px;height:48px;border-radius:50%;border:2px solid var(--border);
+  display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 6px;
+  transition:all 0.4s;}
+.pa-circle.active{border-color:var(--green);box-shadow:0 0 16px rgba(39,201,63,0.4);
+  animation:pulse 1s ease infinite;}
+.pa-circle.done{border-color:var(--green);box-shadow:0 0 10px rgba(39,201,63,0.3);}
+.pa-name{font-family:var(--font-mono);font-size:9px;color:var(--muted);}
+.pa-status{font-family:var(--font-mono);font-size:8px;margin-top:3px;}
+.pipe-arrow{font-size:16px;color:var(--muted);align-self:center;margin-top:-16px;}
+
+/* STATS STRIP */
+.stats-strip{display:flex;gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.ss{flex:1;text-align:center;padding:16px 8px;border-right:1px solid var(--border);}
+.ss:last-child{border-right:none;}
+.ss-v{font-family:var(--font-hd);font-size:20px;font-weight:700;color:var(--cyan);}
+.ss-l{font-family:var(--font-mono);font-size:8px;color:var(--muted);margin-top:3px;}
+
+/* MESH FLOW */
+.flow-connector{text-align:center;padding:10px 0;color:var(--cyan);font-size:20px;}
+.mesh-box{background:rgba(39,201,63,0.04);border:1px solid rgba(39,201,63,0.2);
+  border-radius:12px;padding:16px;margin:0 14px;}
+.mesh-title{font-family:var(--font-hd);font-size:18px;color:var(--green);margin-bottom:6px;}
+.mesh-sub{font-family:var(--font-mono);font-size:9px;color:var(--muted);margin-bottom:10px;letter-spacing:1px;}
+.mesh-log{font-family:var(--font-mono);font-size:10px;line-height:2;}
+
+/* HOW IT WORKS */
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.hw{padding:14px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);}
+.hw:nth-child(even){border-right:none;}
+.hw-num{font-family:var(--font-hd);font-size:22px;color:rgba(0,229,255,0.2);font-weight:900;margin-bottom:4px;}
+.hw-title{font-family:var(--font-mono);font-size:10px;color:var(--cyan);margin-bottom:4px;}
+.hw-desc{font-size:11px;color:var(--muted);line-height:1.5;}
+
+/* ORCHESTRATOR CARDS */
+.orch-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:14px;}
+.orch-card{border-radius:10px;padding:12px;text-align:center;}
+.orch-neo{background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.2);}
+.orch-mor{background:rgba(251,146,60,0.06);border:1px solid rgba(251,146,60,0.2);}
+.orch-ori{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);}
+.orch-icon{font-size:28px;margin-bottom:8px;}
+.orch-name{font-family:var(--font-hd);font-size:11px;font-weight:700;margin-bottom:3px;}
+.orch-role{font-family:var(--font-mono);font-size:8px;margin-bottom:6px;letter-spacing:1px;}
+.orch-desc{font-size:10px;line-height:1.5;}
+
+/* ANIMATIONS */
+@keyframes blink{50%{opacity:0;}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+@keyframes pulse-border{0%,100%{box-shadow:0 0 8px rgba(255,189,46,0.3);}50%{box-shadow:0 0 20px rgba(255,189,46,0.6);}}
+
+/* VIEW SWITCHING */
+.view{display:none;}
+.view.active{display:block;}
+
+/* CONTENT WRAPPER */
+.content{padding:16px;flex:1;}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+
+<div id="app">
+  <!-- GAMMA LANDING VIEW -->
+  <div id="gamma-view" class="view active">
+    <div class="gamma-hero">
+      <span class="gamma-badge">CONSTELLATION25 SOVEREIGN AI PLATFORM</span>
+      <h1 class="gamma-h1">Build the Future<br/><span>With AI Agents</span></h1>
+      <p class="gamma-sub">Deploy a swarm of 25 planetary agents that orchestrate your entire development workflow — from intent to deployment.</p>
+      
+      <div class="build-shell">
+        <div class="build-bar">
+          <span>BUILD INTERFACE</span>
+          <span class="build-status">● ONLINE</span>
+        </div>
+        <div class="build-tabs">
+          <div class="build-tab active" data-tab="intent">INTENT</div>
+          <div class="build-tab" data-tab="agents">AGENTS</div>
+          <div class="build-tab" data-tab="deploy">DEPLOY</div>
+        </div>
+        <div class="build-body">
+          <div id="tab-intent">
+            <div class="build-label">DESCRIBE YOUR PROJECT</div>
+            <textarea id="project-intent" class="inp" placeholder="e.g., Build a React dashboard with real-time analytics and AI-powered insights..."></textarea>
+            <button id="launch-btn" class="big-btn" style="margin-top:14px;">LAUNCH CONSTELLATION</button>
+          </div>
+          <div id="tab-agents" style="display:none;">
+            <div class="pipeline" id="agent-pipeline">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+          <div id="tab-deploy" style="display:none;">
+            <div class="cc-box" id="complete-box" style="display:none;">
+              <div class="cc-title">🚀 CONSTELLATION DEPLOYED</div>
+              <div class="cc-url" id="deploy-url">https://your-project.c25.app</div>
+              <div class="cc-scores">
+                <div class="cc-s"><div class="cc-sv" id="score-perf">98</div><div class="cc-sl">PERFORMANCE</div></div>
+                <div class="cc-s"><div class="cc-sv" id="score-seo">95</div><div class="cc-sl">SEO</div></div>
+                <div class="cc-s"><div class="cc-sv" id="score-a11y">100</div><div class="cc-sl">ACCESSIBILITY</div></div>
+              </div>
+              <div class="cc-btns">
+                <button class="btn btn-cyan" onclick="alert('Opening live preview...')">LIVE PREVIEW</button>
+                <button class="btn btn-green" onclick="alert('Repository created!')">VIEW REPO</button>
+                <button class="btn btn-purple" onclick="switchView('dashboard')">DASHBOARD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="how-grid">
+      <div class="hw">
+        <div class="hw-num">01</div>
+        <div class="hw-title">NATURAL LANGUAGE INTENT</div>
+        <div class="hw-desc">Describe what you want to build in plain English. Our Neo agent parses your intent and creates a detailed specification.</div>
+      </div>
+      <div class="hw">
+        <div class="hw-num">02</div>
+        <div class="hw-title">AGENT SWARM ORCHESTRATION</div>
+        <div class="hw-desc">The Orchestrator cluster coordinates specialized agents for code generation, testing, security, and deployment.</div>
+      </div>
+      <div class="hw">
+        <div class="hw-num">03</div>
+        <div class="hw-title">REAL-TIME BUILD PIPELINE</div>
+        <div class="hw-desc">Watch as Morpheus translates plans into bash commands and oRiKAL validates every step before execution.</div>
+      </div>
+      <div class="hw">
+        <div class="hw-num">04</div>
+        <div class="hw-title">INSTANT DEPLOYMENT</div>
+        <div class="hw-desc">Your project is automatically deployed with optimal configuration, CDN setup, and monitoring enabled.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD VIEW -->
+  <div id="dashboard-view" class="view">
+    <header>
+      <div class="logo">C25</div>
+      <div class="badge">SOVEREIGN AI PLATFORM</div>
+      <div class="hdr-btns">
+        <div id="status-pill" class="pill pill-green" title="System Status">● SYSTEM NOMINAL</div>
+        <div class="pill pill-cyan" onclick="switchView('gamma')" style="cursor:pointer;">⟵ BACK</div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="tab active" data-view="overview">OVERVIEW</div>
+      <div class="tab" data-view="agents">AGENTS</div>
+      <div class="tab" data-view="terminal">TERMINAL</div>
+      <div class="tab" data-view="mesh">MESH</div>
+      <div class="tab" data-view="settings">SETTINGS</div>
+    </nav>
+
+    <div class="content">
+      <!-- OVERVIEW PANEL -->
+      <div id="view-overview" class="panel-view active">
+        <div class="stats">
+          <div class="stat"><div class="sv" id="stat-agents">25</div><div class="sl">ACTIVE AGENTS</div></div>
+          <div class="stat"><div class="sv" id="stat-tasks">0</div><div class="sl">TASKS RUNNING</div></div>
+          <div class="stat"><div class="sv" id="stat-uptime">00:00</div><div class="sl">UPTIME</div></div>
+          <div class="stat"><div class="sv" id="stat-health">100%</div><div class="sl">SYSTEM HEALTH</div></div>
+        </div>
+
+        <div class="panel" style="margin-top:16px;">
+          <div class="panel-head">
+            <h3>⚡ ORCHESTRATION LAYER</h3>
+          </div>
+          <div class="orch-grid">
+            <div class="orch-card orch-neo">
+              <div class="orch-icon">🧠</div>
+              <div class="orch-name">NEO</div>
+              <div class="orch-role">INTENT PARSER</div>
+              <div class="orch-desc">Analyzes natural language input and extracts actionable requirements for the swarm.</div>
+            </div>
+            <div class="orch-card orch-mor">
+              <div class="orch-icon">⚙️</div>
+              <div class="orch-name">MORPHEUS</div>
+              <div class="orch-role">BASH TRANSLATOR</div>
+              <div class="orch-desc">Converts high-level plans into executable shell commands with safety checks.</div>
+            </div>
+            <div class="orch-card orch-ori">
+              <div class="orch-icon">🛡️</div>
+              <div class="orch-name">oRiKAL</div>
+              <div class="orch-role">VALIDATOR</div>
+              <div class="orch-desc">Validates all operations against security policies before execution.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>📊 CLUSTER STATUS</h3>
+            <button class="btn btn-cyan" onclick="refreshStats()">REFRESH</button>
+          </div>
+          <div class="agent-grid" id="cluster-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENTS PANEL -->
+      <div id="view-agents" class="panel-view" style="display:none;">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>🪐 PLANETARY AGENTS</h3>
+            <button class="btn btn-green" onclick="startAllAgents()">START ALL</button>
+          </div>
+          <div class="agent-grid" id="agent-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- TERMINAL PANEL -->
+      <div id="view-terminal" class="panel-view" style="display:none;">
+        <div class="term">
+          <div class="term-bar">
+            <div class="td" style="background:#ff5f56;"></div>
+            <div class="td" style="background:#ffbd2e;"></div>
+            <div class="td" style="background:#27c93f;"></div>
+            <div class="term-title">C25 COMMAND CENTER</div>
+          </div>
+          <div class="term-body" id="term-body">
+            <div class="tl info">Welcome to Constellation25 Terminal</div>
+            <div class="tl info">Type commands or use voice input</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <input type="text" id="cmd-input" class="inp" placeholder="Enter command..." onkeypress="handleCmdKey(event)">
+          <button class="btn btn-cyan" onclick="sendCommand()">SEND</button>
+          <button class="btn btn-purple" onclick="toggleVoice()">🎤</button>
+        </div>
+      </div>
+
+      <!-- MESH PANEL -->
+      <div id="view-mesh" class="panel-view" style="display:none;">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>🕸️ AGENT MESH NETWORK</h3>
+          </div>
+          <div class="ch-grid" id="mesh-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+        
+        <div class="flow-connector">↓</div>
+        
+        <div class="mesh-box">
+          <div class="mesh-title">LIVE MESH ACTIVITY</div>
+          <div class="mesh-sub">Real-time inter-agent communication</div>
+          <div class="mesh-log" id="mesh-log">
+            <div>[14:32:01] Mercury → Venus: UI_UPDATE {component: "dashboard"}</div>
+            <div>[14:32:02] Earth → Mars: BUILD_TRIGGER {target: "production"}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETTINGS PANEL -->
+      <div id="view-settings" class="panel-view" style="display:none;">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>⚙️ PLATFORM SETTINGS</h3>
+          </div>
+          <div style="padding:16px;">
+            <div style="margin-bottom:16px;">
+              <label style="font-family:var(--font-mono);font-size:10px;color:var(--muted);display:block;margin-bottom:6px;">OLLAMA MODEL</label>
+              <select class="inp" id="model-select">
+                <option>qwen2.5:7b</option>
+                <option>llama3.2:3b</option>
+                <option>codellama:7b</option>
+                <option>mixtral:8x7b</option>
+              </select>
+            </div>
+            <div style="margin-bottom:16px;">
+              <label style="font-family:var(--font-mono);font-size:10px;color:var(--muted);display:block;margin-bottom:6px;">AUTO-DEPLOY TARGET</label>
+              <select class="inp" id="deploy-target">
+                <option>Vercel</option>
+                <option>Netlify</option>
+                <option>AWS S3</option>
+                <option>Cloudflare Pages</option>
+              </select>
+            </div>
+            <div style="margin-bottom:16px;">
+              <label style="display:flex;align-items:center;gap:10px;">
+                <input type="checkbox" checked style="accent-color:var(--cyan);">
+                <span style="font-family:var(--font-mono);font-size:10px;">Enable Auto-Scale</span>
+              </label>
+            </div>
+            <div style="margin-bottom:16px;">
+              <label style="display:flex;align-items:center;gap:10px;">
+                <input type="checkbox" checked style="accent-color:var(--cyan);">
+                <span style="font-family:var(--font-mono);font-size:10px;">Security Validation Required</span>
+              </label>
+            </div>
+            <button class="btn btn-green" onclick="saveSettings()" style="width:100%;">SAVE CONFIGURATION</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-strip">
+      <div class="ss"><div class="ss-v" id="strip-cpu">12%</div><div class="ss-l">CPU</div></div>
+      <div class="ss"><div class="ss-v" id="strip-mem">2.4GB</div><div class="ss-l">MEMORY</div></div>
+      <div class="ss"><div class="ss-v" id="strip-net">↑1.2 ↓3.4</div><div class="ss-l">MB/s</div></div>
+      <div class="ss"><div class="ss-v" id="strip-agents">25/25</div><div class="ss-l">AGENTS</div></div>
+    </div>
+  </div>
+</div>
+
+<div id="toast">Notification</div>
+
+<script>
+// =============================================================================
+// C25 FRONTEND LOGIC
+// =============================================================================
+
+const AGENTS = [
+  {name:'mercury',cluster:'SCAFFOLD',role:'Comms router & message bus',icon:'📡'},
+  {name:'venus',cluster:'SCAFFOLD',role:'UI/UX renderer',icon:'🎨'},
+  {name:'earth',cluster:'SCAFFOLD',role:'Core OS + filesystem',icon:'🌍'},
+  {name:'mars',cluster:'SCAFFOLD',role:'Build engine & CI/CD',icon:'🔨'},
+  {name:'jupiter',cluster:'SECURITY',role:'Auth, IAM & access control',icon:'🔐'},
+  {name:'saturn',cluster:'SECURITY',role:'Encryption & key management',icon:'🔑'},
+  {name:'uranus',cluster:'SECURITY',role:'Firewall & network security',icon:'🛡️'},
+  {name:'neptune',cluster:'SECURITY',role:'Audit logging & compliance',icon:'📋'},
+  {name:'pluto',cluster:'RUNTIME',role:'Ollama/LLM runtime',icon:'🤖'},
+  {name:'ceres',cluster:'RUNTIME',role:'API gateway & REST broker',icon:'🌐'},
+  {name:'eris',cluster:'RUNTIME',role:'Database & SQLite manager',icon:'🗄️'},
+  {name:'makemake',cluster:'RUNTIME',role:'Cache layer & memory store',icon:'💾'},
+  {name:'haumea',cluster:'ORCHESTR',role:'Neo — intent parser',icon:'🧠'},
+  {name:'sedna',cluster:'ORCHESTR',role:'Morpheus — bash translator',icon:'⚙️'},
+  {name:'quaoar',cluster:'ORCHESTR',role:'oRiKAL — validator & executor',icon:'✅'},
+  {name:'orcus',cluster:'ORCHESTR',role:'Swarm coordinator',icon:'🎯'},
+  {name:'varuna',cluster:'DEPLOY',role:'Git deploy & Vercel pusher',icon:'🚀'},
+  {name:'ixion',cluster:'DEPLOY',role:'Container manager',icon:'📦'},
+  {name:'chaos',cluster:'DEPLOY',role:'DNS & domain config',icon:'🌐'},
+  {name:'huya',cluster:'DEPLOY',role:'CDN & static asset deploy',icon:'☁️'},
+  {name:'salacia',cluster:'MONITOR',role:'System health dashboard',icon:'📊'},
+  {name:'altjira',cluster:'MONITOR',role:'Log aggregator & analyzer',icon:'📝'},
+  {name:'varda',cluster:'MONITOR',role:'Uptime watchdog & alerting',icon:'⏰'},
+  {name:'gonggong',cluster:'MONITOR',role:'Resource & memory monitor',icon:'📈'},
+  {name:'deimos',cluster:'MONITOR',role:'Crash recovery & failsafe',icon:'🔄'}
+];
+
+const CLUSTER_COLORS = {
+  'SCAFFOLD':'#00e5ff','SECURITY':'#ff5f56','RUNTIME':'#ffbd2e',
+  'ORCHESTR':'#d946ef','DEPLOY':'#27c93f','MONITOR':'#f97316'
+};
+
+let startTime = Date.now();
+let taskCount = 0;
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  initStars();
+  renderAgentGrid();
+  renderClusterGrid();
+  renderMeshGrid();
+  renderPipeline();
+  startUptimeTimer();
+  setupTabListeners();
+  simulateMeshActivity();
+});
+
+// View switching
+function switchView(viewName) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  if(viewName === 'gamma') {
+    document.getElementById('gamma-view').classList.add('active');
+  } else if(viewName === 'dashboard') {
+    document.getElementById('dashboard-view').classList.add('active');
+  }
+}
+
+// Tab listeners
+function setupTabListeners() {
+  // Dashboard tabs
+  document.querySelectorAll('#dashboard-view .tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('#dashboard-view .tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      
+      const viewName = tab.dataset.view;
+      document.querySelectorAll('.panel-view').forEach(v => v.style.display = 'none');
+      document.getElementById('view-' + viewName).style.display = 'block';
+    });
+  });
+  
+  // Build tabs
+  document.querySelectorAll('.build-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.build-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      
+      const tabName = tab.dataset.tab;
+      document.getElementById('tab-intent').style.display = 'none';
+      document.getElementById('tab-agents').style.display = 'none';
+      document.getElementById('tab-deploy').style.display = 'none';
+      document.getElementById('tab-' + tabName).style.display = 'block';
+    });
+  });
+}
+
+// Render agent grid
+function renderAgentGrid() {
+  const grid = document.getElementById('agent-grid');
+  grid.innerHTML = AGENTS.map((a, i) => `
+    <div class="ac" style="--agent-c:${CLUSTER_COLORS[a.cluster]}" onclick="toggleAgent(${i})">
+      <div class="ac-top">
+        <span class="ac-icon">${a.icon}</span>
+        <span class="ac-name">${a.name.toUpperCase()}</span>
+        <div class="ac-dot"></div>
+      </div>
+      <div class="ac-task">${a.role}</div>
+      <div class="ac-cluster">${a.cluster}</div>
+      <div class="ac-status s-pend" id="agent-status-${i}">READY</div>
+    </div>
+  `).join('');
+}
+
+// Render cluster overview
+function renderClusterGrid() {
+  const clusters = {};
+  AGENTS.forEach(a => {
+    if(!clusters[a.cluster]) clusters[a.cluster] = [];
+    clusters[a.cluster].push(a);
+  });
+  
+  const grid = document.getElementById('cluster-grid');
+  grid.innerHTML = Object.entries(clusters).map(([cluster, agents]) => `
+    <div class="panel" style="margin:0;">
+      <div class="panel-head">
+        <h3 style="color:${CLUSTER_COLORS[cluster]}">${cluster}</h3>
+        <span style="font-family:var(--font-mono);font-size:8px;color:var(--muted);">${agents.length} AGENTS</span>
+      </div>
+      <div class="agent-grid" style="padding:10px;">
+        ${agents.map(a => `
+          <div class="ac" style="--agent-c:${CLUSTER_COLORS[a.cluster]}">
+            <div class="ac-top">
+              <span class="ac-icon">${a.icon}</span>
+              <span class="ac-name">${a.name.toUpperCase()}</span>
+              <div class="ac-dot"></div>
+            </div>
+            <div class="ac-task">${a.role}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render mesh grid
+function renderMeshGrid() {
+  const channels = [
+    {name:'Mercury→Venus',desc:'UI Updates',icon:'📡'},
+    {name:'Earth→Mars',desc:'Build Triggers',icon:'🔨'},
+    {name:'Jupiter→Saturn',desc:'Key Exchange',icon:'🔐'},
+    {name:'Haumea→Sedna',desc:'Intent Translation',icon:'🧠'}
+  ];
+  
+  const grid = document.getElementById('mesh-grid');
+  grid.innerHTML = channels.map((c, i) => `
+    <div class="ch" id="channel-${i}">
+      <div class="ch-icon">${c.icon}</div>
+      <div class="ch-name">${c.name}</div>
+      <div class="ch-desc">${c.desc}</div>
+      <div class="ch-badge cb-wait" id="channel-badge-${i}">WAITING</div>
+    </div>
+  `).join('');
+}
+
+// Render pipeline
+function renderPipeline() {
+  const pipeline = document.getElementById('agent-pipeline');
+  const steps = [
+    {name:'NEO',icon:'🧠'},
+    {name:'MORPHEUS',icon:'⚙️'},
+    {name:'oRiKAL',icon:'🛡️'},
+    {name:'ORCUS',icon:'🎯'},
+    {name:'VARUNA',icon:'🚀'}
+  ];
+  
+  pipeline.innerHTML = steps.map((s, i) => `
+    <div class="pipe-agent">
+      <div class="pa-circle" id="pipe-step-${i}">${s.icon}</div>
+      <div class="pa-name">${s.name}</div>
+      <div class="pa-status" id="pipe-status-${i}">PENDING</div>
+    </div>
+    ${i < steps.length - 1 ? '<div class="pipe-arrow">→</div>' : ''}
+  `).join('');
+}
+
+// Launch button handler
+document.getElementById('launch-btn')?.addEventListener('click', () => {
+  const intent = document.getElementById('project-intent').value.trim();
+  if(!intent) {
+    showToast('Please enter a project description');
+    return;
+  }
+  
+  // Switch to agents tab
+  document.querySelectorAll('.build-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-tab="agents"]').classList.add('active');
+  document.getElementById('tab-intent').style.display = 'none';
+  document.getElementById('tab-agents').style.display = 'block';
+  
+  // Animate pipeline
+  runPipeline();
+});
+
+// Run pipeline animation
+function runPipeline() {
+  const steps = 5;
+  let current = 0;
+  
+  const interval = setInterval(() => {
+    if(current >= steps) {
+      clearInterval(interval);
+      setTimeout(() => {
+        // Switch to deploy tab
+        document.querySelectorAll('.build-tab').forEach(t => t.classList.remove('active'));
+        document.querySelector('[data-tab="deploy"]').classList.add('active');
+        document.getElementById('tab-agents').style.display = 'none';
+        document.getElementById('tab-deploy').style.display = 'block';
+        
+        // Show complete box
+        document.getElementById('complete-box').style.display = 'block';
+        
+        // Animate scores
+        animateScore('score-perf', 98);
+        animateScore('score-seo', 95);
+        animateScore('score-a11y', 100);
+      }, 500);
+      return;
+    }
+    
+    const circle = document.getElementById(`pipe-step-${current}`);
+    const status = document.getElementById(`pipe-status-${current}`);
+    
+    circle.classList.add('active');
+    status.textContent = 'RUNNING';
+    status.style.color = 'var(--yellow)';
+    
+    setTimeout(() => {
+      circle.classList.remove('active');
+      circle.classList.add('done');
+      status.textContent = 'DONE';
+      status.style.color = 'var(--green)';
+    }, 800);
+    
+    current++;
+  }, 1000);
+}
+
+// Animate score counter
+function animateScore(id, target) {
+  const el = document.getElementById(id);
+  let current = 0;
+  const interval = setInterval(() => {
+    if(current >= target) {
+      clearInterval(interval);
+      return;
+    }
+    current += Math.ceil(target / 20);
+    if(current > target) current = target;
+    el.textContent = current;
+  }, 50);
+}
+
+// Toggle agent
+function toggleAgent(index) {
+  const statusEl = document.getElementById(`agent-status-${index}`);
+  const statuses = ['READY', 'RUNNING', 'DONE'];
+  const currentIndex = statuses.indexOf(statusEl.textContent);
+  const nextIndex = (currentIndex + 1) % statuses.length;
+  
+  statusEl.textContent = statuses[nextIndex];
+  statusEl.className = 'ac-status ' + 
+    (nextIndex === 0 ? 's-pend' : nextIndex === 1 ? 's-run' : 's-done');
+  
+  if(nextIndex === 1) taskCount++;
+  else if(currentIndex === 1) taskCount--;
+  
+  updateStats();
+}
+
+// Start all agents
+function startAllAgents() {
+  AGENTS.forEach((_, i) => {
+    const statusEl = document.getElementById(`agent-status-${i}`);
+    if(statusEl && statusEl.textContent !== 'RUNNING') {
+      statusEl.textContent = 'RUNNING';
+      statusEl.className = 'ac-status s-run';
+    }
+  });
+  taskCount = AGENTS.length;
+  updateStats();
+  showToast('All agents started');
+}
+
+// Update stats
+function updateStats() {
+  document.getElementById('stat-tasks').textContent = taskCount;
+  document.getElementById('strip-agents').textContent = `${taskCount}/25`;
+}
+
+// Uptime timer
+function startUptimeTimer() {
+  setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    const minutes = Math.floor(elapsed / 60000);
+    const seconds = Math.floor((elapsed % 60000) / 1000);
+    document.getElementById('stat-uptime').textContent = 
+      String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
+  }, 1000);
+}
+
+// Refresh stats
+function refreshStats() {
+  document.getElementById('stat-health').textContent = (95 + Math.random() * 5).toFixed(0) + '%';
+  document.getElementById('strip-cpu').textContent = (8 + Math.random() * 15).toFixed(0) + '%';
+  document.getElementById('strip-mem').textContent = (2 + Math.random() * 1.5).toFixed(1) + 'GB';
+  showToast('Stats refreshed');
+}
+
+// Save settings
+function saveSettings() {
+  showToast('Configuration saved');
+}
+
+// Terminal functions
+function handleCmdKey(e) {
+  if(e.key === 'Enter') sendCommand();
+}
+
+function sendCommand() {
+  const input = document.getElementById('cmd-input');
+  const cmd = input.value.trim();
+  if(!cmd) return;
+  
+  const termBody = document.getElementById('term-body');
+  termBody.innerHTML += `<div class="tl cmd">$ ${cmd}</div>`;
+  
+  setTimeout(() => {
+    termBody.innerHTML += `<div class="tl ok">✓ Command executed successfully</div>`;
+    termBody.scrollTop = termBody.scrollHeight;
+  }, 300);
+  
+  input.value = '';
+}
+
+function toggleVoice() {
+  showToast('Voice input not available in demo');
+}
+
+// Mesh simulation
+function simulateMeshActivity() {
+  const messages = [
+    'UI_UPDATE {component: "dashboard"}',
+    'BUILD_TRIGGER {target: "production"}',
+    'KEY_ROTATE {service: "auth"}',
+    'HEALTH_CHECK {agent: "salacia"}',
+    'LOG_FLUSH {count: 1247}',
+    'CACHE_INVALIDATE {pattern: "*"}'
+  ];
+  
+  const agents = ['Mercury', 'Earth', 'Jupiter', 'Salacia', 'Altjira', 'Makemake'];
+  
+  setInterval(() => {
+    const from = agents[Math.floor(Math.random() * agents.length)];
+    const to = agents[Math.floor(Math.random() * agents.length)];
+    const msg = messages[Math.floor(Math.random() * messages.length)];
+    const time = new Date().toLocaleTimeString('en-US', {hour12:false});
+    
+    const logEl = document.getElementById('mesh-log');
+    const entry = document.createElement('div');
+    entry.textContent = `[${time}] ${from} → ${to}: ${msg}`;
+    logEl.appendChild(entry);
+    logEl.scrollTop = logEl.scrollHeight;
+    
+    // Keep only last 20 entries
+    while(logEl.children.length > 20) {
+      logEl.removeChild(logEl.firstChild);
+    }
+  }, 2000);
+}
+
+// Toast notification
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.style.opacity = '1';
+  setTimeout(() => {
+    toast.style.opacity = '0';
+  }, 2500);
+}
+
+// Starfield background
+function initStars() {
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  
+  const stars = Array.from({length: 200}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    size: Math.random() * 1.5,
+    speed: Math.random() * 0.3 + 0.1
+  }));
+  
+  function animate() {
+    ctx.fillStyle = '#020408';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    stars.forEach(star => {
+      ctx.fillStyle = `rgba(255,255,255,${0.3 + Math.random() * 0.7})`;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+      ctx.fill();
+      
+      star.y += star.speed;
+      if(star.y > canvas.height) star.y = 0;
+    });
+    
+    requestAnimationFrame(animate);
+  }
+  animate();
+}
+</script>
+</body>
+</html>

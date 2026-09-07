@@ -1,0 +1,6 @@
+{
+  "name": "C25-DevOps",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "bash .devcontainer/post-init.sh",
+  "features": {"ghcr.io/devcontainers/features/node:1":{}, "ghcr.io/devcontainers/features/python:1":{}}
+}

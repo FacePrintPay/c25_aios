@@ -1,0 +1,8 @@
+tunnel: c25-gateway
+credentials-file: /data/data/com.termux/files/home/.cloudflared/c25-gateway.json
+ingress:
+  - hostname: c25.mybuyo.com
+    service: http://localhost:8080
+    originRequest:
+      noTLSVerify: true
+  - service: http_status:404

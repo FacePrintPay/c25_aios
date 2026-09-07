@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+DB="${HOME}/.memoria/memory.db"; mkdir -p "$(dirname "${DB}")"
+[ ! -f "${DB}" ] && sqlite3 "${DB}" "CREATE TABLE IF NOT EXISTS memories(id INTEGER PRIMARY KEY,ts DATETIME DEFAULT CURRENT_TIMESTAMP,cmd TEXT);"
+case "${1}" in
+remember) sqlite3 "${DB}" "INSERT INTO memories(cmd)VALUES('${2}')"; echo "✅ Remembered: ${2}" ;;
+recall) echo "🔍 Memories containing '${2}':"; sqlite3 "${DB}" "SELECT ts,cmd FROM memories WHERE cmd LIKE '%${2}%' ORDER BY ts DESC LIMIT 5" | while IFS='|' read t c; do echo "  [${t}] ${c}"; done ;;
+stats) echo "🧠 MEMORIA Stats"; echo "   Memories: $(sqlite3 "${DB}" "SELECT COUNT(*) FROM memories")"; echo "   Database: ${DB}"; echo "   Created by: CyGeL White & Kre8tive Konceptz LLC"; echo "   Powered by: Claude (Anthropic) — optional enhancement layer" ;;
+*) echo "MEMORIA™ v1.0 — Sovereign Terminal Memory"; echo "Copyright © 2026 CyGeL White & Kre8tive Konceptz LLC"; echo "Powered by Claude (Anthropic)"; echo ""; echo "Usage: memoria remember '<cmd>' | recall '<kw>' | stats" ;;
+esac

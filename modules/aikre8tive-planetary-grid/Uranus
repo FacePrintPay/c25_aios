@@ -1,0 +1,13 @@
+Uranus
+
+File: agents/uranus/uranus.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Uranus Agent - A2A Broker")
+
+@app.get("/")
+def root():
+    return {"agent": "Uranus", "mission": "Agent-to-Agent Broker (A2A)", "status": "Online"}
+
+✅ Uranus mission: broker agent-to-agent communications securely across the planetary grid

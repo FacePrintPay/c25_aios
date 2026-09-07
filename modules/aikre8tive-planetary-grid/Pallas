@@ -1,0 +1,13 @@
+Pallas
+
+File: agents/pallas/pallas.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Pallas Agent - Sentiment Analysis")
+
+@app.get("/")
+def root():
+    return {"agent": "Pallas", "mission": "Sentiment Analysis", "status": "Online"}
+
+✅ Pallas mission: analyze and score sentiment data to support planetary reasoning

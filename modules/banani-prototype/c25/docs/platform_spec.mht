@@ -1,0 +1,33 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; type="text/html"; boundary="----C25MHT"
+
+------C25MHT
+Content-Type: text/html
+Content-Location: main.html
+
+<!DOCTYPE html>
+<html>
+<head><title>C25 Platform Specification</title></head>
+<body>
+<h1>Constellation25 Platform Specification</h1>
+<h2>25 Planetary Agents - 6 Clusters</h2>
+<ul>
+<li>SCAFFOLD: Mercury, Venus, Earth, Mars</li>
+<li>SECURITY: Jupiter, Saturn, Uranus, Neptune</li>
+<li>RUNTIME: Pluto, Ceres, Eris, Makemake</li>
+<li>ORCHESTR: Haumea (Neo), Sedna (Morpheus), Quaoar (oRiKAL), Orcus</li>
+<li>DEPLOY: Varuna, Ixion, Chaos, Huya</li>
+<li>MONITOR: Salacia, Altjira, Varda, Gonggong, Deimos</li>
+</ul>
+<h2>File Types</h2>
+<ul>
+<li>.sh - Bash agent scripts</li>
+<li>.json - Configuration & manifests</li>
+<li>.md - Documentation</li>
+<li>.go - Go modules (MCP server)</li>
+<li>.fastapi - Python FastAPI endpoints</li>
+<li>.mht - Archived documentation</li>
+</ul>
+</body>
+</html>
+------C25MHT--

@@ -1,0 +1,13 @@
+Neptune
+
+File: agents/neptune/neptune.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Neptune Agent - Snowflake Ingest/Transform")
+
+@app.get("/")
+def root():
+    return {"agent": "Neptune", "mission": "Snowflake Ingest & Data Transformation", "status": "Online"}
+
+✅ Neptune mission: handle ingestion, transformation, and serving of structured + unstructured data with Snowflake compliance

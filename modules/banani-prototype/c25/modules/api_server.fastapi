@@ -1,0 +1,117 @@
+# api_server.fastapi - FastAPI Server for C25 Agent Coordination
+
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import List, Dict, Optional
+import subprocess
+import os
+import json
+from datetime import datetime
+
+app = FastAPI(title="C25 MCP API", version="1.0.0")
+
+C25_HOME = os.path.dirname(os.path.abspath(__file__)) + "/.."
+
+class Agent(BaseModel):
+    name: str
+    cluster: str
+    status: str = "pending"
+    pid: Optional[int] = None
+
+class Cluster(BaseModel):
+    name: str
+    agents: List[str]
+    status: str = "active"
+
+class CommandRequest(BaseModel):
+    agent: str
+    command: str
+    args: Optional[List[str]] = []
+
+CLUSTERS = {
+    "SCAFFOLD": ["Mercury", "Venus", "Earth", "Mars"],
+    "SECURITY": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "RUNTIME": ["Pluto", "Ceres", "Eris", "Makemake"],
+    "ORCHESTR": ["Haumea", "Sedna", "Quaoar", "Orcus"],
+    "DEPLOY": ["Varuna", "Ixion", "Chaos", "Huya"],
+    "MONITOR": ["Salacia", "Altjira", "Varda", "Gonggong", "Deimos"]
+}
+
+@app.get("/")
+async def root():
+    return {"platform": "Constellation25", "version": "1.0.0", "status": "online"}
+
+@app.get("/status")
+async def get_status():
+    return {
+        "timestamp": datetime.now().isoformat(),
+        "pid": os.getpid(),
+        "home": C25_HOME,
+        "clusters_active": len(CLUSTERS),
+        "total_agents": sum(len(agents) for agents in CLUSTERS.values())
+    }
+
+@app.get("/clusters")
+async def list_clusters():
+    return [
+        {"name": name, "agents": agents, "count": len(agents)}
+        for name, agents in CLUSTERS.items()
+    ]
+
+@app.get("/agents")
+async def list_agents(cluster: Optional[str] = None):
+    agents = []
+    for cluster_name, agent_names in CLUSTERS.items():
+        if cluster and cluster != cluster_name:
+            continue
+        for agent_name in agent_names:
+            agents.append({
+                "name": agent_name,
+                "cluster": cluster_name,
+                "status": "pending"
+            })
+    return {"agents": agents, "count": len(agents)}
+
+@app.post("/execute/{agent_name}")
+async def execute_agent(agent_name: str, request: CommandRequest):
+    agent_script = f"{C25_HOME}/agents/{agent_name}.sh"
+    
+    if not os.path.exists(agent_script):
+        raise HTTPException(status_code=404, detail=f"Agent {agent_name} not found")
+    
+    try:
+        cmd = ["bash", agent_script] + request.args
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        return {
+            "agent": agent_name,
+            "success": result.returncode == 0,
+            "stdout": result.stdout,
+            "stderr": result.stderr,
+            "returncode": result.returncode
+        }
+    except subprocess.TimeoutExpired:
+        raise HTTPException(status_code=408, detail="Agent execution timed out")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/manifest")
+async def generate_manifest():
+    manifest = {
+        "version": "1.0.0",
+        "generated": datetime.now().isoformat(),
+        "clusters": CLUSTERS,
+        "paths": {
+            "agents": f"{C25_HOME}/agents",
+            "config": f"{C25_HOME}/config",
+            "logs": f"{C25_HOME}/logs"
+        }
+    }
+    
+    with open(f"{C25_HOME}/manifest/api_manifest.json", "w") as f:
+        json.dump(manifest, f, indent=2)
+    
+    return manifest
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

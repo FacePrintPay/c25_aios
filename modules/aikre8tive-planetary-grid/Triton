@@ -1,0 +1,13 @@
+Triton
+
+File: agents/triton/triton.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Triton Agent - Streaming Adapter")
+
+@app.get("/")
+def root():
+    return {"agent": "Triton", "mission": "Streaming Data Adapter", "status": "Online"}
+
+✅ Triton mission: adapt, process, and relay streaming data for planetary-scale intelligence

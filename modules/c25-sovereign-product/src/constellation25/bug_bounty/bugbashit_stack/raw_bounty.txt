@@ -1,0 +1,14 @@
+OneTrust announced New Version Released!
+
+5 days ago
+(10 Jun 2026 13:29:07 GMT+0)
+By Leo_Khatchadourian
+Hello,
+
+We are pleased to announce the update to Version 202606.1.0 of our testing platform:
+https://pentest-app.onetrust.com/
+
+You can find the detailed list of changes directly at:
+https://my.onetrust.com/s/release-notes?language=en_US
+
+Thank you for your continued collaboration and happy testing!

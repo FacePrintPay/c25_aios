@@ -1,0 +1,13 @@
+Eris
+
+File: agents/eris/eris.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Eris Agent - Threat Detection")
+
+@app.get("/")
+def root():
+    return {"agent": "Eris", "mission": "Threat Detection", "status": "Online"}
+
+✅ Eris mission: continuously monitor for threats, anomalies, and suspicious activity in the planetary swarm

@@ -1,0 +1,6402 @@
+{"scan_date":"2026-04-25T19:57:27Z","empty_files":[
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/workspace/obsidian/Untitled 1.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2025-10-19 13:09:28.146000000 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/workspace/obsidian/Untitled 2.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2025-10-19 17:30:27.373000000 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/workspace/obsidian/Untitled 3.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2025-11-08 14:27:02.244000000 -0500",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/workspace/obsidian/Untitled 4.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2025-11-08 15:05:15.792000000 -0500",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/workspace/obsidian/Untitled.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2025-12-23 09:36:32.304000000 -0500",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.700001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.700001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.704001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.652001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/workspace/obsidian/Untitled 1.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.928000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/workspace/obsidian/Untitled 2.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.928000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/workspace/obsidian/Untitled 3.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.928000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/workspace/obsidian/Untitled 4.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.928000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/workspace/obsidian/Untitled.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.932000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/283577_Scaffold-Agent_1772702848.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:04:05.143455841 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/3cb517_test.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:04:10.863455841 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/29b6d3_collect_strategy.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:04:05.219455841 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/e578f0_pkg_redox_users-0.5.0.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:08:09.475455855 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/9cf344_earth-agent.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:07:49.435455854 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/ca5847_Scaffold-Agent_1772702546.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:09:11.383455859 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/fb4034_Scaffold-Agent_1772701464.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:08:37.663455857 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/763924_pkg_ai-records.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:07:58.963455855 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_C25-mono_bash/882b20_git_autocommit.sh",
+  "pattern": "*.sh",
+  "size": 0,
+  "modified": "2026-04-17 04:07:19.487455852 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/Constellation25/vercel.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-09 19:47:46.836000946 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/c25-deploy/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-16 09:04:43.580000031 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/backend/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-16 02:03:01.212002427 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/Termux-Packages/package.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:21:51.864001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/BOOT_MANIFEST_20260317_025408.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.608001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/BOOT_MANIFEST_LATEST.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.608001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25-agent-api/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:08.748001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/Constellation25/vercel.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 00:44:22.936000881 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/consolidation-audit/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-10 01:10:14.204002099 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/consolidation-audit/VeRseD_Ai/.github/workflows/npm-grunt.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-10 01:10:18.816002099 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/consolidation-audit/master/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-16 04:58:41.216003055 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/consolidation-audit/master/.github/workflows/npm-grunt.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-16 04:58:41.236003055 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/failed-builds-audit/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-10 01:10:15.100002099 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/failed-builds-audit/VeRseD_Ai/.github/workflows/npm-grunt.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-10 01:10:19.712002099 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/backups/VideoCourts_1776349635/.github/workflows/deploy.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-15 23:44:47.000000000 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/VeRseD_Ai/.github/workflows/npm-grunt.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-11 01:21:52.104001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-11 01:22:02.320001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.config/ranger/plugins/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-22 12:18:13.723525489 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/write_artifact.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-10 00:14:06.216001898 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/banana.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-10 00:14:05.812001898 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/05a183___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.108001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0cb1b7___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0ea8d7_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0ecccd_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.128001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/19fe7c___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.268001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/1fcad0_platform__PlanetaryAgentsDeployment__agents__mars__app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.284001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/23a83b___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.200001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/5715f4___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.648001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/343635___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.516001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/5098d2_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.552001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/606fdc___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.664001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/71e5a8___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.680001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/f6022d___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.420001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/896446___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.872001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/e7931f___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/94227c_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.168001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/dd9747_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.028001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/a305e9___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.712001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b17ae4_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.820001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/ec1ed7___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.408001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/700042_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.676001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b75421___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.824001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/865192___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.792001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b95770___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.376001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/891ad5_platform__PlanetaryAgentsDeployment__agents__mars__app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.696001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b29e6d_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.720001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/7aa865___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.064001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/fe7e96___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.424001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/banana.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.684001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/write_artifact.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.856001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/ranger/gui/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.464001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.480001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/ranger/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.484001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/cassandra-thrift/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.288001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/cqlsh_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.316001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/meta_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.396001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/meta_tests/utils_test/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.400001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/plugins/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.408001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/repair_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.416001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/thrift_bindings/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.472001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/tools/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.484001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/upgrade_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.500001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/blackboxai-1741225183777/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:05.456001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25-agent-core/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:08.916001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.248001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/dashboard/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.680001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/keys_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.684001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/swarm_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.688001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.364001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/FacePrintPay/services/dashboard/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 19:13:16.332002281 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/FacePrintPay/services/keys_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 19:13:16.336002281 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/FacePrintPay/services/swarm_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 19:13:16.340002281 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25-mono/c25-agent-core/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 00:44:29.304000882 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25/vc-staging/_data_data_com.termux_files_home_github-repos_c25_static_master/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 12:01:08.904000735 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/c25-deploy/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-16 09:04:43.708000031 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/bard-totalrecall/bard_logs/bard_20230929142301.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 01:22:04.360001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_static_master/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.664001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25_sovereign_moat/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 18:37:38.752002153 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/constellation25_unified_build_20260411_120007/dist/_data_data_com.termux_files_home_github-repos_c25_static_master/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 12:01:08.904000735 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:12:41.360001249 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 09:04:38.152000031 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.044001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/aikre8tive/agents/recon_logs/wayback_index.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 05:12:46.156003105 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/internal_dirs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 22:02:01.536001426 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/.constellation25_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:21.048001963 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/yesquid-pro_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.840001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/fp-build-fixer_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.004001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/mybuyo-restore_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.984001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/c25_static_master_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.108001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/fp-build-audit-20260311-081904_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.816001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/home_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.708001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/backend_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.020001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/build_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.944001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/build-agentic-software-w-coral-os-agents_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.088001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/bolt.new_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.468001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/antora-ui-stargate_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.512001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-web-extensions_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.972001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-kre8tive-sovereign-genesis_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.888001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/c25-find-videocourts_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.044001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/master_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:39.980001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/nextjs-boilerplate_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.780001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/kreativekoncepts_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.292001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742357245683_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.304001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1741225183777_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.464001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereign-gtp_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.172001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/mybuyo-biometric-saas_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:44.880001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/docs_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.728001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/obsidian-vault_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.588001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/0_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:48.284001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/coral-server_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.364001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742368461092_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.424001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/downloads_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:40.808001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/web_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.640001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereign-ad-serve_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.404001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/api_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.424001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742356607403_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.548001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/vite-react_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.696001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/AiKre8tive_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:47.996001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/alfai-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.656001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/vers3d_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.060001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/src_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:01.024001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/earth-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.752001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/c25-deploy-v3-0_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.124001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereigngtp-terminal_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.744001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-core_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.904001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/jupiter-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.224001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/app_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.264001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/phind-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.856001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/perplexity-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.896001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-infinity_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.264001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-auto-talk_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.300001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/brave-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.480001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/autoclear-chatgpt-history_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.516001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/bitpay_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.764001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/constellation25-tmp_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.024001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/constellation25-dashboard_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.384001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/linkto_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.548001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/clean_build_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.744001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-records_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.016001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/makemake-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.420001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ganymede-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.464001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/multitasker-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.556001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-kre8tive-stargate-wgpk_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.900001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/home_backup_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:34.460001964 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/C25_DEPLOY_MASTER_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:48.864001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-metaverse-orgin-jm23_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.624001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-theme_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.140001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-bioauth_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.664001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/versed-ai_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.796001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-scan_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.452001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/callisto-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.784001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-ai_media_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.860001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/repo-depot-stargate_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.144001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-other_assets_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.184001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/cicd-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.664001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/titan-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.704001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-creative-stargate_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.740001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/youcom-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.816001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/googlegpt_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.064001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/duckduckgpt_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.108001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/airecords-sovereign_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.564001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/public_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.688001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereign_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.944001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/constellation25-root_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.228001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tivegenesis_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.824001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-kre8tive-stargate-of6j_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.976001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/yesquid_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.100001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/luna-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.216001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/europa-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.292001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/recon-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.380001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/planetary_agents_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.660001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/that-9xrk_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.824001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742374192849_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.344001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742376990260_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.384001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/c25-training-corpus_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:43.424001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/AiKre8tive (1)_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:48.036001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/WideOpen Vault_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:48.108001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/Constellation25_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:48.328001965 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive.com_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.548001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/terminal_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.540001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/aikre8tive-shell_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.904001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/github_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.740001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/explorermars_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.824001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/platform_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.060001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/c25-sovereign-hub_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.020001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/deepseek-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.148001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-omnibox_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.228001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-auto-refresh_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.336001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/dist_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.600001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/agi-kre8tive-beta_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.908001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/io-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.256001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/pluto-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.336001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/haumea-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.512001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/github-t1u6_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.984001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/faceprintpay_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:02.152001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/blackboxai-1742367771175_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.512001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/morphic-ai-answer-engine-generative-ui_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.860001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/pa-thos-ai_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.488001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/totalrecallforensics_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.324001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/arcai_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.304001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-kre8tive-sovereign-genesis-orlb_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.868001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereign-stargate_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.940001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-kre8tive-stargate-tzs9_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.940001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/total-recall-stack_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:55.968001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/sovereigngenesis_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.212001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/raw_memory_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.612001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/mercury-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.704001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/mcp_ws_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:56.980001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/repodepot_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.104001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ceres-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.628001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-metaverse-orgin_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.780001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/amazongpt_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:57.936001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-widescreen_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.188001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/bravegpt_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.376001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/chatgpt-auto-continue_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:58.428001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/ai-metaverse-orgin-2llk_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:32:59.584001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/mars-agent_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.180001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/c25_store/repos/complaints_in_filelist.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 00:33:00.624001966 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/obsidian-vault/Verification/sec/microsoft-10k.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 18:09:48.000001008 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-discovery-2026-04-10/deploy_scripts.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 08:17:20.877944660 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-discovery-2026-04-10/apks.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 08:17:57.429944663 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-discovery-2026-04-10/api_endpoints.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 08:17:59.309944663 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_infra/reports/top20_usage_20260410_215410.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-10 21:54:10.392000272 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/evidence/cross-check/your-timestamps/gpg-times.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 22:51:52.496000364 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/evidence/cross-check/your-timestamps/discussion-dates.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 22:51:52.812000364 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/evidence/cross-check/extracted/forensic-dates.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 22:57:07.080000382 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/evidence/master-aggregate/parsed/extracted-dates.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 23:07:12.144000419 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/evidence/master-aggregate/parsed/broad-dates.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-18 23:21:04.988000468 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:12:41.360001249 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/mybuyo-restore/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:10:00.504001240 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/tmp/vc-raw-org-27906/github-repos/mybuyo-restore/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:10:00.516001240 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/bard-local-analysis.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 02:38:32.992000409 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_backups/update_20260419_1554/repos/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:12:41.360001249 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-ProofStack/logs/dispatch_log_20250803_200141.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.000001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-Sovereign-GTP-/logs/dispatch_log_20250803_200141.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.056001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.368001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.628001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.628001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_backup_20260322/logs/history-to-build/raw_commands_365d.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.592001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_backup_20260322/logs/history-to-build/build_commands.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.592001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:24.552001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/logs/history-to-build/build_commands.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.776001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/logs/history-to-build/raw_commands_365d.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.776001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.672001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.676001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.520001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.768001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.768001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.868001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.868001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/geosoll/FFD.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.072001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github-com-faceprintpay-portaled-/hello.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.396001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github-com-faceprintpay-portaled-/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.400001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github.com-FacePrintPay-PoRTaLed-/hello.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.488001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github.com-FacePrintPay-PoRTaLed-/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.492001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/env.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.332001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-unified/legacy/deploy_scripts.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 19:45:07.400001075 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-unified/legacy/apks.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 19:45:07.420001075 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/videocourts-unified/legacy/api_endpoints.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 19:45:07.440001075 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:46:12.996001937 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/geosoll/FFD.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:46:55.388001940 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 04:59:04.120003056 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/termux_meaningful_inventory_20260416_050238/all_meaningful_files.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 05:02:38.692003069 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/termux_meaningful_inventory_20260416_050238/files_by_type.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 05:02:38.704003069 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/nlp2code-test/bard_extract_001.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 16:02:39.648003285 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/1_-_Let_me_know_if_you_have_any_questions_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:17.112002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/-PaTHos- (Cygel White's conflicted copy)_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:18.640002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/nav_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:18.792002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/pathos-proposal_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:18.844002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/index_wrong_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:19.436002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/percellified_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:19.532002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/tailwind_view_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:19.580002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/agents_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:01.732002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/explainer_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:01.772002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/863143512(1)_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:14.644002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/863143512_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:14.696002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/inner_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:14.892002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/m-outer-93afeeb17bc37e711759584dbfc50d47_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:14.984002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/rul_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.092002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/saved_resource_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.036002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/shared-css-no-js_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:03.280002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/shared-css-with-js_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:03.328002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/sub_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:03.560002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/a á_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.404002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/emptyAttr_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.548002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/env_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.596002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/foo_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.664002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/importmapOrder_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.732002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/invalid_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.856002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/link_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.912002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/noBody_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:04.956002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/noHead_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.000002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/relative-input_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.040002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/scriptAsync_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.080002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/scriptMixed_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.112002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/transform-inline-js_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.160002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/valid_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.224002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/write_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.272002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/zeroJS_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.316002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/no-polyfills-no-systemjs_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.604002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/no-polyfills_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.664002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/index.dist_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:05.708002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/loading_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:08.472002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/app_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:17:52.332002696 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/mehlman-search_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:17:55.660002696 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/tech-lobbying_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:17:55.748002696 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/200_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:17:56.180002696 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/404_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:13.588002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/5be308_dashboard_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:19.976002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/doc-header_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:13.352002697 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/email_blast_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:16.080002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_20250803_195418_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.140002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_20250803_195122_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.184002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_20250803_195122_20250803_200221_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.236002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_20250803_200648_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.284002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_20250803_200925_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.328002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_PHASE2_20250803_201325_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.420002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_PHASE2_20250803_201415_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.468002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_PHASE3_20250803_201612_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.520002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_PHASE3_20250803_201651_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.572002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/badge_verification_SCAF_Codex_PHASE3_20250803_201815_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:15.628002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/9c672a_explainer_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:20.032002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/acc6f1_agents_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:20.080002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/fb9e87_CONSOLIDATION_REPORT_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:20.164002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/builds_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:22.124002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/HttpProvider_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:25.564002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/Keyring_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:25.616002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/ScProvider_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:25.672002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/SubmittableResult_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:25.728002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/WsProvider_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:25.792002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain.isConnected_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.016002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.decodeHexAppId_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.076002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.decodeU8IntAppId_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.136002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.formatNumberToBalance_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.188002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.generateKeyring_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.248002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.getKeyringFromSeed_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.300002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/toPromiseMethod_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.476002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/modules_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.660002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.704002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain.COUSCOUS_ENDPOINT_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.868002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain.GOLDBERG_ENDPOINT_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.924002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain.api_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.980002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/chain.chainEndpoint_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:27.048002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/spec.signedExtensions_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:27.220002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/spec.types_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:27.328002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/bard_20230810215345_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:29.112002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/index_backup_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:40.160002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/shared-1_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:52.456002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/unique_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:52.620002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/file_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:53.240002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/analytics-footer_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.596002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/analytics-header_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.628002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/opensearch_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.672002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/snippets_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.712002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/styles_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.744002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/survey_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:07.788002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers.splitStringIntoArray_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.416002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/toRxMethod_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.540002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/helpers_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.756002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/spec_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:26.808002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/packageInfo_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:27.092002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/spec.rpc_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:27.156002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/bard_20230606103659_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:28.948002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/bard_20230929142301_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:29.160002698 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/both_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:53.188002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/shared-2_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:52.512002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/shared_a_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:18:52.564002699 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/popup_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:14.532002701 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/website_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:09.348002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/.c25_html_transform/options_funcs.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-19 13:19:08.048002700 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:46:12.996001937 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/geosoll/FFD.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:46:55.388001940 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/AiKre8tive-ProofStack/logs/dispatch_log_20250803_200141.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:47:00.008001940 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/sovereign_empire/mcp_build_sandbox/c25-agents/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-15 23:47:08.044001941 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.692001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.696001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.700001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.700001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:41.704001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/RepoDepot-Stargate/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:21:50.724001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.652001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.656001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.856001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.860001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.860001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/Termux-Packages/package.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:21:51.864001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/BOOT_MANIFEST_20260317_025408.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.608001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/BOOT_MANIFEST_LATEST.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.608001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25-agent-api/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:08.748001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/kreativekoncepts/playground/assets-sanitize/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:22.720001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/kreativekoncepts/playground/assets/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:22.756001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/kreativekoncepts/playground/cli/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:22.792001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/kreativekoncepts/playground/css-codesplit/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-11 01:22:22.832001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/meta_tests/cassandra-dir-4.0-beta/conf/cassandra.yaml",
+  "pattern": "*.yaml",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.400001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/VeRseD_Ai/.github/workflows/npm-grunt.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-11 01:21:52.104001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-11 01:22:02.320001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-11 01:22:21.928001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/05a183___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.108001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0cb1b7___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0ea8d7_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/0ecccd_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.128001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/19fe7c___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.268001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/1fcad0_platform__PlanetaryAgentsDeployment__agents__mars__app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.284001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/23a83b___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.200001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/5715f4___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.648001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/343635___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.516001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/5098d2_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.552001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/606fdc___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.664001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/71e5a8___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.680001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/f6022d___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.420001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/896446___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.872001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/e7931f___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.124001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/94227c_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.168001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/dd9747_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.028001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/a305e9___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.712001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b17ae4_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.820001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/ec1ed7___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.408001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/700042_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.676001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b75421___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.824001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/865192___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.792001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b95770___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.376001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/891ad5_platform__PlanetaryAgentsDeployment__agents__mars__app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.696001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/b29e6d_app.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:27.720001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/7aa865___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.064001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/C25-mono/python/fe7e96___init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:21:28.424001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/banana.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.684001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/write_artifact.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.856001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/ranger/gui/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.464001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.480001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/ranger/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.484001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/ranger/container/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.484001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/ranger-git/tests/ranger/core/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:48.488001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/cassandra-thrift/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.288001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/cqlsh_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.316001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/meta_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.396001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/meta_tests/utils_test/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.400001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/plugins/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.408001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/repair_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.416001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/thrift_bindings/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.472001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/tools/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.484001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/upgrade_tests/__init__.py",
+  "pattern": "*.py",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.500001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/blackboxai-1741225183777/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:05.456001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25-agent-core/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:08.916001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/css/pkg-dep/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:41.748001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/hmr-ssr/queries/multi-query.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.048001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.248001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.348001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.348001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-root-glob/file1.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.352001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-root-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.352001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.352001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/optimize-deps/dep-optimize-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.356001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/resolve/exports-and-nested-scope/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.472001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/kreativekoncepts/playground/resolve/exports-from-root/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:42.480001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/dashboard/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.680001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/keys_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.684001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/services/swarm_api/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.688001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/css/pkg-dep/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:00.972001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/hmr-ssr/queries/multi-query.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.148001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.364001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-exports-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.468001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-exports-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.468001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-exports-with-root-glob/file1.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.472001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-exports-with-root-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.472001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.476001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/optimize-deps/dep-optimize-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.476001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/resolve/exports-and-nested-scope/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.596001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/_vite/playground/resolve/exports-from-root/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:23:01.604001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/c25-agent-core/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:21.996001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/kreativekoncepts/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-11 01:22:23.332001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/bard-totalrecall/bard_logs/bard_20230929142301.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 01:22:04.360001016 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_static_master/index.html",
+  "pattern": "*.html",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.664001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-ProofStack/logs/dispatch_log_20250803_200141.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.000001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-Sovereign-GTP-/logs/dispatch_log_20250803_200141.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.056001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:24.368001014 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.624001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.628001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:21:43.628001015 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_backup_20260322/logs/history-to-build/raw_commands_365d.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.592001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/c25_backup_20260322/logs/history-to-build/build_commands.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:19.592001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:24.552001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/logs/history-to-build/build_commands.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.776001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/funding-extracted/logs/history-to-build/raw_commands_365d.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:39.776001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.664001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.672001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/mybuyo-restore/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:46.676001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.520001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.764001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.764001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.764001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.768001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.768001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.864001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.868001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/constellation25-mono/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:20.868001017 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/geosoll/FFD.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.072001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github-com-faceprintpay-portaled-/hello.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.396001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github-com-faceprintpay-portaled-/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.400001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github.com-FacePrintPay-PoRTaLed-/hello.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.488001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/https-github.com-FacePrintPay-PoRTaLed-/requirements.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:40.492001018 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/CONSTELLATION25_UNIFIED_SOURCE/stargate-dtest/env.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-11 01:22:49.332001019 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/01_yesquid_pro_coding_standards.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/02_sovereign_gtp_system_fix_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/03_sovereign_gtp_troubleshooting_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/04_fixed_sovereign_monetization_build.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/05_project_dependencies_configuration.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/06_quick_fix_for_current_errors.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/09_quick_command_shortcuts.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/10_yesquid_webhook_complete_setup_guide.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/artifacts/chat_20251211_230247/12_master_implementation_guide_complete_setup.md",
+  "pattern": "*.md",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/assets-sanitize/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.540001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/assets/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.544001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/cli/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.548001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/css-codesplit/package-lock.json",
+  "pattern": "*.json",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.552001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/aikre8tive/.github/workflows/main.yml",
+  "pattern": "*.yml",
+  "size": 0,
+  "modified": "2026-04-16 09:04:38.632000031 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/c25-agent-core/backend/routes/arxiv.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.332001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/css/pkg-dep/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.588001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/hmr-ssr/queries/multi-query.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.604001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/module-graph/empty.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.624001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-root-glob/file1.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-exports-with-root-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-with-glob/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/optimize-deps/dep-optimize-with-glob/named.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.636001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/resolve/exports-and-nested-scope/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.648001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/kreativekoncepts/playground/resolve/exports-from-root/index.js",
+  "pattern": "*.js",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.648001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-16 09:04:38.152000031 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.040001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.044001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/last_commits.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/reflog_last10.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/audit_20251211_224612/zsh_history_tail.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/last_commits_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/FacePrintPay/reflog_report.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:19.076001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+,
+{
+  "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/sovereign-gtp/src/AiKre8tive-Stargate/agents/status.txt",
+  "pattern": "*.txt",
+  "size": 0,
+  "modified": "2026-04-09 21:13:20.888001252 -0400",
+  "expected_content": "unknown",
+  "agent_assigned": "pending",
+  "status": "flagged"
+}
+]
+}

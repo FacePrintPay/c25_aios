@@ -1,0 +1,3 @@
+GET    /api/v1/directory/courts         // Court directory
+GET    /api/v1/directory/judges         // Judge directory
+GET    /api/v1/directory/attorneys      // Attorney directory

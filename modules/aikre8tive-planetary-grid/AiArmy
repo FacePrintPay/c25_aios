@@ -1,0 +1,52 @@
+aikre8tive-planetary-grid/
+└── agents/
+    ├── mercury/
+    │   └── mercury.py
+    ├── venus/
+    │   └── venus.py
+    ├── earth/
+    │   └── earth.py
+    ├── mars/
+    │   └── mars.py
+    ├── jupiter/
+    │   └── jupiter.py
+    ├── saturn/
+    │   └── saturn.py
+    ├── uranus/
+    │   └── uranus.py
+    ├── neptune/
+    │   └── neptune.py
+    ├── pluto/
+    │   └── pluto.py
+    ├── ceres/
+    │   └── ceres.py
+    ├── pallas/
+    │   └── pallas.py
+    ├── hygiea/
+    │   └── hygiea.py
+    ├── vesta/
+    │   └── vesta.py
+    ├── eris/
+    │   └── eris.py
+    ├── haumea/
+    │   └── haumea.py
+    ├── makemake/
+    │   └── makemake.py
+    ├── sedna/
+    │   └── sedna.py
+    ├── quaoar/
+    │   └── quaoar.py
+    ├── orcus/
+    │   └── orcus.py
+    ├── ixion/
+    │   └── ixion.py
+    ├── varuna/
+    │   └── varuna.py
+    ├── triton/
+    │   └── triton.py
+    ├── titania/
+    │   └── titania.py
+    ├── oberon/
+    │   └── oberon.py
+    └── ariel/
+        └── ariel.py

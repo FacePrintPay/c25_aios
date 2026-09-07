@@ -1,0 +1,14 @@
+Venus
+
+File: agents/venus/venus.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Venus Agent - NLP Prompt Router")
+
+@app.get("/")
+def root():
+    return {"agent": "Venus", "mission": "NLP Prompt Router with Groq/LLaMA", "status": "Online"}
+
+✅ Venus mission: route NLP prompts to Groq API or local LLaMA fallback
+

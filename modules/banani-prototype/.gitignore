@@ -1,0 +1,69 @@
+
+# Compressed files
+# Dependencies and build artifacts
+# Editors and IDEs
+# Environment and configuration
+# Logs and temporary files
+# System files
+*.7z
+*.Z
+*.arj
+*.bz2
+*.cab
+*.db
+*.deb
+*.dll
+*.egg-info/
+*.env.*
+*.exe
+*.gz
+*.log
+*.lz
+*.lz4
+*.lzh
+*.lzo
+*.o
+*.obj
+*.out
+*.partial
+*.pid
+*.pyc
+*.pyd
+*.pyo
+*.rar
+*.rpm
+*.so
+*.sqlite
+*.swp
+*.tar
+*.tar.bz2
+*.tar.gz
+*.tar.xz
+*.tar.zst
+*.tgz
+*.tmp
+*.xz
+*.zip
+*.zst
+.DS_Store
+.cache/
+.coverage
+.env
+.env*
+.env.local
+.idea/
+.nox/
+.tox/
+.venv/
+.vscode/
+Thumbs.db
+__pycache__/
+```
+```node_modules/
+build/
+coverage/
+dist/
+htmlcov/
+node_modules/
+target/
+venv/

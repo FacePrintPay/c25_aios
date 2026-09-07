@@ -1,0 +1,13 @@
+Haumea
+
+File: agents/haumea/haumea.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Haumea Agent - Summarizer")
+
+@app.get("/")
+def root():
+    return {"agent": "Haumea", "mission": "Summarizer", "status": "Online"}
+
+✅ Haumea mission: summarize planetary data streams into concise, actionable insights

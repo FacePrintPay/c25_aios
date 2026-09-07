@@ -1,0 +1,16 @@
+*.db
+*.log
+*.partial
+*.pid
+*.sqlite
+.DS_Store
+.cache/
+.env
+.env*
+.env.local
+.vercel
+__pycache__/
+config/.bioauth.key
+config/.env.active
+config/credentials.md
+node_modules/

@@ -1,0 +1,9 @@
+aikre8tive-planetary-grid/
+├── agents/
+│   ├── mercury/
+│   │   └── mercury.py
+│   ├── venus/
+│   │   └── venus.py
+│   ├── earth/
+│   │   └── earth.py
+│   └── ... (all 25)

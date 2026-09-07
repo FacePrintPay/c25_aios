@@ -1,0 +1,13 @@
+Jupiter
+
+File: agents/jupiter/jupiter.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Jupiter Agent - Hyperparameter Tuner")
+
+@app.get("/")
+def root():
+    return {"agent": "Jupiter", "mission": "Hyperparameter Tuner", "status": "Online"}
+
+✅ Jupiter mission: tune models across planetary agents with advanced hyperparameter sweeps

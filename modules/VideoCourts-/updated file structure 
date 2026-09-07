@@ -1,0 +1,40 @@
+VideoCourts/
+├── frontend/
+│   ├── pilot-index.html              # Main public-facing HTML
+│   ├── dashboard-operator.html       # Court Operator Dashboard
+│   ├── dashboard-user.html           # User/Attorney Dashboard
+│   └── assets/
+│       ├── css/
+│       │   ├── dashboard.css         # Dashboard-specific styles
+│       │   └── operator.css          # Operator panel styles
+│       └── js/
+│           ├── dashboard.js          # Dashboard logic
+│           ├── operator-panel.js     # Operator controls
+│           └── termux-bridge.js      # Termux API bridge
+── backend/
+│   ├── server.js
+│   ├── config/
+│   │   ├── database.js
+│   │   └── termux.js                 # Termux API config
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── dashboard.js
+│   │   ├── cases.js
+│   │   ├── sessions.js
+│   │   ├── biometric.js              # Termux biometric routes
+│   │   ├── evidence.js
+│   │   ├── payments.js
+│   │   └── notifications.js
+│   ├── controllers/
+│   │   ├── dashboardController.js
+│   │   ├── sessionController.js
+│   │   └── biometricController.js    # Termux biometric logic
+│   ├── services/
+│   │   ├── termux-biometric.js       # Termux API service
+│   │   ├── webrtc-service.js         # LiveKit/Agora integration
+│   │   └── forensics-service.js      # TotalRecall engine
+│   ── middleware/
+│       ├── auth.js
+│       └── termux-auth.js            # Termux device auth
+└── docs/
+    └── API_WIREFRAME.md

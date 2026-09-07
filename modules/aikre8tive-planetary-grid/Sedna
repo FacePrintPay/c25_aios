@@ -1,0 +1,13 @@
+Sedna
+
+File: agents/sedna/sedna.py
+
+from fastapi import FastAPI
+
+app = FastAPI(title="Sedna Agent - Compliance Logger")
+
+@app.get("/")
+def root():
+    return {"agent": "Sedna", "mission": "Compliance Logging and Audit Trail", "status": "Online"}
+
+✅ Sedna mission: maintain compliance records and secure audit logs for planetary transparency
